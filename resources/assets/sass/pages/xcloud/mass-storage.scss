@@ -1,0 +1,478 @@
+.section--xcloud-header-mass-storage {
+
+	background-image: url('/img/sections/xcloud/mass-storage/header.jpg');
+	background-position: center;
+	position: relative;
+
+	@screen lg {
+		background-position: center top -65px;
+		background-size: 100%;
+	}
+
+	.container {
+
+		@apply
+			.flex
+			.flex-col
+			.h-full
+			.items-center
+			.justify-center
+		;
+
+	}
+
+	.section__heading {
+
+		@screen lg {
+			font-size: 68px;
+			font-weight: 600;
+			letter-spacing: -1.87px;
+			line-height: 0.69;
+			margin-bottom: 37px;
+			margin-top: 15px;
+		}
+
+		.limitless {
+			margin: 0 1px 0 1px;
+		}
+
+	}
+
+	.section__subheading {
+
+		@screen lg {
+			font-size: 23px;
+			font-weight: 600;
+			letter-spacing: 1.06px;
+		}
+
+	}
+
+}
+
+.section--xcloud-mass-storage-explanation {
+
+	padding: 105px 29px 100px;
+
+	@screen lg {
+		padding: 150px 0 200px;
+	}
+
+	.section__heading {
+
+		font-size: 31px;
+		font-weight: 600;
+		letter-spacing: -0.7px;
+		line-height: 1.1;
+
+		@apply
+			.text-text
+		;
+
+		@screen lg {
+			font-size: 40px;
+			letter-spacing: -1.1px;
+			line-height: 1.08;
+			width: 853px;
+		}
+
+	}
+
+	.section__highlight {
+
+		background-image: linear-gradient(83deg, #d914b8, #f62a2a);
+		font-size: 40px;
+		font-weight: 600;
+		letter-spacing: -1.1px;
+		line-height: 1.08;
+		display: block;
+
+		@screen lg {
+			display: inline-block;
+		}
+
+	}
+
+	.section__button {
+		margin-top: 60px;
+	}
+
+}
+
+.section--xcloud-mass-storage-features {
+
+	.section__feature {
+
+		position: relative;
+
+		@screen lg {
+
+			@apply
+				.flex
+				.justify-center
+				.items-center
+			;
+
+		}
+
+		&--latency {
+
+			@screen lg {
+				left: -54px; // Don't ask
+				margin-bottom: 140px;
+			}
+
+		}
+
+		&--simple {
+
+			margin-top: 100px;
+
+			@apply
+				.flex
+				.flex-col
+			;
+
+			@screen lg {
+
+				left: -13px;
+				margin-top: 0;
+
+				@apply
+					.flex-row
+				;
+
+			}
+
+			.feature__body {
+
+				margin-left: 0;
+				margin-right: 0;
+				order: 2;
+
+				@screen lg {
+					order: 2;
+					width: 469px;
+				}
+
+			}
+
+			.feature__image-container {
+
+				order: 1;
+
+				@screen lg {
+					order: 2;
+					position: relative;
+					left: 105px;
+				}
+
+			}
+
+		}
+
+	}
+
+	.feature__image-container {
+
+		margin-bottom: 64px;
+		object-fit: cover;
+		width: 100vw;
+
+		@screen lg {
+			height: 745px;
+			margin-bottom: 0;
+			overflow: hidden;
+			width: 620px;
+		}
+
+	}
+
+	.feature__image {
+
+		width: 100vw;
+		object-fit: cover;
+
+		@screen lg {
+			height: 745px;
+			object-fit: cover;
+			width: 620px;
+		}
+
+	}
+
+	.feature__body {
+
+		color: #7e7e7e;
+		color: #7e7e7e;
+		font-size: 27px;
+		font-size: 27px;
+		font-weight: 500;
+		letter-spacing: -0.5px;
+		line-height: 1.26;
+		padding: 0 29px;
+
+		@screen lg {
+			margin-left: 95px;
+			padding: 0;
+			width: 469px;
+		}
+
+		strong {
+			color: #2c2c2c;
+			font-weight: 600;
+		}
+
+	}
+
+}
+
+.section--xcloud-mass-storage-price-comparison {
+
+	margin-top: 20px;
+	padding: 114px 29px 0;
+
+	@screen lg {
+		margin-top: 63px;
+	}
+
+	& > .container {
+
+		@screen lg {
+			width: 1280px;
+		}
+
+	}
+
+	.section__heading {
+
+		font-size: 31px;
+		font-weight: 600;
+		letter-spacing: -0.7px;
+		line-height: 1.1;
+
+		@apply
+			.text-text
+		;
+
+		@screen lg {
+			font-size: 40px;
+			letter-spacing: -1.1px;
+			line-height: 1.08;
+			margin-left: 94px;
+			width: 849px;
+		}
+
+	}
+
+	.section__highlight {
+
+		background-image: linear-gradient(80deg, #d914b8, #f62a2a);
+		display: block;
+		font-size: 31px;
+		font-weight: 500;
+		letter-spacing: -0.7px;
+		line-height: 1.1;
+
+		@screen md {
+			background-image: linear-gradient(84deg, #d914b8, #f62a2a);
+			margin-bottom: 40px;
+			position: relative;
+			text-indent: 565px;
+			top: -43px;
+			width: 850px;
+		}
+
+		@screen lg {
+			font-size: 40px;
+			font-weight: 600;
+			letter-spacing: -1.1px;
+			line-height: 1.08;
+		}
+
+	}
+
+	.comparison-container {
+
+		margin-top: 100px;
+
+		@apply
+			.text-label
+		;
+
+		@screen lg {
+
+			height: 419px;
+			margin-top: 80px;
+			padding: 90px 102px;
+			width: 1280px;
+
+			@apply
+				.bg-navbar-bg
+				.flex
+				.items-center
+			;
+		}
+
+		li.company {
+
+			font-size: 32px;
+			font-weight: 600;
+			letter-spacing: -0.96px;
+			line-height: 0.94;
+
+			&:first-of-type {
+
+				@apply
+					.text-text
+				;
+
+			}
+
+
+			@screen lg {
+
+				margin-bottom: 40px;
+
+				&--s3 {  // last-of-type isn't selecting it for some reason
+					margin-bottom: 0;
+				}
+
+			}
+
+		}
+
+		.price-container {
+			display: none;
+		}
+
+		@screen lg {
+
+			.price-container {
+				display: block;
+			}
+
+			.company-container li.bar {
+				display: none;
+			}
+
+		}
+
+		li.bar {
+
+			font-size: 26px;
+			font-weight: 600;
+			letter-spacing: -0.78px;
+			line-height: 1.15;
+			margin-bottom: 40px;
+			position: relative;
+			top: 3px;
+
+			span{
+				background-color: #848484;
+				border-radius: 5px;
+				display: inline-block;
+				height: 10px;
+				margin-right: 18px;
+				width: 393px;
+				position: relative;
+				top: -2px;
+			}
+
+			&--xcloud span {
+
+				@apply
+					.bg-text
+				;
+
+				width: 53px;
+
+			}
+
+			&--azure span {
+				width: 150px;
+			}
+
+			&--google span {
+				width: 393px;
+			}
+
+			&--s3 {
+
+				margin-bottom: 0;
+
+				span {
+					width: 430px;
+				}
+
+			}
+
+		}
+
+		.separator {
+
+			display: none;
+
+			@screen lg {
+				background-color: #d8d8d8;
+				display: block;
+				height: 177px;
+				margin: 0 80px 0 74px;
+				width: 1px;
+			}
+
+		}
+
+	}
+
+}
+
+.section--xcloud-mass-storage-encryption {
+
+	padding: 162px 29px 0;
+
+	@screen lg {
+		padding: 162px 0 120px;
+	}
+
+	.section__heading {
+
+		color: #2C2C2C;
+		font-size: 27px;
+		font-weight: 600;
+		letter-spacing: -0.6px;
+		line-height: 1.15;
+
+		@screen lg {
+			font-size: 29px;
+			font-weight: 500;
+			letter-spacing: -0.5px;
+			line-height: 1.17;
+			width: 797px;
+		}
+
+		em {
+			color: #7E7E7E;
+			font-style: normal;
+		}
+
+		a {
+			color: #006deb;
+		}
+
+	}
+
+}
+
+.encryption-separator {
+
+	background-color: #e5e5e5;
+	height: 1px;
+	margin: 120px auto;
+	width: 100%;
+
+	@screen lg {
+		width: 1080px;
+	}
+
+}

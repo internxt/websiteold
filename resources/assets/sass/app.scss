@@ -1,0 +1,144 @@
+@tailwind base;
+
+@tailwind components;
+
+@import "utilities";
+@import "fonts/cerebri";
+
+@import "components/nav";
+@import "components/nav-mobile";
+@import "components/modal";
+@import "components/cookie-notice";
+@import "components/section";
+@import "components/footer";
+@import "components/badge";
+
+@import "components/sections/intro-internxt";
+@import "components/sections/intro-inxt";
+@import "components/sections/intro-xcore";
+@import "components/sections/intro-consultancy";
+@import "components/sections/subscribe";
+@import "components/sections/find-out-more";
+@import "components/sections/section-link-container";
+
+@import "components/sections/xcloud/feature";
+@import "components/sections/xcloud/get-started";
+@import "components/sections/xcloud/get-started-with-1gb";
+@import "components/sections/xcloud/mockup";
+@import "components/sections/xcloud/through-and-through";
+@import "components/sections/xcloud/learn-more";
+@import "components/sections/xcloud/plans";
+@import "components/sections/xcloud/free-plans";
+@import "components/sections/xcloud/eco-comparison";
+
+@import "components/sections/xcore/download";
+
+@import "components/sections/inxt/preview";
+@import "components/sections/inxt/links";
+@import "components/sections/inxt/promo";
+
+@import "components/sections/articles";
+@import "components/sections/whitepaper";
+@import "components/member-profile";
+@import "components/faq";
+
+@import "pages/home";
+
+@import "pages/xcloud/overview";
+@import "pages/xcloud/technology";
+@import "pages/xcloud/interface";
+@import "pages/xcloud/individuals";
+@import "pages/xcloud/teams";
+@import "pages/xcloud/mass-storage";
+@import "pages/xcloud/get-started";
+@import "pages/xcloud/eco";
+
+@import "pages/xcore/overview";
+@import "pages/xcore/get-started";
+
+@import "pages/inxt/overview";
+@import "pages/inxt/metrics";
+@import "pages/inxt/buy";
+
+@import "pages/about";
+@import "pages/resources";
+@import "pages/consultancy";
+@import "pages/vision";
+@import "pages/terms";
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+@import "../../../node_modules/bootstrap/scss/nav";
+@import "../../../node_modules/bootstrap/scss/navbar";
+@import "../../../node_modules/bootstrap/scss/buttons";
+@import "../../../node_modules/bootstrap/scss/close";
+@import "../../../node_modules/bootstrap/scss/dropdown";
+@import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/forms";
+@import "../../../node_modules/bootstrap/scss/dropdown";
+@import "../../../node_modules/bootstrap/scss/utilities/borders";
+
+@tailwind utilities;
+
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+
+	-webkit-overflow-scrolling: touch;
+	overflow-x: hidden;
+	overscroll-behavior-y: none;
+	width: 100vw;
+
+	@apply
+		.font-sans
+	;
+
+}
+
+
+.rslides {
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 100%;
+ }
+
+.rslides li {
+	-webkit-backface-visibility: hidden;
+	display: none;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+ }
+
+.rslides li:first-child {
+	display: block;
+	float: left;
+	position: relative;
+}
+
+.rslides .testimonial {
+	border: 0;
+	display: block;
+	float: left;
+	height: auto;
+	width: 100%;
+}
+
+
+.section[data-inxt-transition] {
+
+	.section__heading,
+	.section__subheading,
+	.section__button {
+		opacity: 0;
+	}
+
+}

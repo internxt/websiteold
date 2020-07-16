@@ -1,0 +1,97 @@
+.section--faq {
+
+	padding: 140px 29px;
+
+	@apply
+		.bg-body-bg
+	;
+
+	@screen lg {
+		padding: 140px 0;
+	}
+
+	.section__heading {
+
+		font-size: 34px;
+		font-weight: 600;
+		letter-spacing: -1px;
+		line-height: 1.06;
+		margin-bottom: 72px;
+
+		@apply
+			.text-text
+		;
+
+	}
+
+
+	.question-container {
+
+		border-top: 1px solid #E0E0E0;
+		cursor: pointer;
+		max-height: 89px;
+		overflow: hidden;
+		padding: 21px 57px 21px 6px;
+		position: relative;
+		transition: max-height 0.3s ease-in-out;
+
+		@screen lg {
+			padding: 31px 28px 32px;
+		}
+
+		&::after {
+
+			content: '';
+			background-image: url('/img/icons/chevron-down.svg');
+			background-repeat: no-repeat;
+			background-size: 26px;
+			display: block;
+			height: 26px;
+			position: absolute;
+			top: 31px;
+			right: 0;
+			width: 26px;
+			transition: transform 0.2s ease-in-out;
+
+			@screen lg {
+				right: 28px;
+			}
+
+		}
+
+		&--active {
+
+			max-height: 500px;
+
+			&::after {
+				transform: rotate(180deg);
+			}
+
+		}
+
+	}
+
+	.question {
+
+		font-size: 18px;
+		font-weight: 450;
+		letter-spacing: -0.2px;
+
+		@apply
+			.text-text
+		;
+
+	}
+
+	.answer {
+
+		margin-top: 35px;
+		max-width: 700px;
+
+		@screen lg {
+			margin-top: 25px;
+		}
+
+	}
+
+}

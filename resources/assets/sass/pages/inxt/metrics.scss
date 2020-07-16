@@ -1,0 +1,152 @@
+#page--inxt-metrics {
+
+	.section--inxt-header-metrics {
+
+		background-image: url('/img/sections/inxt/metrics/header.jpg');
+		background-position: center;
+		background-size: cover;
+		height: 785px;
+
+		@screen lg {
+			background-size: 122%;
+			height: 803px;
+		}
+
+		.container {
+			align-items: center;
+		}
+
+		.section__heading {
+
+			font-size: 36.1px;
+			font-weight: 500;
+			letter-spacing: -0.81px;
+			line-height: 1.42;
+			margin-bottom: 0;
+
+			@screen lg {
+				color: white;
+				font-size: 55px;
+				font-weight: 600;
+				letter-spacing: -1.01px;
+				line-height: 1.12;
+				margin-bottom: 0;
+			}
+
+		}
+
+		.section__subheading {
+
+			color: white;
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 1;
+			margin-bottom: 10px;
+			opacity: 0.9;
+			text-transform: uppercase;
+
+			@screen lg {
+				font-size: 28px;
+				line-height: 2.11;
+				margin-bottom: 0;
+			}
+
+		}
+
+		.section__highlight {
+			background-image: linear-gradient(89deg, #096dff, #00b1ff);
+		}
+
+	}
+
+	.section--inxt-metrics {
+
+		padding: 105px 29px 25px;
+
+		@screen lg {
+			padding: 124px 0 60px;
+		}
+
+		.container {
+
+			@screen lg {
+
+				@apply
+					.flex
+					.flex-wrap
+					.justify-center
+				;
+
+			}
+
+		}
+
+		.metric {
+
+			margin: 0 auto 61px;
+			text-align: center;
+
+			@screen lg {
+				margin: 0 0 100px;
+				width: 33.333%;
+			}
+
+			&__label {
+
+				width: 100%;
+				font-size: 13px;
+				font-weight: 600;
+				letter-spacing: 0.1px;
+				padding-bottom: 15px;
+				text-transform: uppercase;
+				border-bottom: solid 1px #f2f2f2;
+
+				@apply
+					.text-footer-link
+				;
+
+			}
+
+			&__value {
+
+				font-size: 53px;
+				font-weight: 600;
+				letter-spacing: -2.52px;
+				text-align: center;
+				transition: color 0.5s ease-in-out;
+
+				@apply
+					.text-text
+				;
+
+				&--positive {
+					color: #4dd964;
+				}
+
+				&--highlight {
+					color: #5d45d8;
+				}
+
+			}
+
+		}
+
+	}
+
+	.section--inxt-links.links--performance {
+
+		@apply
+			.bg-body-bg
+		;
+
+		.link {
+			background-color: white;
+		}
+
+	}
+
+	.section--whitepaper {
+		background-image: url('/img/sections/inxt/metrics/whitepaper/bg.jpg');
+	}
+
+}

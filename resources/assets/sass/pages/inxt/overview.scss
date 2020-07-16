@@ -1,0 +1,333 @@
+#page--inxt-overview {
+
+	.section--inxt-header-overview {
+
+		background-image: url('/img/sections/inxt/overview/header.jpg');
+		background-position: center;
+		background-size: cover;
+		height: 100vh;
+
+		@screen lg {
+			background-size: 122%;
+			height: 100vh;
+		}
+
+		.container {
+
+			@apply
+				.items-center
+			;
+
+		}
+
+		.section__heading {
+
+			color: white;
+			font-size: 36.1px;
+			font-weight: 500;
+			letter-spacing: -0.81px;
+			line-height: 1.42;
+
+			@screen lg {
+				font-size: 55px;
+				font-weight: 600;
+				letter-spacing: -1.01px;
+				line-height: 1.12;
+				margin-bottom: 0;
+			}
+
+		}
+
+		.section__subheading {
+
+			color: white;
+			opacity: 0.9;
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 2.81;
+			letter-spacing: normal;
+
+	 		@screen lg {
+				font-size: 28px;
+				letter-spacing: 1.2px;
+				margin-bottom: 5px;
+				text-transform: uppercase;
+	 		}
+
+		}
+
+		.section__highlight {
+			background-image: linear-gradient(89deg, #096dff, #00b1ff);
+		}
+
+		.section__button {
+			color: white;
+			margin-top: 30px;
+		}
+
+	}
+
+	.section--inxt-description {
+
+		display: none;
+
+		@screen lg {
+
+			display: block;
+			padding-bottom: 62px;
+			padding-top: 100px;
+			text-align: center;
+
+			.container {
+
+				@apply
+					.flex
+					.justify-center
+				;
+
+			}
+
+			.section__heading {
+
+				font-size: 22px;
+				font-weight: 450;
+				letter-spacing: -0.1px;
+				line-height: 1.32;
+				text-align: center;
+				width: 678px;
+
+				@apply
+					.text-text-lighter
+				;
+
+			}
+
+		}
+
+	}
+
+	.section--inxt-features {
+
+		padding-bottom: 64px;
+		padding-top: 100px;
+
+		@screen lg {
+			padding-top: 0;
+		}
+
+		.container {
+
+			@screen lg {
+
+				width: 1100px;
+
+				@apply
+					.flex
+					.flex-wrap
+				;
+
+			}
+
+		}
+
+		.feature {
+
+			padding: 0 29px;
+			margin-bottom: 48px;
+
+			@apply
+				.text-text
+			;
+
+			@screen lg {
+
+				border-bottom: 1px solid #f2f2f2;
+				border-right: 1px solid #f2f2f2;
+				margin-bottom: 0;
+				padding: 125px 19px 120px 89px;
+
+				&:nth-of-type(3n+1) {
+					padding-left: 68px;
+					padding-right: 44px;
+				}
+
+				&:nth-of-type(3n+3) {
+					padding-left: 78px;
+				}
+
+				&:nth-child(3n) {
+					border-right: none;
+				}
+
+				&:nth-child(1n+4) {
+					border-bottom: none;
+					padding-top: 120px;
+				}
+
+			}
+
+			.feature__heading {
+
+				font-size: 32px;
+				font-weight: 600;
+				letter-spacing: -0.72px;
+				line-height: 1.06;
+
+				@screen lg {
+					font-size: 36px;
+					letter-spacing: -0.95px;
+					line-height: 0.89;
+					width: 255px;
+				}
+
+			}
+
+			&--revenue .feature__highlight {
+				color: #df3b87;
+			}
+
+			&--utilize .feature__highlight {
+				color: #5d45d8;
+			}
+
+			&--bonus .feature__highlight {
+				color: #ff6559;
+			}
+
+			&--maximum .feature__highlight {
+				color: #ff860e;
+			}
+
+			&--benefits .feature__highlight {
+				color: #0ec440;
+			}
+
+			&--organic .feature__highlight {
+				color: #b620ca;
+			}
+
+		}
+
+	}
+
+	.section--inxt-secure-ways-to-store {
+
+		padding: 91px 29px 54px;
+
+		@apply
+			.bg-body-bg
+		;
+
+		@screen lg {
+			padding: 116px 0 126px;
+		}
+
+		.container {
+
+			@screen lg {
+				width: 100vw;
+			}
+
+		}
+
+		.section__heading {
+
+			font-size: 31px;
+			font-weight: 600;
+			letter-spacing: -0.7px;
+			margin-bottom: 60px;
+			line-height: 1.1;
+
+			@apply
+				.text-text
+			;
+
+			@screen lg {
+				font-size: 38px;
+				letter-spacing: -1.16px;
+				line-height: 0.95;
+				margin-bottom: 68px;
+				text-align: center;
+			}
+
+		}
+
+		.method {
+
+			background-color: grey;
+			background-image: linear-gradient(to right, #222222, #353537);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 285px;
+			margin-bottom: 15px;
+			padding: 34px 44px;
+			transition: filter 0.2s;
+			width: 355px;
+
+			@apply
+				.flex
+				.flex-col
+				.items-center
+				.justify-end
+			;
+
+			@screen lg {
+				height: 228px;
+				margin-right: 15px;
+				width: 284px;
+			}
+
+			&:nth-child(4n) {
+				margin-right: 0;
+			}
+
+			&:hover {
+				filter: brightness(85%);
+			}
+
+			&__heading {
+				color: white;
+				font-size: 19px;
+				font-weight: 500;
+				letter-spacing: -0.1px;
+				line-height: 1.26;
+			}
+
+			&__subheading {
+				color: #e6e6e6;
+				font-size: 12px;
+				font-weight: 600;
+				letter-spacing: 0.44px;
+			}
+
+			&__image {
+				height: 28px;
+				margin-bottom: 20px;
+			}
+
+			$wallets:
+				"coinbase",
+				"trezor",
+				"ledger",
+				"binance-trust",
+				"my-ether-wallet",
+				"samsung-keystore",
+				"my-crypto",
+				"status"
+			;
+
+			@each $wallet in $wallets {
+
+				&--#{$wallet} {
+					// background-color: red;
+					background-image: url('/img/sections/inxt/overview/secure-ways-to-store/#{$wallet}.jpg');
+				}
+
+			}
+
+		}
+
+	}
+
+}

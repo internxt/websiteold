@@ -1,0 +1,70 @@
+.section--whitepaper {
+
+	background-image: url('/img/sections/xcloud/whitepaper/bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 10px 0;
+	height: 660px;
+	padding-bottom: 127px;
+
+	@screen lg {
+		height: 518px;
+		padding-bottom: 0;
+	}
+
+	.container {
+
+		@apply
+			.flex
+			.flex-col
+			.h-full
+			.justify-end
+		;
+
+		@screen lg {
+
+			@apply
+				.justify-center
+			;
+
+		}
+
+	}
+
+	.section__content {
+
+		@apply
+			.flex
+			.flex-col
+			.items-center
+		;
+
+		@screen lg {
+			display: block;
+		}
+
+	}
+
+	.section__heading {
+
+		color: white;
+		font-size: 28px;
+		font-weight: 500;
+		letter-spacing: -0.63px;
+		line-height: 1.29;
+		text-align: center;
+		width: 360px;
+
+		@screen lg {
+			font-size: 28px;
+			font-weight: 500;
+			letter-spacing: -0.2px;
+			line-height: 1.18;
+			text-align: left;
+			width: 422px;
+		}
+
+	}
+
+}

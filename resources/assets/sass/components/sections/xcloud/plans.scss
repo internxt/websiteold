@@ -1,0 +1,327 @@
+.plan-wrapper {
+	margin-bottom: 49px;
+	position: relative;
+}
+
+.plan__label {
+	color: #1e1e1e;
+	font-size: 13px;
+    left: 49px;
+	letter-spacing: normal;
+	line-height: 1.89;
+	position: absolute;
+	top: -26px;
+}
+
+
+.plan {
+
+	border-radius: 4px;
+	border: solid 1px #f7f7f7;
+	height: 100px;
+	margin-bottom: 8px;
+	max-width: 320px;
+	width: 100vw;
+
+	@apply
+		.flex
+		.items-center
+	;
+
+	@screen lg {
+		max-width: 495px;
+	}
+
+}
+
+.plan__quota-container {
+
+	border-radius: 4px;
+	height: 99px;
+	width: 120px;
+	background-color: #f7f7f7;
+
+	@apply
+		.flex
+		.flex-col
+		.items-center
+		.justify-center
+		.text-text
+	;
+
+	@screen lg {
+		width: 174px;
+	}
+
+}
+
+.plan__quota {
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: -0.51px;
+	line-height: 1.1;
+}
+
+.plan__base-price {
+
+	font-size: 15px;
+	letter-spacing: -0.21px;
+	line-height: 1.64;
+
+	@apply
+		.text-text-lighter
+	;
+
+}
+
+.plan__payment-option {
+
+	@apply
+		.flex
+		.flex-col
+		.items-center
+		.justify-center
+		.flex-grow
+		.relative
+	;
+
+	top: 1px;
+
+	&--left {
+		left: 8px;
+	}
+
+	&--right {
+		left: -7px;
+	}
+
+}
+
+.plan__payment-separator {
+	background-color: #ededed;
+	height: 55px;
+	left: 3px;
+	position: relative;
+	width: 1px;
+}
+
+.plan__duration {
+	color: #323232;
+	font-size: 12px;
+	letter-spacing: -0.14px;
+	margin-bottom: 5px;
+}
+
+.plan--free .plan__duration {
+	border-bottom: 1px solid #dad9d9;
+	color: #0492ff;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 0.4px;
+	padding-bottom: 9px;
+	text-transform: uppercase;
+}
+
+.plan__price {
+	color: #0492FF;
+	font-size: 16px;
+	font-weight: 600;
+	height: 25px;
+    left: 2px;
+	letter-spacing: -0.21px;
+	line-height: 1.56;
+	position: relative;
+}
+
+.plan__additional-users {
+
+	font-size: 13px;
+	letter-spacing: -0.17px;
+	line-height: 1.92;
+	margin-bottom: 25px;
+	text-align: center;
+
+	@apply
+		.text-text-lighter
+	;
+
+}
+
+
+.plan--free {
+
+	.plan__payment-option {
+		top: 0;
+	}
+
+	.plan__duration {
+		margin-bottom: 0;
+	}
+
+}
+
+
+.plan-container {
+
+	@apply
+		.flex
+		.flex-col
+		.items-center
+		.justify-center
+	;
+
+	@screen lg {
+
+		@apply
+			.flex-row
+			.flex-wrap
+			.items-start
+			.justify-between
+			.w-full
+		;
+
+	}
+
+}
+
+		.plan-wrapper {
+
+			border-radius: 4px;
+			border: solid 1px #e6e6e6;
+			width: 260px;
+			display: block;
+			height: auto;
+
+			&--popular {
+				border: 2px solid #006deb;
+			}
+
+		}
+
+		.plan__label {
+			font-size: 15px;
+			left: 82.5px;
+			line-height: 1.64;
+			top: 13px;
+		}
+
+		.plan {
+			border: none;
+			flex-direction: column;
+			height: auto;
+			margin-bottom: 41px;
+			width: 260px;
+		}
+
+		.plan__quota-container {
+			background-color: transparent;
+			flex-shrink: 0;
+			height: 170px;
+			justify-content: flex-start;
+			margin-bottom: 47px;
+			padding-top: 56px;
+			width: 260px;
+		}
+
+		.plan__quota {
+			font-size: 34px;
+			font-weight: 600;
+			letter-spacing: -0.72px;
+		}
+
+		.plan__duration {
+
+			@screen lg {
+				margin-bottom: 3px;
+			}
+
+		}
+
+		.plan--free .plan__duration {
+
+			color: #0492ff;
+			font-size: 19px;
+			font-weight: 600;
+			letter-spacing: 0.71px;
+			line-height: 1.32;
+			text-align: center;
+
+			@screen lg {
+				top: -26px;
+			}
+
+		}
+
+		.plan__base-price {
+
+			background-color: #006deb;
+			border-radius: 5px;
+			color: white;
+			display: block;
+			font-size: 16px;
+			font-weight: 600;
+			height: 39px;
+			letter-spacing: -0.21px;
+			margin-top: 40px;
+			padding: 7px 0;
+			text-align: center;
+			transition: background-color 0.2s;
+			width: 136px;
+
+			&:hover {
+				background-color: lighten(#006deb, 2.5%);
+			}
+
+		}
+
+		.plan--free {
+
+			.plan__quota-container {
+				margin-bottom: 0;
+			}
+
+			.plan__duration {
+				border: none;
+				margin-bottom: 0;
+				margin-top: 0;
+				position: relative;
+				text-transform: uppercase;
+				top: -30px;
+			}
+
+		}
+
+		.plan__payment-option {
+
+			&--left,
+			&--right {
+				left: 0;
+			}
+
+		}
+
+		.plan__duration {
+			color: #444444;
+			font-size: 13px;
+			letter-spacing: -0.16px;
+			line-height: 1.92;
+		}
+
+		.plan__price {
+			-webkit-background-clip: initial;
+			-webkit-text-fill-color: initial;
+			background-clip: initial;
+			background-image: none;
+			color: #0492FF;
+			color: #252525;
+			letter-spacing: -0.21px;
+			line-height: 1.56;
+			text-fill-color: initial;
+		}
+
+		.plan__payment-separator {
+			height: 1px;
+			margin-bottom: 19px;
+			margin-top: 24px;
+			width: 213px;
+		}

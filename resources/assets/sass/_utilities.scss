@@ -1,0 +1,59 @@
+@mixin sticky-footer($footer-height, $wrapper-selector, $container-selector, $footer-selector) {
+	html, body {
+		height: 100%;
+	}
+	body {
+		margin: 0px;
+		padding: 0px;
+	}
+	#{$wrapper-selector} {
+
+		min-height: 100%;
+		height: auto !important;
+		height: 100%;
+		margin-bottom: -$footer-height;
+
+		#{$container-selector} {
+		  padding: 0 0 $footer-height 0;
+		}
+
+	}
+	#{$footer-selector} {
+		height: $footer-height;
+	}
+}
+
+
+@mixin transparencyOnHover($amount: 0.9) {
+
+	transition: opacity $transition-default;
+
+	&:hover {
+		opacity: $amount;
+	}
+
+}
+
+@mixin safari() {
+
+    @supports (-webkit-appearance:none) {
+		@content;
+    }
+
+}
+
+@mixin chrome() {
+
+    @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+    	@content;
+	}
+
+}
+
+@mixin firefox() {
+
+    @media screen and (min--moz-device-pixel-ratio:0) {
+        @content;
+    }
+
+}

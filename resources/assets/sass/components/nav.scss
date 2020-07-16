@@ -1,0 +1,238 @@
+// header.fixed {
+// 	position: fixed !important;
+// }
+
+// .navbar {
+
+// 	padding: 23px 19px;
+
+// 	@apply
+// 		.flex
+// 		.items-center
+// 		.justify-between
+// 		.w-full
+// 	;
+
+// 	@screen lg {
+
+// 		margin-top: 9px;
+
+// 		@apply
+// 			.justify-center
+// 			.flex-wrap
+// 			.p-6
+// 			.pt-0
+// 		;
+
+// 	}
+
+// 	&__logo-container {
+
+
+// 		@apply
+// 			.cursor-pointer
+// 			.flex
+// 			.items-center
+// 			.flex-shrink-0
+// 			.text-white
+// 		;
+
+// 		@screen lg {
+// 			margin-right: 8px;
+// 		}
+
+// 	}
+
+// 	&__logo {
+
+// 		background-color: rgba(black, 0.95);
+// 		border-radius: 50%;
+// 		height: 50px;
+// 		transition: background-color 0.3s;
+// 		width: 50px;
+
+// 		@supports (backdrop-filter: blur(10px)) {
+// 			backdrop-filter: blur(10px);
+// 			background-color: rgba(black, 0.75);
+// 		}
+
+// 		path {
+// 			fill: white;
+// 			transition: fill 0.3s;
+// 		}
+
+// 		&--light {
+// 			display: inherit;
+// 		}
+
+// 		@screen lg {
+// 			height: 40px;
+// 			width: 40px;
+// 		}
+
+// 	}
+
+// 	&__menu-button {
+
+// 		align-items: center;
+// 		background-color: rgba(black, 0.95);
+// 		border-radius: 50%;
+// 		display: flex;
+// 		height: 50px;
+// 		justify-content: center;
+// 		transition: background-color 0.3s;
+// 		width: 50px;
+
+// 		@supports (backdrop-filter: blur(10px)) {
+// 			backdrop-filter: blur(10px);
+// 			background-color: rgba(black, 0.75);
+// 		}
+
+// 		@screen lg {
+// 			display: none;
+// 			height: 40px;
+// 			width: 40px;
+// 		}
+
+// 		path {
+// 			fill: white;
+// 			transition: fill 0.3s;
+// 		}
+
+// 	}
+
+// 	&__menu {
+
+// 		@apply
+// 			.hidden
+// 		;
+
+
+// 		@supports (backdrop-filter: blur(10px)) {
+// 			backdrop-filter: blur(10px);
+//         	background-color: rgba(#f2f2f2, 0.7);
+// 		}
+
+// 		@screen lg {
+
+// 			background-color: rgba(#f5f5f5, 0.95);
+// 			border-radius: 30.5px;
+// 			height: 40px;
+// 			padding: 8px 11px;
+// 			transition: background-color 0.2s ease-in-out;
+
+// 			@apply
+// 				.bg-navbar-bg
+// 				.flex
+// 				.items-center
+// 				.justify-around
+// 				.rounded-full
+// 				.text-sm
+// 				.w-auto
+// 			;
+
+// 		}
+
+// 	}
+
+// 	&__link {
+
+// 		@apply
+// 			.text-text
+// 			.whitespace-no-wrap
+// 		;
+
+// 		cursor: pointer;
+// 		display: block;
+// 		font-size: 12px;
+// 		font-weight: 500;
+// 		letter-spacing: 0.1px;
+// 		margin: 0 13.5px;
+// 		text-transform: uppercase;
+// 		transition: color 0.2s ease-in-out;
+
+// 		&.active {
+
+// 			@apply
+// 				.text-text
+// 			;
+
+// 			font-weight: 600;
+
+// 		}
+
+// 		&:hover,
+// 		&:active,
+// 		&:focus {
+// 			border: none;
+// 			color: #555;
+// 			outline: none;
+// 		}
+
+// 		&--sign-in {
+
+// 			color: #006DEB;
+
+// 			&:hover,
+// 			&:active,
+// 			&:focus {
+// 				color: lighten(#006DEB, 10%);
+// 			}
+
+// 		}
+
+// 	}
+
+// }
+
+// .navbar--dark {
+
+// 	.navbar__logo {
+// 		background-color: rgba(#1a1a1a, 0.7);
+// 	}
+
+// 	svg g {
+// 		fill: white;
+// 	}
+
+// 	.navbar__menu {
+
+// 		background-color: rgba(#1a1a1a, 0.9);
+// 		border-radius: 30.5px;
+// 		height: 40px;
+// 		opacity: 1;
+
+// 		@supports (backdrop-filter: blur(10px)) {
+// 			background-color: rgba(#1a1a1a, 0.7);
+// 		}
+
+// 	}
+
+// 	.navbar__link {
+
+// 		color: white;
+// 		font-size: 12px;
+// 		font-weight: 500;
+// 		letter-spacing: 0.1px;
+
+// 		&:hover,
+// 		&.active {
+// 			color: #ccc;
+// 		}
+
+// 		&--sign-in {
+
+// 			color: #2e9eff;
+
+// 			&:hover,
+// 			&:active,
+// 			&:focus {
+// 				color: darken(#2e9eff, 10%);
+// 			}
+
+// 		}
+
+// 	}
+
+// }
+

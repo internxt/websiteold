@@ -1,0 +1,133 @@
+body.has-active-navbar {
+	height: 100vh;
+	overflow: hidden;
+}
+
+.navbar-mobile {
+
+	width: 100vw;
+	height: 96px;
+	overflow: hidden;
+	transition: height 0.2s;
+
+	&.active {
+		height: 100vh;
+	}
+
+	&__container {
+
+		padding: 23px 19px;
+
+		@apply
+			.flex
+			.items-center
+			.justify-between
+			.w-full
+		;
+
+	}
+
+	&__logo-container {
+
+		@apply
+			.cursor-pointer
+			.flex
+			.items-center
+			.flex-shrink-0
+			.text-white
+		;
+
+	}
+
+	&__logo {
+
+		background-color: rgba(black, 0.95);
+		border-radius: 50%;
+		height: 50px;
+		transition: background-color 0.3s;
+		width: 50px;
+
+		@supports (backdrop-filter: blur(10px)) {
+			backdrop-filter: blur(10px);
+			background-color: rgba(black, 0.75);
+		}
+
+		path {
+			fill: white;
+			transition: fill 0.3s;
+		}
+
+		&--light {
+			display: inherit;
+		}
+
+	}
+
+	&__menu-button {
+
+		align-items: center;
+		background-color: rgba(black, 0.95);
+		border-radius: 50%;
+		display: flex;
+		height: 50px;
+		justify-content: center;
+		transition: background-color 0.3s;
+		width: 50px;
+
+		@supports (backdrop-filter: blur(10px)) {
+			backdrop-filter: blur(10px);
+			background-color: rgba(black, 0.75);
+		}
+
+		path {
+			fill: white;
+			transition: fill 0.3s;
+		}
+
+	}
+
+	&__menu {
+		background-color: white;
+		height: 100vh;
+		padding: 0 19px;
+		width: 100vw;
+	}
+
+	&__link {
+
+		cursor: pointer;
+		display: block;
+		font-size: 22px;
+		font-weight: 400;
+		letter-spacing: 0.1px;
+		line-height: 2.35;
+		margin: 0 13.5px;
+		transition: color 0.2s ease-in-out;
+
+		@apply
+			.text-text
+			.whitespace-no-wrap
+		;
+
+		&.active {
+
+			@apply
+				.text-text
+			;
+
+			font-weight: 600;
+
+		}
+
+		&:hover,
+		&:active,
+		&:focus {
+			border: none;
+			color: #555;
+			outline: none;
+		}
+
+	}
+
+}
+

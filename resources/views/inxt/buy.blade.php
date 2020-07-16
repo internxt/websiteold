@@ -1,0 +1,106 @@
+@extends('_layouts.master')
+
+@section('pageID', 'inxt-buy')
+
+@section('navbar-classes', 'navbar--dark')
+
+@section('pageTitle', 'Internxt Token – Buy INXT Tokens.')
+
+@section('metaDescription', 'Buy Internxt tokens (INXT) through an exchange or directly from our website.')
+
+@section('body')
+
+	<section class="section section--header section--inxt-header-buy" id="header-buy" data-dark data-inxt-heading>
+		<div class="container">
+
+			<p class="section__subheading">Internxt Token</p>
+
+			<p class="section__heading">Buy INXT Tokens.</p>
+
+		</div>
+	</section>
+
+	<section class="section section--inxt-buy-directly">
+		<div class="container">
+			<p class="section__heading">Buy directly through us.</p>
+			<p class="section__explanation">You can buy INXT directly through our website. Our system tracks down and offers the best exchange rates available on the market. Follow the steps below to buy or sell your INXT without the hassle of an exchange.
+			<a href='https://medium.com/internxt/buy-inxt-without-an-exchange-buying-crypto-has-never-been-so-simple-b6e073cb76ab' target='_blank'><b>Learn more</b></a>.
+			</p>
+
+			
+			@include('_includes.inxt-buy-form')
+		</div>
+	</section>
+	@include('_includes.sections.inxt.links.exchanges')
+
+	<div class="lg:flex" id="inxt-previews" data-dark>
+
+		@include('_includes.sections.inxt.previews.overview')
+
+		@include('_includes.sections.inxt.previews.metrics')
+
+	</div>
+
+	@include('_includes.sections.inxt.articles')
+
+	<section class="section section--intro-inxt" id="intro-inxt" data-dark data-heading data-zoom>
+		<div class="container">
+
+			<p class="section__label">Internxt Token</p>
+
+			<p class="section__heading"><span class="hidden lg:inline-block">INXT.</span> Our tokenised asset.</p>
+
+
+			<div class="section__link-container">
+				<a class="section__link section__link--buy" href="#">Buy INXT</a>
+			</div>
+
+		</div>
+	</section>
+
+	@include('_includes.sections.intro-xcore')
+
+	@include('_includes.sections.xcloud.get-started-with-1gb')
+
+	@include('_includes.sections.about.find-out-more', ['links' => [
+		'About Us' => 'more.about',
+		'Consultancy' => 'more.consultancy',
+		'Resources' => 'more.resources',
+		'Vision' => 'more.vision',
+	]])
+
+	@include('_includes.sections.subscribe')
+
+@endsection
+
+@push('css')
+	{{-- <link rel="stylesheet" href="https://external.cryptowolf.eu/v3/css/inxt.css"> --}}
+@endpush
+
+{{-- @push('js')
+<script>
+       var external = 'inxt';
+       var cryptowolf = 'https://external.cryptowolf.eu/v3/';
+       function defer(method) {
+           if (window.jQuery) {
+             $( document ).ready(function() {
+                 method();
+             });
+           } else {
+               setTimeout(function() { defer(method) }, 50);
+           }
+       }
+       defer(function () {
+               $('#hiddendivbeforeselect').prepend($('.two')[0]);
+               $('.two').addClass('cryptowolf-element')
+               $.ajax ({
+                   type: "POST",
+                   url: "https://external.cryptowolf.eu/v3/css/inxt.css",
+                   success: function(result) {
+                   $("#cryptowolf").after('<style>' + result + '</style>')
+                   }
+               });
+               $.getScript(cryptowolf + 'js/cryptowolf.js');
+       })
+ </script>
+@endpush --}}

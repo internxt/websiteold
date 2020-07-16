@@ -1,0 +1,199 @@
+.section--xcloud-learn-more {
+
+	background-image: none;
+	min-height: 694px;
+	margin: 10px 0;
+
+	padding-top: 64px;
+
+	@apply
+		.bg-body-bg
+		.flex
+		.flex-col
+		.justify-start
+		.relative
+	;
+
+	@screen lg {
+
+		padding-top: 0;
+
+		@apply
+			.justify-center
+			.relative
+		;
+
+	}
+
+	.container {
+
+		@apply
+			.h-full
+			.flex
+			.justify-center
+		;
+
+		@screen lg {
+
+			@apply
+				.justify-between
+			;
+
+		}
+
+	}
+
+	.section__content {
+
+		width: 346px;
+
+		@apply
+			.flex
+			.flex-col
+			.items-center
+			.justify-center
+		;
+
+		@screen lg {
+
+			@apply
+				.items-start
+			;
+
+		}
+
+	}
+
+	.section__icon {
+
+		margin: 0 auto 24px;
+		height: 25.2px;
+
+		@screen lg {
+			margin: 0 0 20px;
+		}
+
+	}
+
+	.section__heading {
+
+		font-size: 36.1px;
+		font-weight: 600;
+		letter-spacing: -0.81px;
+		line-height: 1;
+		text-align: center;
+
+		@apply
+  			.text-text
+  		;
+
+		@screen lg {
+			font-size: 38px;
+			letter-spacing: -0.86px;
+			margin-bottom: 5px;
+			text-align: left;
+		}
+
+	}
+
+	.section__highlight {
+
+		background-image: linear-gradient(89deg, #096dff, #00b1ff);
+		font-size: 36.1px;
+		font-weight: 500;
+		letter-spacing: -0.81px;
+		line-height: 1.42;
+
+		@screen lg {
+			font-size: 38px;
+			letter-spacing: -0.86px;
+			line-height: 1;
+			margin-bottom: 16px;
+			padding-bottom: 10px;
+		}
+
+	}
+
+	.section__button {
+
+		background-color: #f2f2f2;
+		margin: 28px auto 0;
+
+		@screen lg {
+			margin: 28px 0 0;
+		}
+
+	}
+
+	.section__image {
+
+		height: 350px;
+		object-fit: cover;
+		margin-top: 53px;
+
+		@screen lg {
+			height: 537px;
+			margin-top: 0;
+			position: absolute;
+			right: 0;
+			top: 135px;
+		}
+
+	}
+
+	&.right {
+
+		@apply
+			.flex
+			.flex-col
+			.justify-start
+			.relative
+		;
+
+		@screen lg {
+
+			@apply
+				.justify-center
+			;
+
+		}
+
+		.container {
+
+			@apply
+				.h-full
+				.flex
+				.justify-end
+			;
+
+		}
+
+		.section__content {
+
+			width: 346px;
+
+			@apply
+				.flex
+				.flex-col
+				.items-start
+				.justify-start
+			;
+
+		}
+
+		.section__image {
+
+			height: 537px;
+			left: 0;
+			position: absolute;
+			top: 250px;
+
+			@screen lg {
+				top: 135px;
+			}
+
+		}
+
+	}
+
+}

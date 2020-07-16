@@ -1,0 +1,144 @@
+.section--articles {
+
+	margin-bottom: 10px;
+	padding: 117px 29px 90px;
+
+	@apply
+		.bg-body-bg
+	;
+
+	@screen lg {
+		padding: 117px 0 130px;
+	}
+
+	.section__heading {
+
+		font-size: 31px;
+		font-weight: 600;
+		letter-spacing: -0.7px;
+		line-height: 1.1;
+		margin-bottom: 56px;
+
+		@apply
+  			.text-text
+  		;
+
+		@screen lg {
+			font-size: 34px;
+			height: 36px;
+			letter-spacing: -1.04px;
+			line-height: 1.06;
+			margin: 0 auto 67px;
+			text-align: center;
+			width: 449px;
+		}
+
+	}
+
+	.article-container {
+
+		@screen lg {
+
+			width: 1095px;
+
+			@apply
+				.flex
+				.flex-wrap
+				.justify-center
+			;
+
+		}
+
+	}
+
+	.article {
+
+		background: white;
+		margin-bottom: 40px;
+		max-width: 355px;
+		width: 100%;
+
+		&:nth-child(3n + 2) {
+
+			@screen lg {
+				margin-left: 15px;
+				margin-right: 15px;
+			}
+
+		}
+
+		&:last-of-type{
+
+			margin-bottom: 0;
+
+			@screen lg {
+				margin-bottom: 40px;
+			}
+
+		}
+
+		&__image {
+			height: 185px;
+			object-fit: cover;
+			width: 355px;
+		}
+
+		&__content {
+			padding: 16px 24px 26px;
+		}
+
+		&__date {
+			color: #0492ff;
+			font-size: 12px;
+			font-weight: bold;
+			letter-spacing: 0.2px;
+			line-height: 2.75;
+			text-transform: uppercase;
+			margin-bottom: 7px;
+		}
+
+		&__heading {
+
+			font-size: 19px;
+			font-weight: 600;
+			height: 69px;
+			letter-spacing: -0.3px;
+			line-height: 1.21;
+			margin-bottom: 18px;
+
+			@apply
+				.text-text
+			;
+
+		}
+
+		&__link {
+
+			background-image: url('/img/icons/arrow-grey.svg');
+			background-position: right 3px center;
+			background-repeat: no-repeat;
+			background-size: 9px 6px;
+			color: #808080;
+			font-size: 11px;
+			font-weight: 600;
+			letter-spacing: 0.4px;
+			padding-right: 17px;
+			text-transform: uppercase;
+			transition: background-position 0.2s ease-in-out;
+
+			&:hover{
+				background-position: right 0px center;
+			}
+
+		}
+
+	}
+
+	.section__button {
+		background-color: #f2f2f2;
+		background-position: right 15px center;
+		margin: 10px auto 0;
+		width: 156px;
+	}
+
+}

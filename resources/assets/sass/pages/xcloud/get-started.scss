@@ -1,0 +1,104 @@
+#page--xcloud-get-started {
+
+	.section--xcloud-header-get-started {
+
+		height: 612px;
+		overflow: hidden;
+		position: relative;
+
+		@screen lg {
+	  		height: 700px;
+		}
+
+		.container {
+			// display: block; // Override flex from most other headers
+			align-items: center;
+			justify-content: flex-start;
+			padding-top: 100px;
+
+			@screen lg {
+				padding-top: 130px;
+			}
+
+		}
+
+		.section__heading {
+
+			@apply
+				.text-text
+			;
+
+			font-weight: 700;
+			letter-spacing: -0.8px;
+			line-height: 1.06;
+			opacity: 0; // Fades in
+			width: auto;
+
+		}
+
+		.section__image {
+
+
+			height: 497px;
+			top: 240px;
+			width: 249px;
+
+			@screen lg {
+				height: 624px;
+				top: 220px;
+				width: 311px;
+			}
+
+			&:nth-of-type(1) {
+
+				display: none;
+
+				@screen lg {
+					display: block;
+					top: 250px;
+				}
+
+			}
+
+			&:nth-of-type(2) {
+
+				top: 250px;
+
+				@screen lg {
+					top: 230px;
+				}
+
+			}
+
+			&:nth-of-type(3) {
+				z-index: 30;
+			}
+
+			&:nth-of-type(4) {
+
+				top: 250px;
+				z-index: 20;
+
+				@screen lg {
+					top: 230px;
+				}
+
+			}
+
+			&:nth-of-type(5) {
+
+				display: none;
+				z-index: 10;
+
+				@screen lg {
+					display: block;
+					top: 250px;
+				}
+
+			}
+
+		}
+
+	}
+
+}

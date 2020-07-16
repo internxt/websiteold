@@ -1,0 +1,696 @@
+#page--xcloud-individuals {
+
+	.section--xcloud-header-individuals {
+
+		background-image: url('/img/sections/xcloud/individuals/header-mobile.jpg');
+		background-position: center top;
+		height: 803px;
+		position: relative;
+
+		@screen lg {
+			background-image: url('/img/sections/xcloud/individuals/header.jpg');
+			background-size: 106%;
+		}
+
+		.section__content {
+
+			background-image: url('/img/sections/xcloud/individuals/header-shadow.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+
+			@apply
+				.flex
+				.flex-col
+				.h-full
+				.items-center
+				.justify-center
+			;
+
+		}
+
+		.section__heading {
+
+			font-size: 60px;
+			font-weight: 600;
+			letter-spacing: -1.65px;
+			line-height: 0.9;
+			text-align: center;
+
+			@screen lg {
+				font-size: 68px;
+				font-weight: 600;
+				letter-spacing: -1.87px;
+				line-height: 0.69;
+				margin-bottom: 37px;
+				margin-top: 15px;
+			}
+
+		}
+
+		.section__subheading {
+
+			color: white;
+			font-size: 20px;
+			font-weight: bold;
+			letter-spacing: 0.92px;
+			line-height: 1.3;
+			text-align: center;
+			text-transform: uppercase;
+
+			@screen lg {
+				font-size: 23px;
+				font-weight: 600;
+				letter-spacing: 1.06px;
+			}
+
+		}
+
+		.section__icon,
+		.section__heading,
+		.section__button {
+			opacity: 0;
+		}
+
+	}
+
+	.section--xcloud-powerful-technology {
+
+		padding: 104px 29px;
+
+		@screen lg {
+			padding: 140px 0 82px;
+		}
+
+		.section__heading {
+
+			font-size: 32px;
+			font-weight: 600;
+			line-height: 1.06;
+			letter-spacing: -0.72px;
+
+			@screen lg {
+				font-size: 43px;
+				letter-spacing: -0.94px;
+				line-height: 1.29;
+			}
+
+		}
+
+		.section__highlight {
+
+			background-image: linear-gradient(70deg, #fd7335, #d855ab);
+			display: block;
+			font-size: 32px;
+			font-stretch: normal;
+			font-style: normal;
+			font-weight: 500;
+			letter-spacing: -0.72px;
+			line-height: 1.13;
+
+			@screen lg {
+			    background-image: linear-gradient(86deg, #fd7335, #d855ab);
+				font-size: 43px;
+				letter-spacing: -0.97px;
+				line-height: 0.93;
+				padding-bottom: 10px;
+				position: relative;
+				top: -10px;
+				width: 859px;
+			}
+
+		}
+
+	}
+
+	.section--xcloud-made-with-everyone-in-mind {
+
+
+		.container {
+
+			background-image: url('/img/sections/xcloud/individuals/made-with-everyone-in-mind/bg.jpg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 660px;
+			padding: 0 29px;
+	  		width: auto;
+
+			@apply
+				.flex
+				.items-center;
+			;
+
+			@screen lg {
+	  			height: 646px;
+	  			justify-content: flex-end;
+	  			padding: 0;
+			}
+
+		}
+
+		.section__content {
+
+			@screen lg {
+				position: relative;
+				top: -5px;
+				width: 438px;
+			}
+
+		}
+
+		.section__heading {
+
+			color: white;
+			font-size: 28px;
+			font-weight: 600;
+			letter-spacing: -0.84px;
+			line-height: 1.07;
+			margin-bottom: 14px;
+			width: 221px;
+
+			@screen lg {
+				font-size: 38px;
+				letter-spacing: -0.75px;
+				line-height: 1.03;
+				margin-bottom: 8px;
+				width: 345px;
+			}
+
+		}
+
+		.section__explanation {
+
+			color: white;
+			font-size: 20px;
+			letter-spacing: -0.24px;
+			line-height: 1.3;
+			width: 343px;
+
+			@screen lg {
+				font-size: 18px;
+				font-weight: 450;
+				letter-spacing: -0.4px;
+				line-height: 1.39;
+				width: 302px;
+			}
+
+		}
+
+		.section__spacer {
+			height: 45px;
+		}
+
+	}
+
+	.section--xcloud-testimonials {
+
+		margin-bottom: 127px;
+		margin-top: 95px;
+		padding: 0 29px;
+		text-align: center;
+
+		@screen lg {
+			padding: 0;
+		}
+
+		.rslides {
+			margin: 0 auto;
+			max-width: 707px;
+		}
+
+		.testimonial {
+			margin: 0 auto 43px;
+			text-align: center;
+		}
+
+		.testimonial__body {
+
+			color: #202124;
+			font-size: 25px;
+			font-weight: 500;
+			letter-spacing: -0.33px;
+			line-height: 1.36;
+			margin-bottom: 52px;
+			text-align: left;
+
+			@screen lg {
+				text-align: center;
+			}
+
+		}
+
+		.testimonial__source {
+			color: #202124;
+			font-size: 17px;
+			font-weight: 500;
+			letter-spacing: -0.2px;
+			margin-bottom: 1px;
+			text-align: left;
+
+			@screen lg {
+				text-align: center;
+			}
+
+		}
+
+		.testimonial__description {
+
+			font-size: 17px;
+			letter-spacing: -0.2px;
+			text-align: left;
+
+			@apply
+				.text-text-lighter
+			;
+
+			@screen lg {
+				text-align: center;
+			}
+
+		}
+
+		.rslides_tabs {
+
+			@apply
+				.flex
+				.justify-start
+			;
+
+			@screen lg {
+
+				@apply
+					.justify-center
+				;
+
+			}
+
+			li {
+
+				a{
+					display: block;
+					border-radius: 50%;
+					font-size: 0;
+					height: 8px;
+					width: 8px;
+					margin: 0 8px;
+				}
+
+				&:not(.rslides_here) a {
+					background-color: #bfbfc1;
+				}
+
+				&.rslides_here a {
+					background-image: url('/img/icons/testimonial-marker.png');
+					background-size: contain;
+					height: 10px;
+					width: 10px;
+					position: relative;
+					top: -1px;
+					margin: 0 7px;
+
+				}
+			}
+
+		}
+
+	}
+
+	.section--xcloud-control-in-your-hands {
+
+		background: white;
+
+		@apply
+			.flex
+			.flex-col
+			.justify-center
+		;
+
+		.container {
+
+			background-image: url('/img/sections/xcloud/individuals/control-in-your-hands/bg.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 617px;
+			margin: 0;
+			max-width: none;
+			width: 100vw;
+
+			@apply
+				.flex
+				.flex-col
+				.justify-center
+			;
+
+		}
+
+		.section__heading {
+
+			color: white;
+			font-size: 60px;
+			font-weight: bold;
+			letter-spacing: -1.35px;
+			line-height: 0.85;
+			text-align: center;
+			width: 378px;
+
+			@screen lg {
+				font-size: 90px;
+				letter-spacing: -2px;
+				line-height: 0.42;
+				width: auto;
+			}
+
+		}
+
+	}
+
+	.section--xcloud-control-options {
+
+		padding: 56px 0 83px;
+
+		@apply
+			.bg-body-bg
+		;
+
+		.container {
+
+			padding: 0 29px;
+
+			@screen lg {
+
+				padding: 0;
+				width: 1142px;
+
+				@apply
+					.flex
+					.justify-between
+				;
+
+			}
+
+		}
+
+		.control-option {
+
+			margin-bottom: 57px;
+
+			@screen lg {
+				margin-bottom: 0;
+		  		text-align: center;
+				width: 332px;
+			}
+
+			&__heading {
+
+				font-size: 27px;
+				font-weight: 600;
+				line-height: 1.11;
+				letter-spacing: -0.81px;
+				margin-bottom: 13px;
+
+				@apply
+					.text-text
+				;
+
+			}
+
+			&__body {
+
+				color: #868686;
+				font-size: 18px;
+				font-weight: 450;
+				letter-spacing: -0.1px;
+				line-height: 26px;
+				margin-bottom: 20px;
+
+				@apply
+					.text-text-lighter
+				;
+
+				@screen lg {
+					margin-bottom: 38px;
+				}
+
+			}
+
+			&__link {
+
+				background-image: url('/img/icons/arrow-blue.svg');
+				background-position: center right;
+				background-repeat: no-repeat;
+				background-size: 14px 9.5px;
+				color: #0492ff;
+				font-size: 15.6px;
+				font-weight: 600;
+				letter-spacing: 0.4px;
+				padding-right: 21px;
+				text-transform: uppercase;
+
+				@screen lg {
+					font-size: 13px;
+				}
+
+			}
+
+		}
+
+	}
+
+	.section--xcloud-subscribe-to-a-plan {
+
+		padding: 80px 29px 147px 29px;
+		padding-top: 100px;
+
+		@screen lg {
+			padding: 116px 0 147px;
+		}
+
+		.container {
+
+			@screen lg {
+				width: 1130px;
+			}
+
+		}
+
+		.section__heading {
+
+			font-size: 32px;
+			font-weight: 600;
+			letter-spacing: -0.72px;
+			line-height: 1.19;
+
+			@screen lg {
+				font-size: 43px;
+				font-weight: 500;
+				left: 20px;
+				letter-spacing: -0.81px;
+				line-height: 1.42;
+				position: relative;
+			}
+
+		}
+
+		.section__highlight {
+
+			background-image: linear-gradient(77deg, #fd7335, #d855ab);
+			font-size: 32px;
+			font-weight: 500;
+			letter-spacing: -0.72px;
+			line-height: 1.13;
+
+			@screen lg {
+				background-image: linear-gradient(87deg, #fd7335, #d855ab);
+				font-size: 43px;
+				left: 20px;
+				letter-spacing: -0.94px;
+				line-height: 0.93;
+				margin-bottom: 96px;
+				padding-bottom: 10px;
+				position: relative;
+				top: -10px;
+				width: 730px;
+			}
+
+		}
+
+		.section__content {
+
+			margin-top: 72px;
+
+			@apply
+				.flex
+				.flex-col
+				.items-center
+			;
+
+			@screen lg{
+
+				@apply
+					.block
+				;
+
+			}
+
+		}
+
+	}
+
+	.section--xcloud-send-private-secure-link {
+
+	    background-image: linear-gradient(to bottom, #fafafa, white);
+		padding-top: 130px;
+		padding-bottom: 100px;
+
+		@screen lg {
+	 		height: 1044px;
+	 		padding-bottom: 0;
+		}
+
+		.container {
+
+			padding: 0 29px;
+
+			@screen lg {
+				padding: 0;
+			}
+
+		}
+
+		.section__heading {
+
+			font-size: 32px;
+			font-weight: 600;
+			letter-spacing: -0.72px;
+			line-height: 1.19;
+
+			@screen lg {
+				font-size: 42px;
+				letter-spacing: -0.94px;
+				line-height: 1.29;
+			}
+
+		}
+
+		.section__highlight {
+
+			background-image: linear-gradient(75deg, #fd7335, #d855ab);
+			font-size: 32px;
+			font-weight: 500;
+			letter-spacing: -0.72px;
+			line-height: 1.13;
+			margin-bottom: 58px;
+
+			@screen lg {
+				background-image: linear-gradient(89deg, #fd7335, #d855ab);
+				font-size: 43px;
+				letter-spacing: -0.97px;
+				line-height: 0.93;
+				margin-bottom: 50px;
+				padding-bottom: 10px;
+				position: relative;
+				top: -10px;
+				width: 560px;
+			}
+
+		}
+
+		.section__image {
+
+			height: 546.5px;
+			object-fit: cover;
+			object-position: right;
+			margin-bottom: 50px;
+
+			@screen lg {
+				height: 605px;
+				margin-bottom: 0;
+			}
+
+		}
+
+		.section__content {
+
+			position: relative;
+
+			@screen lg {
+
+				@apply
+					.flex
+					.items-center
+				;
+
+			}
+
+		}
+
+		.section__description {
+
+			color: #19191b;
+			font-size: 27px;
+			font-weight: 600;
+			letter-spacing: -0.7px;
+			line-height: 1.15;
+			padding: 0 29px;
+
+			@screen lg {
+				color: #7e7e7e;
+				flex-shrink: 0; // Allow overflow to set custom width
+				font-stretch: normal;
+				font-style: normal;
+				font-weight: 500;
+				left: 31px;
+				letter-spacing: -0.5px;
+				line-height: 1.22;
+				position: relative;
+				top: -30px;
+				width: 440px;
+			}
+
+			span {
+				color: #2c2c2c;
+			}
+
+		}
+
+	}
+
+	.section--xcloud-new-kind-of-cloud {
+
+		background-image: url('/img/sections/xcloud/individuals/new-kind-of-cloud/bg.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 518px;
+		margin-bottom: 10px;
+
+		.container {
+
+			@apply
+				.flex
+				.h-full
+				.flex-col
+				.justify-center
+			;
+
+		}
+
+		.section__heading {
+			color: white;
+			font-size: 28px;
+			font-stretch: normal;
+			font-style: normal;
+			font-weight: 500;
+			letter-spacing: -0.2px;
+			line-height: 1.18;
+			width: 418px;
+		}
+
+		.section__button {
+	  		width: 208px;
+		}
+
+	}
+
+}

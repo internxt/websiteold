@@ -1,0 +1,59 @@
+.section--intro-internxt {
+
+	display: block;
+	height: 660px;
+	overflow: hidden;
+	position: relative;
+
+	@screen lg {
+		height: 694px;
+	}
+
+	.background {
+
+		background-image: url('/img/sections/internxt/intro/bg.jpg');
+		background-position: right 34% center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		content: "";
+		height: 105%;
+		left: -2.5%;
+		position: absolute;
+		width: 105vw;
+		z-index: -1;
+		transform: scale(1.1);
+
+		@screen lg {
+			background-position: center;
+			background-size: 110% auto;
+		}
+
+	}
+
+	.container {
+		@apply
+			.flex
+			.flex-col
+			.h-full
+			.items-center
+			.justify-center
+		;
+	}
+
+	.section__heading {
+
+		color: white;
+		font-size: 39px;
+		text-align: center;
+
+		@screen lg {
+			font-size: 55px;
+			font-weight: 600;
+			letter-spacing: -1.31px;
+			line-height: 1;
+			padding-bottom: 4px;
+		}
+
+	}
+
+}

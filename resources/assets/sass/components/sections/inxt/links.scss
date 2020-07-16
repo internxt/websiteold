@@ -1,0 +1,86 @@
+.section--inxt-links {
+
+	padding: 78px 0 101px;
+
+	@screen lg {
+		padding: 116px 0 181px;
+	}
+
+	.section__heading {
+
+		font-size: 31px;
+		font-weight: 600;
+		letter-spacing: -0.7px;
+		line-height: 1.1;
+		padding: 0 29px;
+
+		@apply
+			.text-text
+		;
+
+		@screen lg {
+			font-size: 38px;
+			letter-spacing: -1.16px;
+			line-height: 0.95;
+			margin: 0 auto 110px;
+			padding: 0;
+			text-align: center;
+		}
+
+	}
+
+	.link {
+
+		width: 174.6px;
+		height: 115.2px;
+		border-radius: 6.5px;
+
+		@apply
+			.bg-body-bg
+			.flex
+			.items-center
+			.justify-center
+		;
+
+		@screen lg {
+			border-radius: 7.2px;
+			height: 128.1px;
+			margin-right: 26.1px;
+			transition: margin-top 0.2s;
+			width: 194.4px;
+		}
+
+		&:last-of-type {
+			margin-right: none;
+		}
+
+		&:hover {
+
+			@screen lg {
+				margin-top: -5px;
+			}
+
+		}
+
+		$images: (
+			"yobit": 95px,
+			"idex": 120px,
+			"mercatox": 151px,
+			"latoken": 134px,
+			"coinbase": 141px,
+			"coinmarketcap": 151px,
+			"binance": 106px,
+			"blockfolio": 140px,
+		);
+
+		@each $name, $width in $images {
+
+			&--#{$name} img {
+				width: $width;
+			}
+
+		}
+
+	}
+
+}

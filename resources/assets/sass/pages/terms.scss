@@ -1,0 +1,58 @@
+#page--privacy,
+#page--terms {
+
+	.page-container {
+
+		margin: 180px auto 140px;
+		max-width: 792px;
+		padding: 0 29px;
+
+		@screen lg {
+			padding: 0;
+		}
+
+	}
+
+	.section {
+
+		margin-top: 95px;
+
+		&__content {
+
+			font-size: 17px;
+			font-stretch: normal;
+			font-style: normal;
+			font-weight: normal;
+			letter-spacing: -0.2px;
+			line-height: 1.53;
+
+			@apply
+				.text-text-lighter
+			;
+
+		}
+
+		&__heading {
+
+			font-size: 34px;
+			font-stretch: normal;
+			font-style: normal;
+			font-weight: 500;
+			letter-spacing: -1.04px;
+			line-height: 1.06;
+			margin-bottom: 15px;
+
+			@apply
+				.text-text
+			;
+
+		}
+
+		&__subheading {
+			font-weight: 600;
+			margin: 28px 0;
+		}
+
+	}
+
+}

@@ -1,0 +1,1128 @@
+#page--xcloud-overview {
+
+	.section--xcloud-header-overview {
+
+		height: 100vh;
+		margin-bottom: 10px;
+		overflow: hidden;
+		padding-top: 0;
+		position: relative;
+		width: 100vw;
+
+		@screen lg {
+			height: 100vh;
+			padding-top: 0;
+		}
+
+		.container {
+
+			align-items: center;
+			justify-content: flex-start;
+
+			@screen lg {
+				align-items: flex-start;
+			}
+
+		}
+
+		.section__content {
+
+			text-align: center;
+
+			@screen lg {
+				left: 12px;
+				position: relative;
+				text-align: left;
+				top: -50px;
+			}
+
+		}
+
+		.section__icon-container {
+			display: inline-block;
+			margin: 0px;
+			margin-bottom: -7px 5px -7px;
+		}
+
+		.section__icon {
+
+			height: 42px;
+			margin: 0 10px 1px 0;
+
+			@screen lg {
+			}
+
+		}
+
+		.section__image {
+
+			display: none;
+			top: initial;
+			left: initial;
+			transform: inherit;
+
+			@screen lg {
+				display: block;
+				opacity: 0;
+			}
+
+			&--ipad {
+
+				display: block;
+				height: auto;
+				left: -25vw;
+				max-width: 600px;
+				top: 409px;
+
+				@screen lg {
+					left: 0;
+					max-width: 641px;
+					top: 441px;
+				}
+
+			}
+
+			&--phone {
+
+				display: block;
+				height: 322px;
+				right: -41.5vw;
+				top: 350px;
+
+				@screen lg {
+					left: 23vw;
+					top: 405px;
+				}
+
+			}
+
+			&--laptop {
+				height: initial;
+				right: 0;
+				top: -40px;
+				width: 1115px;
+			}
+
+		}
+
+		.section__heading {
+
+			display: inline-block;
+
+			color: black;
+			font-size: 38px;
+			
+			font-weight: 600;
+
+			@screen lg {
+				left: -1px;
+				line-height: 1;
+				margin-bottom: 4px;
+				opacity: 1 !important;
+				position: relative;
+				text-align: left;
+	  			letter-spacing: -0.86px;
+			}
+
+		}
+
+		.section__highlight {
+
+			background-image: linear-gradient(89deg, #000000, #000000);
+			font-size: 36px;
+			letter-spacing: -0.81px;
+			line-height: 1;
+			padding-bottom: 5px;
+
+			@screen lg {
+				font-size: 38px;
+				left: -1px;
+				letter-spacing: -0.86px;
+				opacity: 1 !important;
+				position: relative;
+			}
+
+		}
+
+		.section__button {
+
+			margin-top: 36px;
+
+			@screen lg {
+				margin-top: 43px;
+			}
+
+		}
+
+		.section__link--ios {
+
+			background: none;
+			padding-right: 0;
+			margin-right: 0;
+
+			img {
+				height: 51px;
+				margin-bottom: 10px;
+			}
+
+		}
+
+		.section__link--android {
+
+			background: none;
+			padding-right: 0;
+			margin-right: 0;
+
+			img {
+				height: 51px;
+			}
+
+		}
+
+	}
+
+	.section--xcloud-encryption {
+
+		padding-bottom: 72px;
+		padding-top: 100px;
+
+		@screen lg {
+			padding-bottom: 127px;
+			padding-top: 144px;
+		}
+
+		.section__heading {
+
+			font-size: 32px;
+			font-weight: 600;
+			letter-spacing: -0.94px;
+			line-height: 1.29;
+			margin-bottom: 68px;
+
+			@screen lg {
+				font-size: 43px;
+			}
+
+		}
+
+		.section__highlight {
+
+	        background-image: linear-gradient(87deg, #c65baf, #6e6fef);
+			display: block;
+			font-size: 32px;
+			font-weight: 500;
+			letter-spacing: -0.97px;
+			line-height: 0.93;
+			padding-bottom: 10px; // To compensate for reduced line height, which was clipping the bottom of the text
+			position: relative;
+			top: -8px;
+
+			@screen lg {
+				font-size: 43px;
+				width: 700px;
+			}
+
+		}
+
+		.encryption-details {
+
+			&:first-of-type {
+
+				margin-bottom: 44px;
+
+				@screen lg {
+					margin-bottom: 0;
+					margin-right: 85px;
+				}
+
+			}
+
+				&__heading {
+
+				font-size: 27px;
+				font-weight: 600;
+				letter-spacing: -0.81px;
+				line-height: 1.11;
+				margin-bottom: 13px;
+
+				@apply
+					.text-text
+				;
+
+			}
+
+			&__content {
+
+				font-size: 20px;
+				letter-spacing: -0.24px;
+				line-height: 1.3;
+
+				@apply
+					.text-text-lighter
+				;
+
+				@screen lg {
+					letter-spacing: -0.21px;
+					line-height: 1.44;
+					font-size: 18px;
+					width: 420px;
+				}
+
+			}
+
+		}
+
+	}
+
+	.section--xcloud-secure-every-way {
+
+		background: white;
+
+		@apply
+			.flex
+			.flex-col
+			.justify-center
+		;
+
+		.container {
+
+			background-image: url('/img/sections/xcloud/technology/secure-every-way/bg.jpg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 617px;
+			width: 100vw;
+			margin: 0;
+			max-width: none;
+
+			@apply
+				.flex
+				.flex-col
+				.justify-center
+			;
+
+		}
+
+		.section__heading {
+
+			color: white;
+			font-size: 60px;
+			font-weight: bold;
+			letter-spacing: -1.35px;
+			line-height: 0.85;
+			position: relative;
+			text-align: center;
+			top: -10px;
+
+
+			@screen lg {
+				font-size: 90px;
+				letter-spacing: -2px;
+				line-height: 1.42;
+			}
+
+		}
+
+	}
+	.section--xcloud-decentralization {
+
+		padding-top: 80px;
+		padding-left: 29px;
+
+		@screen lg {
+			padding-left: 0;
+			padding-top: 153px;
+		}
+
+		.section__heading {
+
+			font-size: 32px;
+			letter-spacing: -0.72px;
+			line-height: 1.19;
+
+			@screen lg {
+				font-size: 43px;
+				letter-spacing: inherit;
+				line-height: inherit;
+				margin-bottom: 80px;
+			}
+
+		}
+
+		.section__highlight {
+
+			display: block;
+			font-size: 32px;
+			font-weight: 500;
+			letter-spacing: -0.72px;
+			line-height: 1.13;
+			padding-bottom: 10px; // To compensate for reduced line height, which was clipping the bottom of the text
+			position: relative;
+	        background-image: linear-gradient(85deg, #c65baf, #6e6fef);
+
+	        @screen lg {
+				font-size: 43px;
+				letter-spacing: -0.97px;
+				line-height: 0.93;
+				top: -10px;
+				width: 765px;
+	        }
+
+		}
+
+		.section__content {
+
+			margin-top: 54px;
+
+			@screen lg {
+				margin-top: 0;
+			}
+
+		}
+
+		.decentralization__point {
+
+			color: #7e7e7e;
+			font-size: 27px;
+			font-stretch: normal;
+			font-style: normal;
+			font-weight: 500;
+			letter-spacing: -0.5px;
+			line-height: 1.26;
+			margin-bottom: 70px;
+			padding-left: 10px;
+
+			@screen lg {
+				width: 454px;
+			}
+
+			span {
+	  			color: #2c2c2c;
+			}
+
+		}
+
+		.section__image {
+
+
+			@screen lg {
+				height: 811px;
+			}
+
+		}
+
+	}
+
+	.section--xcloud-protect-your-digital-security {
+
+		margin-bottom: 100px;
+
+		.section__content {
+
+			@screen lg {
+				margin-left: 82px;
+			}
+
+		}
+
+	}
+
+	.section--business-feature {
+
+		max-width: 100vw;
+		overflow-x: hidden;
+
+		@screen lg {
+
+			@apply
+				.flex
+				.items-center
+			;
+
+		}
+
+		.section__image-container {
+
+			height: 466px;
+			overflow: hidden;
+
+			@screen lg {
+				height: 739px;
+				width: 51.3%;
+			}
+
+		}
+
+		.section__image {
+
+			max-width: 100vw;
+			height: 466px;
+			object-fit: contain;
+			object-position: center;
+
+			@screen lg {
+				height: 739px;
+				object-fit: cover;
+			}
+
+		}
+
+		.section__content {
+
+			@apply
+				.flex
+				.flex-col
+				.items-center
+				.justify-center
+			;
+
+		}
+
+		.section__heading {
+
+			font-size: 28px;
+			font-weight: 600;
+			letter-spacing: -0.84px;
+			line-height: 1.07;
+			margin-bottom: 10px;
+			text-align: center;
+			width: 250px;
+
+			@apply .text-text;
+
+			@screen lg {
+				font-size: 40px;
+				letter-spacing: -1.22px;
+				line-height: 1.03;
+				margin-bottom: 10px;
+				width: 420px;
+			}
+
+		}
+
+		.section__explanation {
+
+			font-size: 20px;
+			letter-spacing: -0.24px;
+			line-height: 1.3;
+			text-align: center;
+			width: 343px;
+
+			@apply
+				.text-text-lighter
+			;
+
+			@screen lg {
+				line-height: 1.35;
+				width: 453px;
+			}
+
+		}
+
+	}
+
+	.section--xcloud-eco-partners {
+
+		padding: 117px 28px 128px;
+
+		@apply
+			.bg-body-bg
+		;
+
+		@screen lg {
+			padding: 159px 0 144px 0;
+		}
+
+		.container {
+
+			@screen lg {
+
+				@apply
+					.flex
+					.items-center
+					.justify-around
+				;
+
+			}
+
+		}
+
+		.section__heading {
+
+			font-size: 32px;
+			font-weight: 600;
+			line-height: 1.19;
+			letter-spacing: -0.72px;
+			margin-bottom: 59px;
+
+			@apply
+				.text-text
+			;
+
+			@screen lg {
+				color: #141414;
+				left: -7px;
+				letter-spacing: -1px;
+				line-height: 1.25;
+				margin-bottom: 0;
+				max-width: 756px;
+				position: relative;
+			}
+
+		}
+
+		.section__highlight {
+
+			font-size: 32px;
+
+			@screen lg {
+				background-image: linear-gradient(88deg, #1d976c 3%, #3bcc56 95%);
+				display: block;
+				text-indent: 233px;
+				position: relative;
+				top: -39px;
+			}
+
+		}
+
+		.section__image {
+
+			height: 136px;
+			left: 12px;
+			object-fit: contain;
+			position: relative;
+			width: 136px;
+
+			@screen lg {
+				height: 134px;
+				left: -2px;
+				top: -15px;
+				width: 134px;
+			}
+
+		}
+
+	}
+
+	.section--xcloud-control-in-your-hands {
+
+		background: white;
+
+		@apply
+			.flex
+			.flex-col
+			.justify-center
+		;
+
+		.container {
+
+			background-image: url('/img/sections/xcloud/individuals/control-in-your-hands/bg.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 617px;
+			margin: 0;
+			max-width: none;
+			width: 100vw;
+
+			@apply
+				.flex
+				.flex-col
+				.justify-center
+			;
+
+		}
+
+		.section__heading {
+
+			color: white;
+			font-size: 60px;
+			font-weight: bold;
+			letter-spacing: -1.35px;
+			line-height: 0.85;
+			text-align: center;
+			width: 378px;
+
+			@screen lg {
+				font-size: 90px;
+				letter-spacing: -2px;
+				line-height: 0.42;
+				width: auto;
+			}
+
+		}
+
+	}
+
+	.section--xcloud-subscribe-to-a-plan {
+
+		padding: 80px 29px 147px 29px;
+		padding-top: 100px;
+
+		@screen lg {
+			padding: 116px 0 147px;
+		}
+
+		.container {
+
+			@screen lg {
+				width: 1130px;
+			}
+
+		}
+
+		.section__heading {
+
+			font-size: 32px;
+			font-weight: 600;
+			letter-spacing: -0.72px;
+			line-height: 1.19;
+
+			@screen lg {
+				font-size: 43px;
+				font-weight: 500;
+				left: 20px;
+				letter-spacing: -0.81px;
+				line-height: 1.42;
+				position: relative;
+			}
+
+		}
+
+		.section__highlight {
+
+			background-image: linear-gradient(77deg, #fd7335, #d855ab);
+			font-size: 32px;
+			font-weight: 500;
+			letter-spacing: -0.72px;
+			line-height: 1.13;
+
+			@screen lg {
+				background-image: linear-gradient(87deg, #fd7335, #d855ab);
+				font-size: 43px;
+				left: 20px;
+				letter-spacing: -0.94px;
+				line-height: 0.93;
+				margin-bottom: 96px;
+				padding-bottom: 10px;
+				position: relative;
+				top: -10px;
+				width: 730px;
+			}
+
+		}
+
+		.section__content {
+
+			margin-top: 72px;
+
+			@apply
+				.flex
+				.flex-col
+				.items-center
+			;
+
+			@screen lg{
+
+				@apply
+					.block
+				;
+
+			}
+
+		}
+	}
+
+	.section--xcloud-folder-customisation {
+
+		overflow: hidden;
+		padding: 114px 29px 60px;
+	
+		@screen lg {
+			background-image: url('/img/sections/xcloud/interface/folder-customisation/bg.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 1078px;
+			padding: 140px 0 0;
+		}
+	
+		.section__heading {
+	
+			font-size: 32px;
+			font-weight: 600;
+			letter-spacing: -0.72px;
+			line-height: 1.19;
+	
+			@screen lg {
+				font-size: 42px;
+				letter-spacing: -0.94px;
+				line-height: 1.29;
+			}
+	
+		}
+	
+		.section__highlight {
+	
+			background-image: linear-gradient(77deg, #eb5f79, #a349d9);
+			display: block;
+			font-size: 32px;
+			font-weight: 500;
+			height: 170px;
+			letter-spacing: -0.72px;
+			line-height: 1.13;
+			width: 365px;
+	
+			  @screen lg {
+				background-image: linear-gradient(80deg, #eb5f79, #a349d9);
+				font-size: 43px;
+				letter-spacing: -0.97px;
+				line-height: 0.93;
+				width: 456px;
+			  }
+	
+		}
+	
+		.section__image {
+	
+			height: 706px;
+			object-fit: contain;
+			margin: 0 auto;
+			width: 353px;
+	
+			@screen lg {
+				height: 800px;
+				left: -49px;
+				margin: 0;
+				position: relative;
+				width: auto;
+				z-index: 10;
+			}
+	
+		}
+	
+		.jade {
+	
+			@screen lg {
+				left: 55px;
+				position: relative;
+				top: -25px;
+			}
+	
+		}
+	
+		.bob {
+	
+			color: #7e7e7e;
+			font-size: 27px;
+			font-stretch: normal;
+			font-style: normal;
+			font-weight: 500;
+			letter-spacing: -0.3px;
+			line-height: 1.19;
+			margin-bottom: 62px;
+	
+			@screen lg {
+				height: 274px;
+				letter-spacing: -0.5px;
+				line-height: 1.22;
+				width: 478px;
+			}
+	
+			@include safari() {
+				line-height: 1.24;
+			}
+	
+	
+		}
+	
+		.alan {
+			width: 439px;
+			margin-left: 2px;
+		}
+	}
+
+	.section--xcloud-enhanced-technology {
+
+		margin-bottom: 90px;
+		padding-left: 12px;
+		padding-top: 100px;
+		padding-right: 1px;
+
+		@screen lg {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.section__heading {
+
+			font-size: 32px;
+			letter-spacing: -0.7px;
+			line-height: 1.13;
+
+			@screen lg {
+				font-size: 36px;
+				letter-spacing: -0.84px;
+				line-height: 1.06;
+			}
+
+		}
+
+		.section__highlight {
+
+			background-image: linear-gradient(78deg, #fd7335, #d855ab);
+			font-size: 32px;
+			letter-spacing: -0.7px;
+			line-height: 1.13;
+
+			@screen lg {
+	  		    background-image: linear-gradient(87deg, #c65baf, #6e6fef);
+		  		font-size: 36px;
+				letter-spacing: -0.84px;
+				line-height: 1.06;
+				position: relative;
+				top: -38px;
+				text-indent: 362px;
+			}
+
+		}
+
+		.section__button {
+
+			background-position: right 15px center;
+			font-size: 12px;
+			font-stretch: normal;
+			font-style: normal;
+			font-weight: 600;
+			height: auto;
+			letter-spacing: 0.44px;
+			line-height: normal;
+			margin-top: 57px;
+			padding: 11.2px 30px 12px 17px;
+			width: auto;
+
+			@screen lg {
+				margin-top: 20px;
+			}
+
+		}
+
+	}
+
+	.section--xcloud-eco-friendly {
+
+		.section__highlight {
+
+			color: black;
+			font-size: 32px;
+			font-weight: 500;
+			letter-spacing: -0.72px;
+			line-height: 1.13;
+			background-image: linear-gradient(88deg, #1d976c, #3bcc56);
+
+			@screen lg {
+				font-size: 36px;
+			}
+
+		}
+
+	}
+
+	.section--xcloud-eco-comparison {
+
+		margin-top: 46px;
+
+		.section__heading {
+			display: none;
+		}
+
+	}
+
+	.section--xcloud-mockup-secure-individuals {
+
+		margin-bottom: 46px;
+		padding-left: 29px;
+		padding-right: 29px;
+
+		@screen lg {
+
+			margin-bottom: 46px;
+			padding-left: 0;
+			padding-right: 0;
+
+			@apply
+				.flex
+				.flex-col
+				.justify-center
+			;
+
+		}
+
+		.container {
+
+			@apply
+				.flex
+				.justify-center
+				.w-auto
+			;
+
+			@screen lg {
+				max-width: 1130px;
+				width: 100%;
+			}
+
+		}
+
+	}
+
+	.section--xcloud-secure-teams {
+
+		padding: 0 29px 80px;
+
+		@screen lg {
+			display: none;
+		}
+
+		.section__heading {
+
+			font-size: 32px;
+
+			@screen lg {
+				font-size: 36px;
+			}
+
+		}
+
+		.section__highlight {
+
+			background-image: linear-gradient(89deg, #096dff, #00b1ff);
+			font-size: 32px;
+			line-height: 1.1;
+
+			@screen lg {
+				font-size: 36px;
+			}
+
+		}
+
+		.section__button {
+			margin-top: 100px;
+		}
+
+	}
+
+	@include safari() {
+		// Replace gradient text with image
+		.section--xcloud-get-started.xcloud-get-started--default .section__highlight {
+			background-image: url('/img/sections/xcloud/overview/get-started-heading.png');
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-clip: initial;
+			-webkit-background-clip: initial;
+			color: transparent;
+		}
+	}
+
+	.section--xcloud-benefits {
+
+		padding: 0 29px 61px;
+
+		@screen lg {
+
+			padding: 0 0 118px;
+
+			@apply
+				.bg-body-bg
+				.flex
+				.justify-center
+			;
+
+		}
+
+		.xcloud-benefit {
+
+			margin-bottom: 80px;
+
+			@screen lg {
+
+				margin-bottom: 0;
+				width: 355px;
+
+				@apply
+					.flex
+					.flex-col
+					.items-center
+					.relative
+				;
+
+			}
+
+			@screen lg {
+
+				&:nth-child(2) {
+					margin: 0 52px;
+				}
+
+			}
+
+			img {
+
+				margin-bottom: 46px;
+
+				@screen lg {
+					margin-bottom: 34px;
+				}
+
+			}
+
+			p {
+
+				color: #7e7e7e;
+				font-size: 20px;
+				font-weight: 500;
+				letter-spacing: -0.2px;
+				line-height: 1.45;
+				max-width: 270px;
+				width: 294px;
+
+				@screen lg {
+					font-size: 18px;
+					max-width: none;
+				}
+
+			}
+
+			span {
+				color: #2c2c2c;
+			}
+
+			&:nth-of-type(1) {
+
+				p {
+					position: relative;
+					left: -6px;
+				}
+
+			}
+
+			&:nth-of-type(2) {
+
+				p {
+					position: relative;
+					left: -2px;
+				}
+
+			}
+
+			&:nth-of-type(3) {
+
+				p {
+					position: relative;
+					left: -1px;
+				}
+
+			}
+
+		}
+	}
+
+}

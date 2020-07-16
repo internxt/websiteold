@@ -1,0 +1,71 @@
+.section--xcore-download {
+
+    background-image: url('/img/sections/xcore/intro/graphic.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #181526;
+    height: 660px;
+    margin: 10px 0;
+    padding-bottom: 82px;
+
+    @apply
+        .flex
+        .items-center
+        .flex-col
+        .justify-end
+    ;
+
+    @screen lg {
+
+        background-image: url('/img/sections/xcore/download/bg.jpg');
+        background-size: cover;
+        height: 506px;
+        margin: 0;
+        padding-bottom: 0;
+
+        @apply
+            .justify-center
+        ;
+
+    }
+
+    .container {
+
+        @apply
+            .flex
+            .flex-col
+            .items-center
+        ;
+
+        @screen lg {
+
+            @apply
+                .block
+            ;
+
+        }
+
+    }
+
+    .section__icon {
+        margin-bottom: 20px;
+    }
+
+    .section__heading {
+        color: white;
+        font-size: 38px;
+        font-weight: 600;
+        letter-spacing: -0.26px;
+        line-height: 1;
+        margin-bottom: 5px;
+    }
+
+    .section__highlight {
+        background-image: linear-gradient(86deg, #8952ff, #9666ff);
+        font-size: 38px;
+        font-weight: 500;
+        letter-spacing: -0.46px;
+        line-height: 1;
+        padding-bottom: 10px;
+    }
+}

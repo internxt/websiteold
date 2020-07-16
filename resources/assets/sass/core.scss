@@ -1,0 +1,793 @@
+#page-core{
+
+    .pageHeader {
+
+        $offset: 74px;
+
+        align-items: center;
+        background-image: url('/img/headers/xcore_mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        height: calc(100vh + #{$offset});
+        margin-bottom: -$offset;
+        padding-top: $offset;
+        position: relative;
+        top: -$offset;
+        z-index: 1;
+
+        @include whenLargerThan('large-screen') {
+            background-image :url('/img/headers/xcore_desktop.png');
+        }
+
+        &__icon {
+
+            @include whenLargerThan('large-screen') {
+                height: 68px;
+                width: 68px;
+            }
+
+        }
+
+        &__heading {
+
+            color: white;
+            font-size: 60.9px;
+            font-weight: bold;
+            letter-spacing: -3.2px;
+            line-height: 0.75;
+            margin-top: 27px;
+
+            &::first-letter {
+                letter-spacing: -9.9px;
+            }
+
+            @include whenLargerThan('large-screen') {
+
+                font-size: 78px;
+                margin-left: 8px;
+                letter-spacing: -2.5px;
+                line-height: 0.82;
+                margin-top: 42px;
+
+                &::first-letter {
+                    letter-spacing: -12px;
+                }
+
+            }
+
+        }
+
+        &__subheading {
+
+            color: white;
+            font-size: 33.6px;
+            font-weight: 500;
+            letter-spacing: -1.1px;
+            line-height: 0.86;
+            margin-top: 17px;
+            opacity: 0.76;
+
+            @include whenLargerThan('large-screen') {
+                font-size: 41px;
+                letter-spacing: -0.8px;
+                line-height: 0.9;
+                margin-top: 22px;
+                margin-left: 6px;
+            }
+
+        }
+
+        &__cta {
+
+            display: none;
+
+            @include whenLargerThan('large-screen') {
+                background-color: #6852f9;
+                background-image: url("/img/icons/cta-chevron-circle.png");
+                background-position: 165px 10px;
+                background-repeat: no-repeat;
+                background-size: 21px;
+                border-radius: 31.4px;
+                color: white;
+                display: inline-block;
+                font-size: 18px;
+                font-weight: 600;
+                height: auto;
+                letter-spacing: -0.5px;
+                margin-left: 2px;
+                margin-top: 88px;
+                padding: 8px 50px 8px 20px;
+                width: auto;
+            }
+
+            @include transparencyOnHover();
+
+        }
+
+    }
+
+    .section {
+
+        &--core-summary {
+
+            .subsection {
+
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 91px;
+                max-width: 375px;
+
+                @include whenLargerThan('large-screen') {
+                    max-width: none;
+                }
+
+                &__heading {
+
+                    color: black;
+                    font-size: 34px;
+                    font-weight: 600;
+                    letter-spacing: -0.6px;
+                    line-height: 1.15;
+
+                    @include whenLargerThan('large-screen') {
+                        font-size: 40px;
+                        font-stretch: normal;
+                        font-style: normal;
+                        font-weight: bold;
+                        letter-spacing: -1.1px;
+                        line-height: 0.98;
+                    }
+
+                }
+
+                &__content {
+
+                    color: #838387;
+                    font-size: 20px;
+                    letter-spacing: -0.1px;
+                    line-height: 1.55;
+
+                    @include whenLargerThan('large-screen') {
+                        color: #838387;
+                        font-size: 21px;
+                        letter-spacing: -0.4px;
+                        line-height: 1.48;
+                    }
+
+                }
+
+                &--intro {
+
+                    @include whenLargerThan('large-screen') {
+                        padding-left: 100px;
+                        margin-top: 150px;
+                    }
+
+                    .subsection__heading {
+
+                        font-size: 44px;
+                        letter-spacing: -0.8px;
+                        line-height: 0.93;
+
+                        @include whenLargerThan('large-screen') {
+                            font-size: 58px;
+                            font-weight: bold;
+                            letter-spacing: -2.6px;
+                            line-height: 1;
+                            margin-bottom: 0;
+                            margin-left: 31px;
+                            max-width: 684px;
+                        }
+
+                    }
+
+                    .subsection__content {
+
+                        @include whenLargerThan('large-screen') {
+                            color: #838387;
+                            font-size: 21px;
+                            font-stretch: normal;
+                            font-style: normal;
+                            font-weight: normal;
+                            letter-spacing: -0.4px;
+                            line-height: 1.48;
+                            margin-left: 35px;
+                            margin-top: 20px;
+                            max-width: 630px;
+                        }
+
+                    }
+
+                    &--bg {
+
+                        background-image: url("/img/mockups/xcore/intro.png");
+                        background-position: -4vw 46px;
+                        background-repeat: no-repeat;
+                        background-size: 575px;
+                        margin: 0 auto;
+                        padding-top: 396px;
+                        width: 360px; // 375 - 15px left padding, to prevent body scroll
+
+                        @include whenLargerThan('large-screen') {
+                            background-position: -1vw 38px;
+                            background-size: 1080px;
+                            margin-top: 73px;
+                            padding-bottom: 325px; // To make up for hidden .subsection--enhanced
+                            padding-top: 0;
+                            width: auto;
+                        }
+
+                        @include whenLargerThan('xl-screen') {
+                            background-size: 1440px;
+                            padding-bottom: 175px; // To show whole laptop
+                        }
+
+                    }
+
+                }
+
+                &--host {
+
+                    @include whenLargerThan('large-screen') {
+                        padding-left: 7px;
+                        margin-top: 180px;
+                    }
+
+                    @include whenLargerThan('xl-screen') {
+                        margin-top: 91px;
+                    }
+
+                    .subsection__heading {
+
+                        @include whenLargerThan('large-screen') {
+                            margin-bottom: 0;
+                        }
+
+                    }
+
+                    .subsection__content {
+
+                        @include whenLargerThan('large-screen') {
+                            margin-top: 21px;
+                            width: 328px;
+                        }
+
+                    }
+
+                }
+
+                &--enhanced {
+
+                    @include whenLargerThan('small-screen') {
+                        display: none;
+                    }
+
+                    @include whenLargerThan('xl-screen') {
+                        display: block;
+                        margin-left: 7px;
+                        margin-top: 103px;
+                    }
+
+                    .subsection__heading {
+
+                        @include whenLargerThan('large-screen') {
+                            margin-bottom: 0;
+                        }
+
+                    }
+
+                    .subsection__content {
+
+                        @include whenLargerThan('large-screen') {
+                            margin-top: 21px;
+                            width: 328px;
+                        }
+
+                    }
+
+                }
+
+                &--setup {
+
+                    padding-left: 30px;
+                    padding-right: 30px;
+
+                    @include whenLargerThan('large-screen') {
+                        padding-left: 208px;
+                    }
+
+                    @include whenLargerThan('xl-screen') {
+                        margin-top: 0;
+                    }
+
+
+                    &.enhanced-1080 {
+
+                        display: none;
+                        margin-top: -40px; // To account for bottom padding of laptop bg
+
+                        @include whenLargerThan('large-screen'){
+                            display: block;
+                        }
+
+                        @include whenLargerThan('xl-screen') {
+                            display: none;
+                        }
+
+                    }
+
+                    @include whenLargerThan('xl-screen') {
+                    }
+
+                    .subsection__heading {
+
+                        @include whenLargerThan('large-screen') {
+                            margin-bottom: 0;
+                        }
+
+                    }
+
+                    .subsection__content {
+
+                        @include whenLargerThan('large-screen') {
+                            color: #838387;
+                            font-size: 21px;
+                            letter-spacing: -0.4px;
+                            line-height: 1.48;
+                            margin-bottom: 50px;
+                            margin-left: 2px;
+                            margin-top: 16px;
+                            max-width: 655px;
+                        }
+
+                    }
+
+                    .subsection__cta {
+                        background-color: #191820;
+                        background-image: url("/img/icons/chevron-right-circle.svg");
+                        background-position: 112px 11px;
+                        background-repeat: no-repeat;
+                        background-size: 20px;
+                        border-radius: 28.5px;
+                        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.22);
+                        color: white;
+                        display: block;
+                        font-size: 16px;
+                        font-weight: 500;
+                        height: 41px;
+                        letter-spacing: -0.4px;
+                        padding: 9px 42px 11px 23px;
+                        width: 144px;
+                    }
+
+                }
+
+            }
+
+            &__image {
+                margin-top: 91px;
+            }
+
+        }
+
+
+        &--core-calculator {
+
+            background: #fafafa url("/img/section-backgrounds/x-core-calculator/bg.svg");
+            background-size: 1440px;
+            background-position: top center;
+            background-repeat: no-repeat;
+            height: 866px;
+            margin-top: 120px;
+            padding-top: 88px;
+            padding-bottom: 82.4px;
+
+            @include whenLargerThan('xl-screen') {
+                background-image: url("/img/section-backgrounds/x-core-calculator/bg.svg");
+                background-size: contain;
+                height: 663px;
+                margin-bottom: 0;
+                margin-top: 145px;
+                padding-bottom: 156px;
+                padding-top: 110px;
+                text-align: center;
+            }
+
+            .section__heading {
+
+                font-size: 44px;
+                font-weight: 600;
+                letter-spacing: -0.8px;
+                line-height: 0.94;
+                margin: 0 auto;
+                max-width: 329px;
+
+                @include whenLargerThan('xl-screen') {
+                    color: black;
+                    font-size: 58px;
+                    font-weight: bold;
+                    letter-spacing: -2.6px;
+                    line-height: 1;
+                    margin: 0 auto;
+                    max-width: 505px
+                }
+
+            }
+
+            .section__subheading {
+
+                color: #838387;
+                font-size: 20px;
+                padding-left: 4px;
+                letter-spacing: 0px;
+                // letter-spacing: -0.1px; -- Zeplin says -0.1, but Chrome doesn't seem to agree
+                line-height: 1.55;
+                margin: 21px auto 51px;
+                max-width: 329px;
+
+                @include whenLargerThan('xl-screen') {
+                    font-size: 21px;
+                    letter-spacing: -0.3px; // Zeplin says -0.4, but Chrome doesn't seem to agree
+                    line-height: 1.48;
+                    margin: 26px auto 74px;
+                    max-width: 698px;
+                    padding-left: 0;
+                }
+
+            }
+
+            .section__content {
+
+                margin: 0 auto;
+                max-width: 329px;
+                padding-left: 4px;
+
+                @include whenLargerThan('xl-screen') {
+                    padding-left: 0;
+                    max-width: none;
+                }
+
+            }
+
+            .x-core-earnings-calculator {
+
+                &--hasFocus {
+
+                    .section__inputContainer {
+
+                        position: relative;
+
+                        &::after {
+
+                            content: "";
+                            position: absolute;
+                            right: 25px;
+                            top: 0;
+
+                            @include whenLargerThan('large-screen') {
+                                right: 40px;
+                            }
+
+                        }
+
+                        .section__input {
+                            padding: 0 45px 0 35px;
+                            text-align: left;
+                        }
+
+                        &--gb {
+
+                            &::after {
+                                content: "GB";
+                            }
+
+                        }
+
+                        &--inxt {
+
+                            &::after {
+                                content: "INXT";
+                            }
+
+                            .section__input {
+                                padding: 0 60px 0 35px;
+                            }
+
+                        }
+
+                    }
+
+
+                }
+
+            }
+
+            .section__inputContainer {
+                display: inline;
+            }
+
+            .section__input {
+
+                background-color: white;
+                border-radius: 29.3px;
+                border: solid 1px #5b4ade;
+                color: #242424;
+                font-size: 15px;
+                font-weight: 600;
+                height: 57px;
+                line-height: 1.61;
+                margin-bottom: 14px;
+                text-align: center;
+                width: 225px;
+
+                &::placeholder {
+                    color: #242424;
+                }
+
+                &:active,
+                &:focus {
+                    outline: none;
+                }
+
+                @include whenLargerThan('xl-screen') {
+
+                    margin-bottom: 0;
+                    margin-right: 17px;
+
+                    &::placeholder {
+                        position: relative;
+                        top: 1px;
+                    }
+
+                }
+
+            }
+
+            .section__output {
+
+                background-color: #191820;
+                border-radius: 29.3px;
+                color: white;
+                font-size: 15px;
+                font-weight: 600;
+                height: 56.6px;
+                line-height: 1.61;
+                margin-bottom: 0;
+                margin-top: 24px;
+                padding-top: 17px;
+                text-align: center;
+                width: 225px;
+
+                @include whenLargerThan('xl-screen') {
+                    display: inline-block;
+                    margin-top: 0;
+                    margin-left: 28px;
+                }
+
+            }
+
+        }
+
+
+        &--core-design {
+
+            margin-top: 98px;
+            margin-bottom: 140px;
+
+            @include whenLargerThan('large-screen') {
+                background-image: linear-gradient(to bottom, #fafafa, #ffffff);
+                padding-top: 114px;
+            }
+
+            @include whenLargerThan('xl-screen') {
+                margin-top: 0px;
+            }
+
+            .section__heading {
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 58px;
+                    font-weight: bold;
+                    letter-spacing: -2.6px;
+                    line-height: 1;
+                    margin-bottom: 0;
+                    margin-left: 130px;
+                    max-width: 592px;
+                }
+
+            }
+
+            .section__subheading {
+
+                margin-bottom: 42px;
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 21px;
+                    letter-spacing: -0.4px;
+                    line-height: 1.48;
+                    margin-bottom: 0;
+                    margin-left: 130px;
+                    margin-top: 17px;
+                    max-width: 584px;
+                }
+
+            }
+
+            .featurePreviewContainer {
+
+                margin-bottom: 40px;
+
+                @include whenLargerThan('large-screen') {
+                    background-image: url("/img/mockups/xcore/macbook.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 523px;
+                    margin: 112px auto 37px;
+                    position: relative; // .featurePreview is abs
+                    width: 891px;
+                }
+
+                @include whenLargerThan('xl-screen') {
+                    height: 734px;
+                    margin: 112px auto 37px;
+                    width: 1251px;
+                }
+
+                .featurePreview {
+
+                    background-image: url("/img/mockups/xcore/dashboard_mobile.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 425px;
+                    left: -24px;
+                    position: relative;
+                    width: 375px;
+
+                    @include whenLargerThan('small-screen') {
+                        display: block;
+                        margin: 0 auto;
+                        left: 0;
+                    }
+
+
+                    @include whenLargerThan('large-screen') {
+                        background-image: url("/img/mockups/xcore/dashboard.png");
+                        background-size: contain;
+                        height: 432px;
+                        left: 103px;
+                        position: absolute;
+                        top: 24px;
+                        width: 689px;
+                    }
+
+                    @include whenLargerThan('xl-screen') {
+                        height: 607px;
+                        left: 142px;
+                        top: 41px;
+                        width: 968px;
+                    }
+
+                    &--settings {
+
+                        background-image: url("/img/mockups/xcore/settings_mobile.png");
+
+                        @include whenLargerThan('large-screen') {
+                            background-image: url("/img/mockups/xcore/settings.png");
+                        }
+
+                    }
+
+                }
+
+            }
+
+            // .nav-tabs {
+
+            //     border-bottom: none;
+
+            //     @include whenLargerThan('small-screen') {
+            //         left: 2px;
+            //         margin: 0 auto;
+            //         max-width: 260px;
+            //         position: relative;
+            //     }
+
+            //     .nav-item {
+
+            //         @include whenLargerThan('large-screen') {
+            //             padding: 0 13px;
+            //         }
+
+            //     }
+
+            //     .nav-link {
+
+            //         border-color: transparent;
+            //         color: #d1b2ff;
+            //         font-size: 20px;
+            //         font-weight: 700;
+            //         letter-spacing: -0.2px;
+            //         margin-right: 30px;
+            //         padding-bottom: 12px;
+            //         padding-left: 0;
+            //         padding-right: 0;
+            //         transition: border-color $transition-default, color $transition-default;
+
+            //         @include whenLargerThan('large-screen') {
+            //             font-size: 20.8px;
+            //             margin-left: 0px;
+            //             margin-right: 0;
+            //             padding-left: 2px;
+            //             padding-right: 4px;
+            //         }
+
+            //         &:hover {
+            //             border-color: transparent;
+            //             color: #6600ff;
+            //         }
+
+            //         &.active {
+            //             border-bottom: 2px solid #6600ff;
+            //             color: #6600ff;
+            //         }
+
+            //     }
+
+            // }
+
+            .tab-content {
+
+                margin-top: 52px;
+
+                @include whenLargerThan('large-screen') {
+                    max-width: 645px;
+                    margin: 50px auto 0;
+                }
+
+                .tab-pane {
+
+                    color: #838387;
+                    font-size: 21px;
+                    letter-spacing: -0.4px;
+                    line-height: 1.48;
+
+                    @include whenLargerThan('large-screen') {
+                        text-align: center;
+                    }
+
+                }
+
+                strong {
+                    color: #000000;
+                    font-weight: 600;
+                }
+
+            }
+
+        }
+
+        &--beta {
+
+            @include whenLargerThan('small-screen') {
+
+                & > .container {
+                    max-width: 906px;
+                }
+
+            }
+
+            .section__cta {
+
+                // Override strange hover behaviour
+                &:hover {
+                    opacity: 1;
+                }
+
+            }
+
+        }
+
+    }
+
+}

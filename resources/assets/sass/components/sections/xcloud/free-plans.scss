@@ -1,0 +1,63 @@
+.section--xcloud-free-plans {
+
+	margin-top: 10px;
+	padding: 55px 29px;
+
+  	@apply
+  		.bg-body-bg
+  		.text-center
+  	;
+
+  	@screen lg {
+		height: 248px;
+  		padding: 55px 0 0 0;
+  	}
+
+  	.section__heading {
+		color: #111111;
+		font-size: 32px;
+		font-weight: 600;
+		letter-spacing: -0.6px;
+		line-height: 1;
+		margin-bottom: 14px;
+  	}
+
+  	.section__subheading {
+		color: #333;
+		font-size: 21px;
+		font-weight: 450;
+		left: -1px;
+		letter-spacing: -0.2px;
+		margin-bottom: 34px;
+		position: relative;
+		text-align: center;
+  	}
+
+  	.section__link {
+
+		background-image: url('/img/icons/arrow-blue-bold.svg');
+		background-position: right 2px top 5px;
+		background-repeat: no-repeat;
+		background-size: 13px;
+		color: #006deb;
+		font-size: 16.3px;
+		font-weight: 600;
+		letter-spacing: 0.59px;
+		line-height: 1;
+		margin-right: 0;
+		padding-right: 18px;
+		text-transform: uppercase;
+		transition: background-position 0.2s;
+
+		@screen lg {
+			font-size: 15px;
+			letter-spacing: 0.6px;
+		}
+
+		&:hover {
+			background-position: right 0 top 5px;
+		}
+
+	}
+
+}

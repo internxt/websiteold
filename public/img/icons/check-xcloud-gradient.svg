@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9">
+  <defs>
+    <linearGradient id="check-a" x1="3.262%" x2="96.462%" y1="53.22%" y2="49.41%">
+      <stop offset="0%" stop-color="#096DFF"/>
+      <stop offset="100%" stop-color="#00B1FF"/>
+    </linearGradient>
+  </defs>
+  <polyline fill="none" stroke="url(#check-a)" stroke-width="1.881" points="342 5752.58 345.043 5755.364 352 5749" transform="translate(-341 -5748)"/>
+</svg>

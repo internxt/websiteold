@@ -1,0 +1,529 @@
+.section--consultancy-header {
+
+	background-image: url('/img/sections/consultancy/header.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 795px;
+
+	@screen lg{
+		background-size: 100%;
+	}
+
+	.container {
+
+		@apply
+			.h-full
+			.flex
+			.justify-center
+			.items-center
+		;
+
+	}
+
+	.section__heading {
+
+		color: white;
+		font-size: 40px;
+		font-weight: 600;
+		letter-spacing: -1.1px;
+		line-height: 1.15;
+		text-align: center;
+
+		@screen lg {
+			font-size: 55px;
+			letter-spacing: -1px;
+			line-height: 1;
+		}
+
+	}
+
+}
+
+.section--consultancy-empowerment {
+
+	padding: 99px 29px 72px;
+
+	@screen lg {
+		padding: 108px 0 100px;
+	}
+
+	.section__heading {
+
+		font-size: 28px;
+		font-weight: 600;
+		letter-spacing: -0.84px;
+		line-height: 1.07;
+		margin-bottom: 12px;
+		width: 294px;
+
+		@apply
+			.text-text
+		;
+
+		@screen lg {
+			font-size: 49px;
+			letter-spacing: -1.5px;
+			line-height: 0.96;
+			margin: 0 auto 16px;
+			text-align: center;
+			width: 520px;
+		}
+
+	}
+
+	.section__explanation {
+
+		font-size: 20px;
+		letter-spacing: -0.24px;
+		line-height: 1.3;
+		width: 343px;
+
+		@apply
+			.text-footer-header
+		;
+
+		@screen lg {
+			font-size: 22px;
+			font-weight: 450;
+			letter-spacing: -0.35px;
+			line-height: 1.37;
+			margin: 0 auto;
+			text-align: center;
+			width: 713px;
+		}
+
+	}
+
+}
+
+.section--consultancy-features {
+
+	@screen lg {
+		padding-bottom: 158px;
+	}
+
+	.feature {
+
+		@apply
+			.flex
+			.flex-col
+		;
+
+		@screen lg {
+
+			@apply
+				.flex-row
+				.items-center
+				.justify-between
+			;
+
+		}
+
+		&__content {
+
+			padding: 0 29px;
+
+			@screen lg {
+				left: 140px;
+				padding: 0;
+				position: relative;
+		  		width: 330px;
+			}
+
+		}
+
+		&__heading {
+
+			font-size: 28px;
+			font-weight: 600;
+			letter-spacing: -0.84px;
+			line-height: 1.07;
+
+	  		@apply
+	  			.text-text
+	  		;
+
+			@screen lg {
+				font-size: 33px;
+				left: -1px;
+				letter-spacing: -1.01px;
+				line-height: 1.03;
+				margin-bottom: 12px;
+				position: relative;
+			}
+
+		}
+
+		&__explanation {
+
+			font-size: 20px;
+			letter-spacing: -0.24px;
+			line-height: 1.3;
+			width: 349px;
+
+			@apply
+				.text-footer-header
+			;
+
+			@screen lg {
+				font-size: 17px;
+				letter-spacing: -0.2px;
+				line-height: 1.43;
+				width: 324px;
+			}
+
+		}
+
+		&__image {
+
+			height: 318px;
+			margin: 70px 0;
+			object-fit: cover;
+			width: 100vw;
+
+			@screen lg {
+				left: -5px;
+				margin: 0;
+				height: auto;
+				position: relative;
+				width: 541px;
+			}
+
+		}
+
+		&:nth-of-type(2) {
+
+			@screen lg {
+				justify-content: center;
+			}
+
+			.feature__image {
+
+				margin-bottom: 0;
+				order: 2;
+
+				@screen lg {
+					left: -102px;
+					order: 1;
+				}
+
+			}
+
+			.feature__content {
+
+				order: 1;
+
+				@screen lg {
+					left: -20px;
+					order: 2;
+					width: 335px;
+				}
+
+			}
+
+		}
+
+	}
+
+
+}
+
+.section--consultancy-new-technologies {
+
+	padding: 90px 29px 60px;
+
+	@apply
+		.bg-body-bg
+	;
+
+	@screen lg {
+		padding: 114px 0 80px;
+	}
+
+	.section__heading {
+
+		font-size: 28px;
+		font-weight: 600;
+		letter-spacing: -0.84px;
+		line-height: 1.07;
+		margin-bottom: 15px;
+		width: 342px;
+
+  		@apply
+  			.text-text
+  		;
+
+		@screen lg {
+			font-size: 49px;
+			letter-spacing: -1.5px;
+			line-height: 0.96;
+			margin: 0 auto 16px;
+			text-align: center;
+			width: 660px;
+		}
+
+	}
+
+	.section__explanation {
+
+		font-size: 20px;
+		letter-spacing: -0.24px;
+		line-height: 1.3;
+		width: 343px;
+
+		@apply
+			.text-footer-header
+		;
+
+		@screen lg {
+			font-size: 22px;
+			font-weight: 450;
+			letter-spacing: -0.35px;
+			line-height: 1.36;
+			text-align: center;
+			margin: 0 auto;
+			width: 731px;
+		}
+
+	}
+
+}
+
+.section--consultancy-tools {
+
+	padding-bottom: 27px;
+
+	.container {
+
+		background-image: url('/img/sections/consultancy/tools/bg.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 574px;
+		margin: 0 auto;
+
+		@apply
+			.flex
+			.items-center
+			.justify-center
+		;
+
+		@screen lg {
+
+			width: 1081px;
+
+			@apply
+				.justify-end
+			;
+
+		}
+
+	}
+
+	.section__content {
+
+		@screen lg {
+			margin-right: 126px;
+			width: 344px;
+		}
+
+	}
+
+	.section__heading {
+
+		color: white;
+		font-size: 28px;
+		font-weight: 600;
+		letter-spacing: -0.84px;
+		margin-bottom: 15px;
+		line-height: 1.07;
+		width: 240px;
+
+		@screen lg {
+			font-size: 38px;
+			letter-spacing: -0.75px;
+			line-height: 1.03;
+			margin-bottom: 20px;
+			width: 344px;
+		}
+
+	}
+
+	.section__explanation {
+
+		color: white;
+		font-size: 20px;
+		letter-spacing: -0.24px;
+		line-height: 1.3;
+		width: 341px;
+
+		@screen lg {
+			font-size: 18px;
+			letter-spacing: -0.4px;
+			line-height: 1.39;
+			width: 344px;
+		}
+
+	}
+
+}
+
+.section--consultancy-taking-work-further {
+
+	margin-bottom: 40px;
+
+	@screen lg {
+		margin-bottom: 181px;
+	}
+
+	.container {
+
+		background-image: url('/img/sections/consultancy/taking-work-further/bg.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 574px;
+		margin: 0 auto;
+		width: 1081px;
+
+		@apply
+			.flex
+			.items-center
+		;
+
+	}
+
+	.section__content {
+		margin-left: 61px;
+		width: 344px;
+	}
+
+	.section__heading {
+
+		color: white;
+		font-size: 28px;
+		font-weight: 600;
+		letter-spacing: -0.84px;
+		line-height: 1.07;
+		margin-bottom: 15px;
+  		width: 307px;
+
+		@screen lg {
+			font-size: 38px;
+			letter-spacing: -0.75px;
+			line-height: 1.03;
+			margin-bottom: 20px;
+			width: 425px;
+		}
+
+	}
+
+	.section__explanation {
+
+		color: white;
+		font-size: 20px;
+		letter-spacing: -0.24px;
+		line-height: 1.3;
+		width: 344px;
+
+		@screen lg {
+			font-size: 18px;
+			letter-spacing: -0.4px;
+			line-height: 1.39;
+			width: 344px;
+		}
+
+	}
+
+}
+
+.section--consultancy-contact {
+
+	background-image: url('/img/sections/consultancy/contact/bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 581px;
+	margin-bottom: 10px;
+
+	@screen lg {
+  		height: 900px;
+	}
+
+  	.container {
+
+  		@apply
+  			.h-full
+			.flex
+			.items-center
+			.justify-center
+		;
+
+		@screen lg {
+
+  			width: 920px;
+
+  			@apply
+  				.justify-end
+  			;
+
+		}
+
+  	}
+
+  	.section__content {
+
+  		@screen lg {
+	  		left: 20px;
+	  		position: relative;
+	  		top: -20px;
+  		}
+
+  	}
+
+	.section__heading {
+
+		color: white;
+		font-size: 28px;
+		font-weight: 600;
+		letter-spacing: -0.84px;
+		line-height: 1.07;
+		width: 307px;
+
+		@screen lg {
+			font-size: 38px;
+			letter-spacing: -0.75px;
+			line-height: 1.03;
+			margin-bottom: 20px;
+			width: 370px;
+		}
+
+	}
+
+	.section__explanation {
+
+		color: white;
+		font-size: 20px;
+		letter-spacing: -0.24px;
+		line-height: 1.3;
+		width: 343px;
+
+		@screen lg {
+			font-size: 18px;
+			left: 2px;
+			letter-spacing: -0.4px;
+			line-height: 1.39;
+			position: relative;
+			width: 344px;
+		}
+
+	}
+
+	.section__button {
+		background-color: rgba(white, 0.86);
+		height: 36px;
+		margin-top: 50px;
+	}
+
+}

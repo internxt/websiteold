@@ -1,0 +1,44 @@
+.badge {
+
+	border-radius: 30.5px;
+	height: 32px;
+	padding: 0 13px 0 7px;
+	width: 250px;
+
+	@apply
+		.bg-button-bg
+		.flex
+		.items-center
+		.justify-between
+	;
+
+	&__heading {
+
+		background-color: #ebebeb;
+		border-radius: 30.5px;
+		color: #141414;
+		font-size: 11px;
+		font-weight: 600;
+		height: 21.9px;
+		width: 38.6px;
+
+		@apply
+			.flex
+			.items-center
+			.justify-center
+		;
+	}
+
+	&__content {
+		color: #141414;
+		font-size: 12px;
+		letter-spacing: 0.1px;
+	}
+
+	&--free-plans {
+		margin-left: 11px;
+		position: relative;
+		top: -4px;
+	}
+
+}

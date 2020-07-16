@@ -1,0 +1,128 @@
+#page--inxt-buy {
+
+	.section--inxt-header-buy {
+
+		background-image: url('/img/sections/inxt/buy/header.jpg');
+		background-position: center;
+		background-size: cover;
+		height: 100vh;
+
+		@screen lg {
+			background-size: 122%;
+			height: 100vh;
+		}
+
+		.container {
+			align-items: center;
+		}
+
+		.section__heading {
+
+			color: white;
+			font-size: 36.1px;
+			font-weight: 500;
+			line-height: 1.42;
+			letter-spacing: -0.81px;
+			text-align: center;
+
+			@screen lg {
+				font-size: 55px;
+				font-weight: 600;
+				letter-spacing: -1.01px;
+				line-height: 1.12;
+				text-align: left;
+			}
+
+		}
+
+		.section__subheading {
+
+			color: white;
+			font-size: 20px;
+			font-weight: 500;
+			opacity: 0.9;
+			text-transform: uppercase;
+
+			@screen lg {
+				font-size: 28px;
+				line-height: 2.11;
+			}
+
+		}
+
+		.section__highlight {
+			background-image: linear-gradient(89deg, #096dff, #00b1ff);
+		}
+
+		.section__button {
+			color: white;
+			width: 107px;
+		}
+
+	}
+
+	.section--inxt-buy-directly {
+
+		.section__heading {
+
+			font-size: 28px;
+			letter-spacing: -0.84px;
+			line-height: 1.07;
+
+			@screen lg {
+				font-size: 38px;
+				font-weight: 600;
+				letter-spacing: -1.16px;
+				line-height: 0.95;
+				margin: 0 auto 16px;
+			}
+
+		}
+
+		.section__explanation {
+
+			font-size: 20px;
+			letter-spacing: -0.24px;
+			line-height: 1.3;
+			width: 343px;
+
+			@screen lg {
+				font-size: 18px;
+				letter-spacing: -0.21px;
+				line-height: 1.44;
+				margin: 0 auto 100px;
+				width: 551px;
+			}
+
+		}
+
+	}
+
+	#cryptowolf {
+		margin: 0 auto;
+		max-width: 690px;
+	}
+
+	.section--inxt-links.links--exchanges {
+
+		@apply
+			.bg-body-bg
+		;
+
+		.section__heading {
+
+			margin-bottom: 53px;
+
+			@screen lg {
+				margin: 0 auto 110px;
+			}
+
+		}
+
+		.link {
+			background: white;
+		}
+
+	}
+
+}

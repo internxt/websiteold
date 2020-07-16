@@ -1,0 +1,504 @@
+.section--xcloud-feature {
+
+	padding: 0 21px;
+
+	@screen lg {
+		padding: 0;
+	}
+
+	.section__content {
+
+		@screen lg {
+			width: 800px;
+		}
+
+	}
+
+	.section__button {
+
+  		height: 39px;
+  		margin-top: 57px;
+  		padding: 11.12px 29.7px 11.8px 17.3px;
+
+  		@screen lg {
+  			margin-top: 20px;
+  		}
+
+	}
+
+}
+
+.section--xcloud-beautiful-interface {
+
+	height: auto;
+
+	.section__heading {
+
+		font-size: 32px;
+		font-stretch: normal;
+		font-style: normal;
+		font-weight: 500;
+		letter-spacing: -0.81px;
+		line-height: 1.06;
+
+		@screen lg {
+			padding-top: 100px;
+			font-size: 36px;
+		}
+
+	}
+
+	.section__highlight {
+
+		background-image: linear-gradient(80deg, #eb5f79, #a349d9);
+		font-size: 32px;
+		font-stretch: normal;
+		font-style: normal;
+		font-weight: 500;
+		letter-spacing: -0.72px;
+		line-height: 1.13;
+
+		@screen lg {
+			font-size: 36px;
+			letter-spacing: -0.81px;
+			position: relative;
+			text-indent: 343px;
+			top: -38px;
+			line-height: 1.06;
+		}
+
+	}
+
+	.section__button {
+		font-size: 12px;
+		font-stretch: normal;
+		font-style: normal;
+		font-weight: 600;
+		letter-spacing: 0.44px;
+		line-height: normal;
+		padding: 11.2px 31.7px 11.8px 17.3px;
+	}
+
+}
+
+.section--xcloud-eco-friendly {
+
+	.section__content {
+
+		@screen lg {
+		    width: 802px;
+		}
+
+	}
+
+	.section__heading {
+
+		font-size: 32px;
+		font-stretch: normal;
+		font-style: normal;
+		font-weight: 500;
+		letter-spacing: -0.81px;
+		line-height: 1.06;
+
+		@screen lg {
+			font-size: 36px;
+		}
+
+	}
+
+	.section__highlight {
+
+		@screen lg {
+			background-image: linear-gradient(85deg, #1d976c 7%, #3bcc56 84%);
+			font-size: 36px;
+			letter-spacing: -0.81px;
+			line-height: 1.06;
+	  		position: relative;
+	  		text-indent: 218px;
+	  		top: -38px;
+        }
+	}
+
+}
+
+.section--xcloud-secure-individuals {
+
+	margin-bottom: 53px;
+
+	.section__heading {
+		font-size: 36px;
+		font-stretch: normal;
+		font-style: normal;
+		font-weight: 500;
+		letter-spacing: -0.81px;
+		line-height: 1.06;
+	}
+
+	.section__highlight {
+
+		background-image: linear-gradient(79deg, #c65baf, #6e6fef);
+		font-size: 32px;
+		font-stretch: normal;
+		font-style: normal;
+		font-weight: 500;
+		letter-spacing: -0.72px;
+		line-height: 1.13;
+
+
+        @screen lg {
+	        background-image: linear-gradient(86deg, #fd7335, #d855ab);
+			font-size: 36px;
+			letter-spacing: -0.81px;
+			line-height: 1.06;
+	  		position: relative;
+			text-indent: 339px;
+	  		top: -38px;
+        }
+
+	}
+
+	.section__button {
+		font-size: 12px;
+		font-stretch: normal;
+		font-style: normal;
+		font-weight: 600;
+		letter-spacing: 0.44px;
+		line-height: normal;
+		padding: 11.2px 31.7px 11.8px 17.3px;
+		width: auto;
+	}
+
+}
+
+.section--xcloud-plans {
+
+	background-color: black;
+	height: 1109px;
+	overflow: hidden;
+	padding: 29px;
+
+	@apply
+		.flex
+		.items-center
+		.justify-center
+		.flex-col
+		.relative
+	;
+
+	@screen lg {
+		height: 100vh;
+		padding: 0;
+	}
+
+	.section__image-container {
+		background-image: url('/img/sections/xcloud/overview/plans/bg.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 100%;
+		position: absolute;
+		width: 100%;
+	}
+
+	.container {
+
+		display: none;
+
+		@screen lg {
+			display: block;
+			z-index: 10;
+		}
+
+	}
+
+	.section__content {
+		width: 798px;
+	}
+
+	.section__heading {
+		color: white;
+		font-size: 36px;
+		font-stretch: normal;
+		font-style: normal;
+		font-weight: 500;
+		letter-spacing: -0.81px;
+		line-height: 1.06;
+	}
+
+	.section__highlight {
+		font-size: 36px;
+		font-stretch: normal;
+		font-style: normal;
+		font-weight: 500;
+		letter-spacing: -0.81px;
+		line-height: 1;
+  		background-image: linear-gradient(80deg, #9757e7, #57aaef);
+  		position: relative;
+  		text-indent: 240px;
+  		top: -38px;
+	}
+
+	.section__button {
+		background-color: rgba(white, 14%);
+		background-image: url('/img/icons/arrow-white.svg');
+		color: white;
+		font-size: 12px;
+		font-stretch: normal;
+		font-style: normal;
+		font-weight: 600;
+		letter-spacing: 0.44px;
+		line-height: normal;
+		padding: 11.2px 31.7px 11.8px 17.3px;
+		width: auto;
+	}
+
+	.plan-container {
+
+		@screen lg {
+
+			@apply
+				.flex
+				.items-center
+				.justify-center
+			;
+
+		}
+
+	}
+
+	.plan {
+
+		background-color: white;
+		border-radius: 6px;
+		display: block;
+		box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.18);
+		height: 336px;
+		margin-bottom: 21px;
+		padding: 30px 20px 28px;
+		position: relative;
+		top: 4px;
+		width: 346px;
+		z-index: 2;
+
+		@screen lg {
+			margin-bottom: inherit;
+			opacity: 0;
+			top: 30px;
+		}
+
+		&--featured {
+
+			height: 355px;
+			padding: 47px 20px 45px;
+			top: 0;
+
+			@screen lg {
+				margin: 0 24px;
+				top: 10px;
+			}
+
+		}
+
+		&__heading {
+
+			@apply
+				.flex
+				.items-center
+				.justify-center
+			;
+
+			&--placeholder {
+				background-image: url('/img/icons/arrow-blue.svg');
+				background-position: right center;
+				background-repeat: no-repeat;
+				background-size: 13px 9px;
+				color: #0492ff;
+				width: 107px;
+				font-size: 13px;
+				font-weight: 600;
+				letter-spacing: 0.4px;
+				margin: 59px auto 0;
+				padding-right: 20px;
+				text-transform: uppercase;
+			}
+
+		}
+
+		.plan__heading-placeholder-underline {
+			background-color: #dad9d9;
+			height: 1px;
+			width: 78px;
+			margin: 9px auto 87px;
+		}
+
+
+		&__name {
+
+			font-size: 27px;
+			font-weight: bold;
+			letter-spacing: -0.57px;
+			margin-right: 12px;
+
+			@apply
+				.text-text
+			;
+
+		}
+
+		&__price {
+			color: #838387;
+			font-size: 16px;
+			letter-spacing: -0.26px;
+			line-height: 1.54;
+
+			// Override default plan styling
+			background-image: none;
+			-webkit-text-fill-color: inherit;
+			background-clip: inherit;
+			-webkit-background-clip: inherit;
+		}
+
+		&__prepayment-details {
+
+  			border-radius: 4px;
+  			margin-bottom: 24px;
+			padding: 0;  
+			  
+			@screen lg {
+				padding: 17px 28px;	
+			}
+
+  			@apply
+  				.bg-plan-bg-2
+  				.flex
+  				.justify-around
+  			;
+
+		}
+
+		.prepayment__label {
+			color: #323232;
+			font-size: 12px;
+			letter-spacing: -0.14px;
+			line-height: 2.08;
+		}
+
+		.prepayment__price {
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			background-image: linear-gradient(88deg, #096dff, #00b1ff);
+			font-size: 16px;
+			font-weight: 600;
+			letter-spacing: -0.21px;
+			line-height: 1.56;
+			text-align: center;
+		}
+
+		.prepayment__separator {
+			background-color: #e0e0e0;
+			height: 50px;
+			width: 1px;
+		}
+
+		&__features {
+
+			padding: 0 0 0 10px;
+
+			@apply
+				.flex
+				.justify-between
+				.items-start
+			;
+
+			ul {
+
+				&:first-of-type {
+					width: 45%;
+				}
+
+				&:last-of-type {
+					width: 55%;
+				}
+
+			}
+
+			li {
+				font-size: 13px;
+				letter-spacing: -0.17px;
+				margin-bottom: 10px;
+				padding-left: 15px;
+				background-image: url('/img/icons/check-blue.svg');
+				background-repeat: no-repeat;
+				background-size: 13px 9px;
+				background-position: 0px 6px;
+
+				@apply
+					.text-text-lighter
+				;
+
+			}
+
+		}
+
+	}
+
+}
+
+.section--xcloud-mass-storage {
+
+	@apply
+		.bg-body-bg
+	;
+
+	padding-bottom: 144px;
+	padding-top: 118px;
+
+	@screen lg {
+		padding-bottom: 118px;
+		padding-top: 130px;
+	}
+
+	.section__heading {
+		font-size: 36px;
+		font-stretch: normal;
+		font-style: normal;
+		font-weight: 500;
+		letter-spacing: -0.81px;
+		line-height: 1.06;
+	}
+
+	.section__highlight {
+
+		background-image: linear-gradient(72deg, #d914b8, #f62a2a);
+		font-size: 32px;
+		font-stretch: normal;
+		font-style: normal;
+		font-weight: 500;
+		letter-spacing: -0.72px;
+		line-height: 1.13;
+
+		@screen lg {
+			background-image: linear-gradient(74deg, #d914b8, #f62a2a);
+			font-size: 36px;
+			letter-spacing: -0.81px;
+			line-height: 1.06;
+			position: relative;
+			text-indent: 230px;
+			top: -38px;
+		}
+
+	}
+
+	.section__button {
+		background-color: #ededed;
+		font-size: 12px;
+		font-stretch: normal;
+		font-style: normal;
+		font-weight: 600;
+		letter-spacing: 0.44px;
+		line-height: normal;
+	}
+
+}
+

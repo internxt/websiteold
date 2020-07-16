@@ -1,0 +1,59 @@
+.section--intro-consultancy {
+
+	background-image: url(/img/sections/consultancy/intro/bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	height: 660px;
+	margin-bottom: 10px;
+
+	@screen lg {
+		background-position: center top;
+		height: 518px;
+		min-height: 518px;
+	}
+
+	@apply
+		.flex
+		.flex-col
+		.justify-center
+	;
+
+	.section__heading {
+
+		color: white;
+		font-size: 28px;
+		font-weight: 600;
+		letter-spacing: -0.63px;
+		line-height: 1.29;
+		text-align: center;
+		width: 360px;
+
+		@screen lg {
+			font-weight: 500;
+			letter-spacing: -0.2px;
+			line-height: 1.11;
+			width: 380px;
+			text-align: left;
+		}
+
+	}
+
+	.section__button {
+
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 285px;
+
+		@screen lg {
+			display: inline-block;
+			margin-left: 0;
+			margin-right: 0;
+			width: auto;
+		}
+
+	}
+
+}

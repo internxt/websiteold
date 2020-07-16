@@ -1,0 +1,78 @@
+body.has-modal{
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.modal {
+
+    display: none;
+
+    &--active {
+
+        background-color: rgba(0, 0, 0, 0.5);
+
+        @apply
+            .fixed
+            .flex
+            .flex-col
+            .h-screen
+            .items-center
+            .justify-center
+            .inset-0
+            .w-screen
+            .z-40
+        ;
+
+    }
+
+    .modal__content {
+
+        border-radius: 9px;
+        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.45);
+        font-size: 27px;
+        font-weight: 600;
+        height: 199px;
+        letter-spacing: -0.42px;
+        line-height: 1.19;
+        padding: 0 41px 37px 34px;
+        width: 356px;
+
+        @apply
+            .bg-white
+            .flex
+            .flex-col
+            .items-center
+            .justify-end
+            .relative
+            .text-text
+            .z-50
+        ;
+
+    }
+
+    .modal__button {
+        background-image: url('/img/icons/close-circle.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+        font-size: 0;
+        height: 38px;
+        left: 29px;
+        margin-top: 0;
+        padding: 0;
+        position: absolute;
+        top: 31px;
+        width: 38px;
+    }
+
+}
+
+#modal-xcore-get-started {
+
+    @screen lg {
+        display: none;
+    }
+
+}

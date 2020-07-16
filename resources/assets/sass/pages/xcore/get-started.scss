@@ -1,0 +1,328 @@
+/**
+* X Core is not available for mobile devices, so display a banner
+* to that effect, preventing the page from scrolling.
+*/
+
+#page--xcore-get-started {
+
+
+    .section--xcore-header-get-started {
+
+        background-image: url('/img/sections/xcore/overview/header.jpg');
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+
+        @screen lg {
+
+            background-image: url('/img/sections/xcore/get-started/header.jpg');
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: 127%;
+            height: 754px;
+
+            @apply
+                .flex
+                .flex-col
+                .justify-center
+            ;
+
+        }
+
+        .container {
+
+            align-items: center;
+
+            @screen lg {
+                align-items: flex-start;
+            }
+
+        }
+
+        .section__heading {
+
+            color: white;
+            font-size: 36.1px;
+            font-weight: 600;
+            letter-spacing: -0.82px;
+            line-height: 1;
+            width: 209px;
+
+            @screen lg {
+                font-size: 38px;
+                line-height: 1.42;
+                letter-spacing: -0.26px;
+                margin-bottom: 0px;
+                width: auto;
+            }
+
+        }
+
+        .section__subheading {
+
+            color: #cdcdcd;
+            font-size: 36.1px;
+            font-weight: 500;
+            letter-spacing: -0.81px;
+            line-height: 1.42;
+            text-transform: initial;
+            width: 332px;
+
+            @screen lg {
+                font-size: 38px;
+                letter-spacing: -0.46px;
+                position: relative;
+                top: -10px;
+                width: auto;
+            }
+
+        }
+
+        .section__button {
+
+            background-color: rgba(255, 255, 255, 0.18);
+            background-image: url('/img/icons/arrow-white.svg');
+            background-position: right 15px center;
+            color: white;
+            display: none;
+            height: 36px;
+            transition: background-position 0.2s;
+            width: 119px;
+
+            @screen lg{
+                display: block;
+                padding-right: 34.9px;
+                width: auto;
+            }
+
+            &:hover {
+                background-position: right 13px center;
+            }
+
+        }
+
+    }
+
+    .section--xcore-step {
+
+        min-height: 552px;
+        padding: 74px 29px 0;
+
+        @screen lg {
+            height: 654px;
+        }
+
+        .container {
+
+            @apply
+                .h-full
+                .flex
+                .justify-between
+                .items-center
+                .p-0
+            ;
+
+        }
+
+        .section__label {
+            border-radius: 4.5px;
+            border: 2px solid #7621EC;
+            color: #7621EC;
+            font-size: 11.7px;
+            font-weight: 600;
+            height: 31px;
+            letter-spacing: 0.36px;
+            margin-bottom: 27px;
+            text-align: center;
+            width: 59px;
+        }
+
+        .section__content {
+            position: relative;
+            top: -3px;
+            left: -5px;
+        }
+
+        .section__heading {
+
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: -0.84px;
+            line-height: 1.07;
+            margin-bottom: 15px;
+
+            @apply
+                .text-text
+            ;
+
+            @screen lg {
+                font-size: 34px;
+                left: -2px;
+                letter-spacing: -1.04px;
+                line-height: 1.06;
+                position: relative;
+                width: 400px;
+            }
+
+        }
+
+        .section__explanation {
+
+            font-size: 20px;
+            letter-spacing: -0.24px;
+            line-height: 1.3;
+
+            @apply
+                .text-text-lighter
+            ;
+
+            @screen lg {
+                font-size: 17px;
+                font-weight: 450;
+                letter-spacing: -0.2px;
+                line-height: 1.53;
+                width: 435px;
+            }
+
+        }
+
+        a {
+            color: #9556e6;
+        }
+
+    }
+
+    .step--download {
+
+        background-image: url('/img/sections/xcore/get-started/download/bg.svg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @apply
+            .bg-body-bg
+        ;
+
+        @screen lg {
+            padding-top: 0;
+        }
+
+        .section__separator {
+            background-color: #e6e6e6;
+            height: 133px;
+            margin-right: 17px;
+            width: 1px;
+        }
+
+        .section__logo {
+            margin-right: 108px;
+        }
+
+    }
+
+    .step--set-up-node {
+
+        .section__image {
+
+            @screen lg {
+                left: 60px;
+                position: relative;
+                top: -69px;
+                transform: scale(1.36);
+                width: 668px;
+            }
+
+        }
+
+        .section__explanation {
+
+            @screen lg {
+                width: 431px;
+            }
+
+        }
+
+    }
+
+    .step--open-routers-port {
+
+        @apply
+            .bg-body-bg
+        ;
+
+        .w-full {
+            left: 2px;
+            position: relative;
+            top: -20px;
+        }
+
+        .section__content {
+
+            @screen lg {
+
+                left: -1px;
+                top: -1px;
+
+                @apply
+                    .flex
+                ;
+
+            }
+
+        }
+
+        .section__heading {
+            top: -1px;
+        }
+
+        .section__explanation {
+
+            &:first-of-type {
+                margin-bottom: 50px;
+            }
+
+            @screen lg {
+
+                width: 485px;
+
+                &:first-of-type {
+                    margin-bottom: 0;
+                    margin-right: 52px;
+                }
+
+            }
+
+        }
+
+    }
+
+    .step--finished {
+
+        .section__image {
+
+            display: none;
+
+            @screen lg {
+                display: block;
+                height: 410px;
+                left: -77px;
+                position: relative;
+                top: 16px;
+                width: 713px;
+            }
+
+        }
+
+        .section__content {
+
+            @screen lg {
+                left: -35px;
+                top: -20px
+            }
+
+        }
+
+    }
+
+}

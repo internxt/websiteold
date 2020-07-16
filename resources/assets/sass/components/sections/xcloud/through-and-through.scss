@@ -1,0 +1,33 @@
+.section--xcloud-through-and-through {
+
+	background-image: url('/img/sections/xcloud/technology/through-and-through/bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 617px;
+	margin: 10px 0;
+
+	@apply
+		.flex
+		.flex-col
+		.justify-center
+	;
+
+	.section__heading {
+		color: white;
+		font-size: 28px;
+		font-weight: 500;
+		letter-spacing: -0.2px;
+		line-height: 1.18;
+		width: 418px;
+	}
+
+	.section__button {
+		background-color: rgba(white, 0.15);
+		background-image: url('/img/icons/arrow-white.svg');
+		color: white;
+		height: 37.8px;
+		width: 124.2px;
+	}
+
+}

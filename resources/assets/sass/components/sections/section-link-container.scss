@@ -1,0 +1,152 @@
+.section--xcloud-section-link-container {
+
+	margin-bottom: 65px;
+	margin-top: 80px;
+
+	@apply
+		.bg-body-bg
+	;
+
+	@screen lg {
+		margin-bottom: 10px;
+		margin-top: 10px;
+		padding-bottom: 114px;
+		padding-top: 126px;
+	}
+
+	& > .container {
+
+		padding: 0 24px;
+
+		@screen lg {
+
+			padding: 0;
+			width: 1110px;
+
+			@apply
+				.flex
+				.flex-wrap
+				.justify-center
+			;
+
+		}
+
+	}
+
+	.link-divider {
+
+		@screen lg {
+
+			&:nth-child(1){
+				margin-right: 12px;
+				padding-top: 48px;
+			}
+
+		}
+
+	}
+
+	.link {
+
+		background-position: center bottom;
+		background-size: cover;
+		border-radius: 1.25%;
+		display: block;
+		height: 446px;
+		margin-bottom: 12px;
+		position: relative;
+
+		@screen lg {
+			width: 496px;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background-color: black;
+			opacity: 0;
+			transition: opacity 0.2s;
+			z-index: 2;
+		}
+
+		&:hover {
+
+			@screen lg {
+
+				&::after {
+					opacity: 0.15;
+				}
+
+			}
+
+		}
+
+		&--technology {
+			background-image: url('/img/sections/find-out-more/xcloud-technology.jpg');
+		}
+
+		&--interface {
+			background-image: url('/img/sections/find-out-more/xcloud-interface.jpg');
+		}
+
+		&--eco {
+			background-image: url('/img/sections/find-out-more/xcloud-eco.jpg');
+		}
+
+		&--individuals {
+			background-image: url('/img/sections/find-out-more/xcloud-individuals.jpg');
+		}
+
+		&--teams {
+			background-image: url('/img/sections/find-out-more/xcloud-teams.jpg');
+		}
+
+		&--mass-storage {
+			background-image: url('/img/sections/find-out-more/xcloud-mass-storage.jpg');
+		}
+
+		&__heading {
+
+			bottom: 88px;
+			color: white;
+			font-size: 27px;
+			font-weight: 600;
+			left: 45px;
+			letter-spacing: -0.47px;
+			line-height: 1.11;
+			position: absolute;
+
+			@screen lg {
+				bottom: 71px;
+				font-size: 24px;
+				font-weight: 500;
+				left: 40px;
+				letter-spacing: normal;
+				line-height: 1.01;
+				z-index: 3;
+			}
+
+		}
+
+		&__button {
+			background-image: url('/img/icons/arrow-white.svg');
+			background-position: right center;
+			background-repeat: no-repeat;
+			background-size: 8px 6px;
+			bottom: 40px;
+			color: #e6e6e6;
+			font-size: 12px;
+			font-weight: 600;
+			left: 40px;
+			letter-spacing: 0.44px;
+			padding-right: 12px;
+			position: absolute;
+			text-transform: uppercase;
+			z-index: 3;
+		}
+
+	}
+
+}

@@ -1,0 +1,408 @@
+#page--home {
+
+	.section--homepage-header {
+
+
+		background-image: linear-gradient(to bottom, white, theme('colors.body-bg'));
+		background-position: top left;
+		background-size: cover;
+		height: 912px;
+		margin-bottom: 10px;
+		overflow: hidden;
+		padding-top: 115px;
+		position: relative;
+		width: 100vw;
+
+		@screen lg {
+			height: 694px;
+			padding-top: 0;
+		}
+
+		@screen lg {
+			padding-top: 0;
+		}
+
+		.container {
+
+			align-items: center;
+			justify-content: flex-start;
+
+			@screen lg {
+				align-items: flex-start;
+				justify-content: center;
+			}
+
+		}
+
+		.section__content {
+
+			text-align: center;
+
+			@screen lg {
+				left: 12px;
+				position: relative;
+				text-align: left;
+				top: -55px;
+			}
+
+		}
+
+		.section__icon-container {
+			display: inline-block;
+			margin: 0px;
+			margin-bottom: -7px 5px -7px;
+		}
+
+		.section__icon {
+
+			height: 42px;
+			margin: 0 10px 1px 0;
+
+			@screen lg {
+			}
+
+		}
+
+		.section__image {
+
+			display: none;
+			top: initial;
+			left: initial;
+			transform: inherit;
+
+			@screen lg {
+				display: block;
+				opacity: 0;
+			}
+
+			&--ipad {
+
+				display: block;
+				height: 655px;
+				left: -25vw;
+				max-width: 600px;
+				top: 390px;
+
+				@screen lg {
+					left: 0;
+					max-width: 641px;
+					top: 443px;
+				}
+
+			}
+
+			&--phone {
+
+				display: block;
+				height: 322px;
+				right: -41.5vw;
+				top: 345px;
+
+				@screen lg {
+					left: 23vw;
+					top: 407px;
+				}
+
+			}
+
+			&--laptop {
+				top: -38px;
+				right: 0;
+				width: 1115px;
+				height: initial;
+			}
+
+		}
+
+		.section__heading {
+
+			display: inline-block;
+
+			color: black;
+			font-size: 38px;
+			margin-bottom: 4px;
+
+			@screen lg {
+				left: -1px;
+				line-height: 1;
+				margin-bottom: 4px;
+				opacity: 0;
+				position: relative;
+				text-align: left;
+	  			letter-spacing: -0.86px;
+			}
+
+		}
+
+		.section__highlight {
+
+			background-image: linear-gradient(89deg, #096dff, #00b1ff);
+			font-size: 36px;
+			letter-spacing: -0.81px;
+			line-height: 1;
+			padding-bottom: 5px;
+
+			@screen lg {
+				font-size: 38px;
+				left: -1px;
+				letter-spacing: -0.86px;
+				opacity: 0;
+				position: relative;
+			}
+
+		}
+
+		.section__link--ios {
+
+			background: none;
+			padding-right: 0;
+			margin-right: 0;
+
+			img {
+				height: 51px;
+				margin-bottom: 10px;
+			}
+
+		}
+
+		.section__link--android {
+
+			background: none;
+			padding-right: 0;
+			margin-right: 0;
+
+			img {
+				height: 51px;
+			}
+
+		}
+
+	}
+
+	.section--intro-inxt {
+
+		@screen lg {
+			background-image: url(/img/sections/inxt/intro/bg-home.jpg);
+			height: 694px;
+		}
+
+	}
+
+	.__mobile-home-content {
+
+		height: 50vh;
+		margin-bottom: 10px;
+		overflow: hidden;
+		padding-top: 0;
+		position: relative;
+
+		@screen lg {
+			height: 100vh;
+			padding-top: 0;
+		}
+
+		.container {
+
+			align-items: center;
+			justify-content: flex-start;
+
+			@screen lg {
+				align-items: flex-start;
+			}
+
+		}
+
+		.section__content {
+
+			text-align: center;
+
+			@screen lg {
+				left: 12px;
+				position: relative;
+				text-align: left;
+				top: -50px;
+			}
+
+		}
+
+		.section__icon-container {
+			display: inline-block;
+			margin: 0px;
+			margin-bottom: -7px 5px -7px;
+		}
+
+		.section__icon {
+
+			height: 42px;
+			margin: 0 10px 1px 0;
+
+			@screen lg {
+			}
+
+		}
+
+		.section__image {
+
+			display: none;
+			top: initial;
+			left: initial;
+			transform: inherit;
+
+			@screen lg {
+				display: block;
+				opacity: 0;
+			}
+
+			&--ipad {
+
+				display: block;
+				height: auto;
+				left: -25vw;
+				max-width: 600px;
+				top: 409px;
+
+				@screen lg {
+					left: 0;
+					max-width: 641px;
+					top: 441px;
+				}
+
+			}
+
+			&--phone {
+
+				display: block;
+				height: 322px;
+				right: -41.5vw;
+				top: 350px;
+
+				@screen lg {
+					left: 23vw;
+					top: 405px;
+				}
+
+			}
+
+			&--laptop {
+				height: initial;
+				right: 0;
+				top: -40px;
+				width: 1115px;
+			}
+
+		}
+
+		.section__heading {
+
+			display: inline-block;
+
+			color: black;
+			font-size: 38px;
+			
+			font-weight: 600;
+
+			@screen lg {
+				left: -1px;
+				line-height: 1;
+				margin-bottom: 4px;
+				opacity: 1 !important;
+				position: relative;
+				text-align: left;
+	  			letter-spacing: -0.86px;
+			}
+
+		}
+
+		.section__highlight {
+
+			// background-image: linear-gradient(89deg, #096dff, #00b1ff);
+			font-size: 36px;
+			letter-spacing: -0.81px;
+			line-height: 1;
+			padding-bottom: 5px;
+
+			@screen lg {
+				font-size: 38px;
+				left: -1px;
+				letter-spacing: -0.86px;
+				opacity: 1 !important;
+				position: relative;
+			}
+
+		}
+
+		.section__button {
+
+			margin-top: 36px;
+
+			@screen lg {
+				margin-top: 43px;
+			}
+
+		}
+
+		.section__link--ios {
+
+			background: none;
+			padding-right: 0;
+			margin-right: 0;
+
+			img {
+				height: 51px;
+				margin-bottom: 10px;
+			}
+
+		}
+
+		.section__link--android {
+
+			background: none;
+			padding-right: 0;
+			margin-right: 0;
+
+			img {
+				height: 51px;
+			}
+
+		}
+
+	}
+
+	.section--intro-xcore {
+
+		@screen lg {
+			background-image: url(/img/sections/xcore/intro/bg-home.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 694px;
+			opacity: 0;
+		}
+
+		&.hold {
+			background-size: 65% 78% !important; // Override scrollmagic transition until hold class is removed
+			position: fixed;
+			top: 755px;
+			width: 100vw;
+		}
+
+		.section__graphic {
+			background-image: url(/img/sections/xcore/intro/graphic.png);
+			background-position: top left;
+			background-repeat: no-repeat;
+			background-size: contain;
+			display: block;
+			height: 100%;
+			left: -11vw;
+			position: absolute;
+			top: 0;
+			transform: scale(1.5);
+			width: 100%;
+		}
+
+	}
+
+	.section--intro-inxt.hold {
+		margin-top: 714px; // The height of the previous section plus 2x 10px margins
+	}
+
+}

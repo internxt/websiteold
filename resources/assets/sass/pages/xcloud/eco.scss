@@ -1,0 +1,662 @@
+#page--xcloud-eco {
+
+	// Disable gradient background for section
+	// highlights on smaller viewports
+	.section__highlight {
+
+		background-image: none;
+		-webkit-text-fill-color: inherit;
+		background-clip: inherit;
+		-webkit-background-clip: inherit;
+
+		@screen lg {
+			// reinstate gradient background
+			background-clip: text;
+			-webkit-background-clip: text;
+			text-fill-color: transparent;
+			-webkit-text-fill-color: transparent;
+		}
+
+	}
+
+	.section--xcloud-header-eco {
+
+		background-image: url('/img/sections/xcloud/eco/header-mobile.jpg');
+		background-position: top right 32%;
+		height: 803px;
+
+		@screen lg {
+			background-image: url('/img/sections/xcloud/eco/header.jpg');
+			background-position: top -30px center;
+			background-size: 100%;
+		}
+
+		.container {
+
+			padding-top: 331px;
+
+			@apply
+				.items-center
+				.justify-start
+			;
+
+		}
+
+		.section__heading {
+
+			margin-bottom: 15px;
+
+			@screen lg {
+				font-size: 68px;
+				font-weight: 600;
+				letter-spacing: -1.87px;
+				line-height: 0.69;
+				margin-bottom: 37px;
+				margin-top: 15px;
+			}
+
+		}
+
+		.section__subheading {
+
+			@screen lg {
+				font-size: 23px;
+				font-weight: 600;
+				letter-spacing: 1.06px;
+			}
+
+		}
+
+	}
+
+	// The default background colour for the plans banner is
+	// grey, but so is the first section of the eco page.
+	// Here it's overridden so the sections contrast.
+	.section--xcloud-free-plans {
+		background-color: white;
+	}
+
+	.section--xcloud-eco-quote {
+
+		color: #202124;
+		padding: 109px 28px 0;
+		text-align: left;
+
+		@screen lg {
+
+			padding: 133px 0 30px;
+
+	  		@apply
+				.bg-body-bg
+				.text-center
+			;
+
+		}
+
+		.container {
+
+			@apply
+				.flex
+				.flex-col
+				.items-center
+			;
+
+		}
+
+		.testimonial {
+
+			&__body {
+
+				font-size: 25px;
+				font-weight: 500;
+				letter-spacing: -0.33px;
+				line-height: 1.36;
+				margin-bottom: 42px;
+				max-width: 741px;
+
+				@screen lg {
+					margin-bottom: 30px;
+				}
+
+			}
+
+			&__source {
+
+				color: #202124;
+				font-size: 17px;
+				font-weight: 500;
+				letter-spacing: -0.2px;
+				line-height: 1.41;
+				margin-bottom: 5px;
+
+				@screen lg {
+					margin-bottom: 6px;
+				}
+
+			}
+
+			&__description {
+
+				font-size: 17px;
+				line-height: 1.41;
+				letter-spacing: -0.2px;
+
+				@apply
+					.text-text-lighter
+				;
+
+			}
+
+		}
+
+	}
+
+	.section--xcloud-eco-issues {
+
+		padding-bottom: 100px;
+		padding-top: 109px;
+
+		@screen lg {
+
+			padding-bottom: 123px;
+			padding-top: 65px;
+
+			@apply
+				.bg-body-bg
+			;
+
+		}
+
+		.container {
+
+			@apply
+				.flex
+				.flex-col
+				.items-center
+			;
+
+			@screen lg {
+
+				@apply
+					.flex-row
+					.justify-center
+				;
+
+			}
+
+		}
+
+		.issue {
+
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 3px;
+			height: 648px;
+			padding: 0 26px;
+			position: relative;
+  			width: 359px;
+
+			@screen lg {
+				margin: 0 10px;
+				padding: 0 41px;
+				width: 480px;
+			}
+
+			&--temperatures {
+
+				background-image: url('/img/sections/xcloud/eco/issues/temperatures-mobile.jpg');
+  				margin-bottom: 28px;
+
+				@screen lg {
+					background-image: url('/img/sections/xcloud/eco/issues/temperatures.jpg');
+					margin-bottom: 0;
+				}
+
+			}
+
+			&--evidence {
+
+				background-image: url('/img/sections/xcloud/eco/issues/evidence-mobile.jpg');
+
+				@screen lg {
+					background-image: url('/img/sections/xcloud/eco/issues/evidence.jpg');
+					padding-left: 42px;
+				}
+
+			}
+
+			&__heading {
+
+				bottom: 84px;
+				color: white;
+				font-size: 33px;
+				font-weight: 500;
+				letter-spacing: -0.3px;
+				line-height: 1.18;
+				position: absolute;
+
+				@screen lg {
+					bottom: 83px;
+					line-height: 1.18;
+					width: 398px;
+				}
+
+			}
+
+		}
+
+	}
+
+	.section--xcloud-eco-saving {
+
+		padding: 0 28px;
+
+		@screen lg {
+			padding: 122px 0 0 0;
+		}
+
+		.container {
+
+			@apply
+				.flex
+				.flex-col
+			;
+
+			@screen lg {
+
+				@apply
+					.items-center
+				;
+
+			}
+
+		}
+
+		.section__heading {
+
+			font-size: 32px;
+			font-weight: 600;
+			line-height: 1.19;
+			letter-spacing: -0.72px;
+			margin-bottom: 39px;
+
+			@apply
+				.text-text
+			;
+
+			@screen lg {
+				color: #141414;
+				font-size: 40px;
+				font-weight: 600;
+				letter-spacing: -1.1px;
+				line-height: 1.18;
+				margin-bottom: 49px;
+				max-width: 880px;
+				text-align: center;
+			}
+
+		}
+
+		.section__highlight {
+
+			font-size: 32px;
+			font-weight: 500;
+			line-height: 1.13;
+			letter-spacing: -0.72px;
+
+  			@screen lg {
+				background-image: linear-gradient(88deg, #1d976c, #3bcc56);
+				font-size: 40px;
+				font-weight: 600;
+				letter-spacing: -1.1px;
+				line-height: 1.18;
+				text-align: center;
+  			}
+
+		}
+
+		.section__link {
+
+			background-image: url('/img/icons/arrow-blue-bold.svg');
+			color: #006deb;
+			font-size: 18px;
+			font-weight: 600;
+			letter-spacing: 0.72px;
+			margin-right: 0;
+			width: 298px;
+
+			@screen lg {
+				position: relative;
+				left: 1px;
+			}
+
+		}
+
+	}
+
+	.section--xcloud-eco-comparison {
+
+		padding-bottom: 0;
+
+		@screen lg {
+			padding-bottom: 222px;
+		}
+
+		.container {
+
+			@screen lg {
+				max-width: 1148px;
+				width: 1148px;
+			}
+
+		}
+
+		.section__heading {
+
+			padding-bottom: 0;
+
+			@screen lg {
+				padding-bottom: 222px;
+			}
+
+		}
+
+		.section__highlight {
+
+			@screen lg {
+  				background-image: linear-gradient(89deg, #1d976c 6%, #3bcc56 84%);
+			}
+
+		}
+
+	}
+
+	.section--xcloud-eco-separator {
+
+		background-color: #d6d6d6;
+		height: 1px;
+		margin: 73px auto;
+		width: 350px;
+
+		@screen lg {
+			margin: 192px auto;
+			width: 985px;
+		}
+
+	}
+
+	.section--xcloud-eco-video {
+
+  		background-image: url('/img/sections/xcloud/eco/video/bg-mobile.jpg');
+  		background-repeat: no-repeat;
+  		background-size: cover;
+  		color: white;
+  		height: 775px;
+  		text-align: center;
+
+  		@screen lg {
+  			background-image: url('/img/sections/xcloud/eco/video/bg.jpg');
+  		}
+
+  		.container {
+
+  			@apply
+  				.flex
+  				.flex-col
+  				.h-full
+  				.items-center
+  				.justify-center
+  			;
+
+  		}
+
+  		.section__content {
+
+  			top: -10px;
+
+			@apply
+  				.flex
+  				.flex-col
+  				.h-full
+  				.items-center
+  				.justify-center
+  				.relative
+  			;
+
+  		}
+
+  		.section__heading {
+
+  			color: white;
+			font-size: 40px;
+			font-weight: bold;
+			letter-spacing: -0.7px;
+			line-height: 1.18;
+			margin-bottom: 15px;
+
+			@screen lg {
+				margin-bottom: 16px;
+			}
+
+  		}
+
+  		.section__subheading {
+
+			font-size: 23px;
+			font-weight: 500;
+			letter-spacing: -0.4px;
+			line-height: 1.57;
+			width: 285px;
+
+			@screen lg {
+				width: 473px;
+			}
+
+  		}
+
+  		.section__button {
+
+  			background-color: transparent;
+			background-image: url('/img/icons/play-button.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			border-radius: 50%;
+			height: 98px;
+			margin-top: 38px;
+			opacity: 0.9;
+			transition: opacity 0.3s;
+			width: 98px;
+
+			@screen lg {
+				margin-top: 45px;
+			}
+
+			&:hover,
+			&:focus {
+				opacity: 1 !important;
+			}
+
+  		}
+
+	}
+
+	.section--xcloud-eco-partners {
+
+		padding: 117px 28px 128px;
+
+		@apply
+			.bg-body-bg
+		;
+
+		@screen lg {
+			padding: 159px 0 144px 0;
+		}
+
+		.container {
+
+			@screen lg {
+
+				@apply
+					.flex
+					.items-center
+					.justify-around
+				;
+
+			}
+
+		}
+
+		.section__heading {
+
+			font-size: 32px;
+			font-weight: 600;
+			line-height: 1.19;
+			letter-spacing: -0.72px;
+			margin-bottom: 59px;
+
+			@apply
+				.text-text
+			;
+
+			@screen lg {
+				color: #141414;
+				left: -7px;
+				letter-spacing: -1px;
+				line-height: 1.25;
+				margin-bottom: 0;
+				max-width: 756px;
+				position: relative;
+			}
+
+		}
+
+		.section__highlight {
+
+			font-size: 32px;
+
+			@screen lg {
+				background-image: linear-gradient(88deg, #1d976c 3%, #3bcc56 95%);
+				display: block;
+				text-indent: 233px;
+				position: relative;
+				top: -39px;
+			}
+
+		}
+
+		.section__image {
+
+			height: 136px;
+			left: 12px;
+			object-fit: contain;
+			position: relative;
+			width: 136px;
+
+			@screen lg {
+				height: 134px;
+				left: -2px;
+				top: -15px;
+				width: 134px;
+			}
+
+		}
+
+	}
+
+	.section--xcloud-eco-plans {
+
+		margin-bottom: 215px;
+		padding: 114px 28px 0;
+
+		@screen lg {
+			margin-bottom: 0;
+			padding: 131px 0 0 0;
+		}
+
+		.container {
+
+			@screen lg {
+				max-width: 1130px;
+				width: 1130px;
+			}
+
+		}
+
+		.section__heading {
+
+			font-size: 32px;
+			font-weight: 600;
+			letter-spacing: -0.72px;
+			line-height: 1.19;
+			margin-bottom: 60px;
+			max-width: 370px;
+
+			@apply
+				.text-text
+			;
+
+			@screen lg {
+				left: -15px;
+  				letter-spacing: -1px;
+  				margin-bottom: 100px;
+  				max-width: none;
+				position: relative;
+				text-align: center;
+			}
+
+		}
+
+		.section__highlight {
+
+			font-size: 32px;
+			font-weight: 600;
+			letter-spacing: -0.72px;
+			line-height: 1.19;
+
+			@screen lg {
+				background-image: linear-gradient(86deg, #1d976c, #3bcc56);
+			}
+
+		}
+
+		.plan-wrapper.plan--pro {
+
+			@screen lg {
+				height: 406px;
+				margin-bottom: 200px;
+			}
+
+		}
+
+		.plan--pro {
+
+			margin-bottom: 114px;
+
+			&::after {
+				background-image: url('/img/icons/tree.svg');
+				background-position: right top;
+				background-repeat: no-repeat;
+				background-size: 16.6px 18.9px;
+				bottom: -55px;
+				color: #141414;
+				content: 'Included';
+				font-size: 20px;
+				font-weight: 600;
+				left: 77px;
+				letter-spacing: -0.63px;
+				line-height: 1;
+				padding-right: 25px;
+				position: absolute;
+			}
+
+		}
+
+	}
+
+	// Override section highlight rule on page
+	.section--intro-xcore .section__highlight {
+		background-image: linear-gradient(86deg, #8952ff, #9666ff);
+	}
+
+}

@@ -1,0 +1,59 @@
+.section--inxt-promo {
+
+    background-image: url('/img/sections/inxt/promo/bg.jpg');
+    background-position: right 16% top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 660px;
+    margin: 10px 0;
+    padding-bottom: 128.7px;
+
+    @apply
+        .flex
+        .flex-col
+        .items-center
+        .justify-end
+    ;
+
+    @screen lg {
+        background-position: center top;
+        height: 518px;
+        justify-content: center;
+        padding-bottom: 0;
+    }
+
+    .container {
+
+        text-align: center;
+
+        @screen lg {
+            text-align: left;
+        }
+
+    }
+
+    .section__heading {
+
+        color: white;
+        font-size: 28px;
+        font-weight: 500;
+        letter-spacing: -0.2px;
+        line-height: 1.18;
+        max-width: 360px;
+        margin: 0 auto;
+
+        @screen lg {
+            margin: 0;
+            max-width: 365px;
+        }
+
+    }
+
+    .section__button {
+        background-color: rgba(black, 0.1);
+        background-image: url('/img/icons/arrow-white.svg');
+        color: white;
+        margin-top: 38px;
+    }
+
+}

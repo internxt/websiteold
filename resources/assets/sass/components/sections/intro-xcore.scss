@@ -1,0 +1,148 @@
+.section--intro-xcore {
+
+	background-image: url('/img/sections/xcore/intro/bg-desktop.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	color: white;
+	height: 660px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding-bottom: 81.7px;
+	position: relative;
+
+	@apply
+		.bg-xcore-purple
+		.flex
+		.items-end
+	;
+
+	@screen lg {
+
+		height: 560px;
+		min-height: 560px;
+		padding-bottom: 0;
+
+		@apply
+			.bg-xcore-purple
+			.flex
+			.items-center
+		;
+
+	}
+
+	.section__graphic {
+		display: none; // Only shown on homepage
+	}
+
+	.container {
+
+		@screen lg {
+
+			width: 988.40px;
+
+			@apply
+				.justify-end
+				.flex
+			;
+		}
+
+	}
+
+	.section__content {
+
+		@apply
+			.flex
+			.flex-col
+			.h-full
+			.items-center
+			.justify-center
+			.text-center
+		;
+
+		@screen lg {
+
+			padding-left: 160px;
+			text-align: left;
+			width: 50%;
+			position: relative;
+			top: -20px;
+
+			@apply
+				.items-start
+			;
+
+		}
+
+	}
+
+	.section__icon {
+		margin-bottom: 10px;
+	}
+
+	.section__heading {
+		color: white;
+		font-size: 38px;
+		letter-spacing: -0.26px;
+		width: 380px;
+	}
+
+	.section__highlight {
+
+		background-image: linear-gradient(86deg, #8952ff, #9666ff);
+		display: block;
+		font-size: 38px;
+		position: relative;
+		top: -12px;
+
+		@screen lg {
+            background-image: linear-gradient(86deg, #8952ff, #9666ff);
+            line-height: 1;
+            padding-bottom: 5px;
+            top: -8px;
+		}
+
+	}
+
+	.section__link-container {
+		margin-top: 35px;
+	}
+
+	.section__link {
+
+		background-color: transparent;
+		background-image: url('/img/icons/arrow-white-small.svg');
+		background-position: right 2px center;
+		background-repeat: no-repeat;
+		color: white;
+		font-size: 12.3px;
+		font-weight: 600;
+		letter-spacing: 0.45px;
+		margin-right: 25px;
+		margin-top: 0;
+		text-transform: uppercase;
+		padding-right: 19px;
+		transition: background-position 0.2s;
+
+		@screen lg {
+  			font-size: 15px;
+  			letter-spacing: 0.6px;
+			margin-top: 0px;
+		}
+
+		&--download {
+
+			display: none;
+
+			@screen lg {
+				display: inline-block;
+			}
+
+		}
+
+		&:hover {
+			background-position: right 0 center;
+		}
+
+	}
+
+}

@@ -1,0 +1,311 @@
+.section--resources-header {
+
+	background-image: url('/img/sections/resources/header.jpg');
+	background-position: center;
+	background-size: 101%;
+	height: 795px;
+
+	.container {
+		align-items: center;
+	}
+
+	.section__heading {
+		color: white;
+		font-size: 55px;
+		font-weight: 600;
+		letter-spacing: -1px;
+		line-height: 1;
+		text-align: center;
+	}
+
+}
+
+.section--resources-logos {
+
+	padding-top: 116px;
+	padding-bottom: 79px;
+
+	.container {
+		width: 1095px;
+	}
+
+	.section__heading {
+
+		font-size: 38px;
+		font-stretch: normal;
+		font-style: normal;
+		font-weight: 600;
+		letter-spacing: -1.16px;
+		line-height: 0.95;
+		margin-bottom: 48px;
+		text-align: center;
+
+  		@apply
+  			.text-text
+  		;
+
+	}
+
+	.logos {
+
+		@apply
+			.flex
+			.flex-wrap
+		;
+
+	}
+
+	.logo {
+
+		margin-bottom: 60px;
+		width: 355px;
+
+		&:nth-child(3n+2) {
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+
+	}
+
+	.logo__image {
+
+		height: 185px;
+		margin-bottom: 20px;
+		transition: margin 0.2s;
+
+		&:hover {
+			margin-bottom: 25px;
+			margin-top: -5px;
+		}
+
+	}
+
+	.logo__caption {
+
+		font-size: 16px;
+		font-weight: 500;
+		letter-spacing: -0.19px;
+		line-height: 1.63;
+		text-align: center;
+
+		@apply
+			.text-text
+		;
+
+	}
+
+}
+
+.section--resources-post-images {
+
+	padding-bottom: 160px;
+	padding-top: 110px;
+
+	@apply
+		.bg-body-bg
+	;
+
+	.section__heading {
+
+		font-size: 38px;
+		font-stretch: normal;
+		font-style: normal;
+		font-weight: 600;
+		letter-spacing: -1.16px;
+		line-height: 0.95;
+		margin-bottom: 57px;
+		text-align: center;
+
+		@apply
+			.text-text
+		;
+
+	}
+
+	.images {
+
+		@apply
+			.flex
+			.flex-wrap
+		;
+
+	}
+
+	.image-link {
+
+		height: 285px;
+		object-fit: contain;
+		width: 355px;
+		margin-bottom: 14px;
+		transition: filter 0.2s;
+
+		&:nth-child(3n+2) {
+			margin-left: 14px;
+			margin-right: 14px;
+		}
+
+		&:hover {
+			filter: brightness(85%);
+		}
+
+	}
+
+}
+
+.section--resources-whitepaper {
+
+	padding: 150px 0;
+
+	.section__content {
+
+		@screen lg {
+			position: relative;
+			left: 3px;
+			width: 394px;
+		}
+
+	}
+
+	.section__heading {
+
+		font-size: 38px;
+		font-stretch: normal;
+		font-style: normal;
+		font-weight: 600;
+		letter-spacing: -1.16px;
+		line-height: 0.95;
+		margin-bottom: 13px;
+
+		@apply
+			.text-text
+		;
+
+	}
+
+	.section__explanation {
+
+		font-size: 17px;
+		font-stretch: normal;
+		font-style: normal;
+		font-weight: 450;
+		left: 1px;
+		letter-spacing: -0.2px;
+		line-height: 1.53;
+		position: relative;
+
+  		@apply
+  			.text-text-lighter
+  		;
+
+	}
+
+	.section__button {
+		margin-top: 35px;
+		width: 115px;
+	}
+
+	.section__image {
+		height: 346px;
+		left: -4px;
+		top: 1px;
+		object-fit: contain;
+		position: relative;
+		width: 561px;
+	}
+
+}
+
+.section--resources-colour-palette {
+
+	margin-bottom: 10px;
+	padding-top: 157px;
+	padding-bottom: 167px;
+
+	@apply
+		.bg-body-bg
+	;
+
+
+	.colours {
+
+		@apply
+			.flex
+			.flex-wrap
+		;
+
+	}
+
+	.colour {
+
+		margin-bottom: 60px;
+
+		&__preview {
+
+  			height: 185px;
+  			margin-bottom: 21px;
+  			width: 355px;
+
+  			@apply
+  				.flex
+  				.items-center
+  				.justify-center
+  			;
+
+		}
+
+		&__label {
+			color: white;
+			font-size: 19px;
+			font-weight: 600;
+		}
+
+		&__caption {
+
+			font-size: 15px;
+			font-weight: 600;
+			line-height: 1.73;
+			text-align: center;
+
+			@apply
+				.text-text
+			;
+
+		}
+
+		&:nth-child(3n+2) {
+			margin-left: 14px;
+			margin-right: 14px;
+		}
+
+		$colours: (
+			"black": #19191a,
+			"blue": #0492ff,
+			"purple": #5b4ade,
+		);
+
+		$gradients: (
+			"internxt-gradient": linear-gradient(242deg, #3b3b3d, #19191a),
+			"xcloud-gradient": linear-gradient(62deg, #096dff, #00b1ff),
+			"xcore-gradient": linear-gradient(62deg, #9556e6, #7569ee 54%, #5778ee)
+		);
+
+		@each $name, $colour in $colours {
+
+			&--#{$name} .colour__preview {
+				background-color: $colour;
+			}
+
+		}
+
+		@each $name, $gradient in $gradients {
+
+			&--#{$name} .colour__preview {
+				background-image: $gradient;
+			}
+
+		}
+
+	}
+
+}
+

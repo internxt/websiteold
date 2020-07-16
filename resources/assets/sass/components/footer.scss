@@ -1,0 +1,210 @@
+.pageFooter {
+
+	@apply
+		.w-full
+	;
+
+	padding-bottom: 42px;
+	padding-left: 38px;
+	padding-right: 27px;
+	padding-top: 64px;
+
+	@screen lg {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.container {
+
+		@apply
+			.mx-auto
+		;
+
+		@screen lg {
+			width: 1070px;
+		}
+
+	}
+
+	&__heading {
+
+		border-top: 1px solid #dcdcdc;
+		font-size: 16px;
+		font-weight: 500;
+		letter-spacing: normal;
+		line-height: 2.25;
+		padding-bottom: 2px;
+		padding-top: 5px;
+
+		&--legal {
+			border-bottom: 1px solid #dcdcdc;
+		}
+
+		@apply
+			.text-text
+		;
+
+		@screen md {
+			font-size: 17px;
+		}
+
+		@screen lg {
+
+			border: none;
+			font-size: 18px;
+			font-weight: normal;
+			font-weight: 600;
+			letter-spacing: -0.11px;
+			line-height: 1.9;
+			padding: 0;
+
+			@apply
+				.text-footer-header
+			;
+
+		}
+
+	}
+
+	&__links {
+
+		@screen lg {
+
+			@apply
+				.flex
+				.justify-between
+			;
+
+		}
+
+	}
+
+	&__link {
+
+		font-size: 15px;
+		line-height: 2.28;
+		transition: color 0.2s;
+
+		@apply
+			.text-footer-link
+		;
+
+		&:hover {
+			color: darken(#8c8c8c, 12%);
+		}
+
+		&.xcore-get-started{
+
+			display: none;
+
+			@screen lg {
+				display: block;
+			}
+
+		}
+
+	}
+
+	&__call {
+
+		font-size: 14px;
+		line-height: 2.44;
+		margin-bottom: 12px;
+		margin-top: 41px;
+
+		@apply
+			.text-footer-link
+		;
+
+		@screen lg {
+			margin-top: 75px;
+			text-align: right;
+		}
+
+	}
+
+	&__separator {
+
+		background-color: #dcdcdc;
+		height: 1px;
+		margin-bottom: 30px;
+		width: 100%;
+
+		@screen lg {
+			display: none;
+		}
+
+	}
+
+	&__copyrightRow {
+
+		@screen lg {
+
+			padding-top: 27px;
+
+			@apply
+				.flex
+				.justify-between
+				.border-t
+				.border-separator
+			;
+
+		}
+
+	}
+
+	&__copyright {
+
+		font-size: 13px;
+		line-height: 2.44;
+
+		@apply
+			.text-footer-link
+		;
+
+		@screen lg {
+			font-size: 14px;
+		}
+
+	}
+
+
+	&__socialMediaLinks {
+
+		margin-top: 30px;
+		padding-right: 20px; // To account for uneven padding on footer
+
+		@apply
+			.flex
+			.justify-center
+		;
+
+		@screen lg {
+			margin-top: 0;
+			padding-right: 0;
+		}
+
+	}
+
+	&__socialMediaLink {
+
+		height: 36px;
+		margin-left: 8px;
+		transition: background-color 0.2s;
+		width: 36px;
+
+		@apply
+  			.bg-sm-bg
+  			.flex
+  			.items-center
+  			.justify-center
+  			.rounded-full
+  		;
+
+		&:hover {
+			background-color: darken(#f2f2f2, 8%);
+		}
+
+	}
+
+}
