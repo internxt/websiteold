@@ -93,7 +93,7 @@
 						</p>
 						<button class="member__link">Open Bio</button>
 					</div>
-					<img loading="lazy" class="member__image" src="{{ asset('img/sections/about/team/gtormo2.jpg') }}" alt="Gonzalo Tormo">
+					<img loading="lazy" class="member__image" src="{{ asset('img/sections/about/team/gtormo-bw.jpg') }}" alt="Gonzalo Tormo">
 				</div>
 				<div class="member">
 					<div class="section__content">

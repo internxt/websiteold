@@ -1,5 +1,7 @@
 <div class="inxt-buy-form">
     @php
+        session_start();
+
         $urlBTC = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?CMC_PRO_API_KEY=ad054d41-e820-4ebb-805b-dabf899a49ff&symbol=INXT&convert=BTC";
         $urlETH = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?CMC_PRO_API_KEY=ad054d41-e820-4ebb-805b-dabf899a49ff&symbol=INXT&convert=ETH";
         $urlLTC = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?CMC_PRO_API_KEY=ad054d41-e820-4ebb-805b-dabf899a49ff&symbol=INXT&convert=LTC";
@@ -29,14 +31,26 @@
 
             try {
                 $response = $sendgrid->send($email);
+                $_SESSION['email_sended'] = 'sended';
             } catch (Exception $e) {
                 // echo 'Caught exception: ',  $e->getMessage(), "\n";
             }
         }
 
         if(isset($_GET['submit'])) {
-            if (isset($_GET['deposit']) && isset($_GET['currency']) && isset($_GET['receive']) && isset($_GET['receiveAddr']) && isset($_GET['addr'])) {
-                sendMail($_GET['deposit'], $_GET['currency'], $_GET['receive'], 'INXT', $_GET['receiveAddr'], $_GET['addr']);
+            if (
+                isset($_GET['deposit'])
+                && isset($_GET['currency']) && $_GET['deposit'] != ''
+                && isset($_GET['receive']) && $_GET['receive'] != ''
+                && isset($_GET['receiveAddr']) && $_GET['receiveAddr'] != '' && preg_match("/^(0x)?[0-9a-fA-F]{40}$/", $_GET['receiveAddr'])
+                && isset($_GET['addr']) && $_GET['addr'] != ''
+            ) {
+                if (!isset($_SESSION['email_sended'])) {
+                    sendMail($_GET['deposit'], $_GET['currency'], $_GET['receive'], 'INXT.', $_GET['receiveAddr'], $_GET['addr']);
+                }
+
+                header("Location: https://internxt.com/inxt/buy?submit=");
+                die();
             }
         }
     @endphp
@@ -54,7 +68,7 @@
             <div class="__section-buy">
                 <div style="width: 45%">
                     <label for="deposit" style="display: flex;">Deposit</label>
-                    <input type="number" class="form-control" id="deposit" name="deposit" placeholder="0" required />
+                    <input type="number" step="any" class="form-control" id="deposit" name="deposit" placeholder="0" required />
                 </div>
                 
                 <div style="width: 45%">
