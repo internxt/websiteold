@@ -1,7 +1,5 @@
 <div class="inxt-buy-form">
     @php
-        session_start();
-
         $urlBTC = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?CMC_PRO_API_KEY=ad054d41-e820-4ebb-805b-dabf899a49ff&symbol=INXT&convert=BTC";
         $urlETH = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?CMC_PRO_API_KEY=ad054d41-e820-4ebb-805b-dabf899a49ff&symbol=INXT&convert=ETH";
         $urlLTC = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?CMC_PRO_API_KEY=ad054d41-e820-4ebb-805b-dabf899a49ff&symbol=INXT&convert=LTC";
@@ -11,7 +9,25 @@
         $resultETH = file_get_contents( $urlETH, false, $context );
         $resultLTC = file_get_contents( $urlLTC, false, $context );
 
-        function sendMail($deposit, $currency, $receive, $currencyReceive, $receivingAddr, $inxtAddr) {
+        function checkRecaptcha($token) {
+            $curl = curl_init();
+            curl_setopt($curl, CURLOPT_URL,"https://www.google.com/recaptcha/api/siteverify");
+            curl_setopt($curl, CURLOPT_POST, 1);
+            curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query(array('secret' => env('RECAPTCHA_V3_SK'), 'response' => $token)));
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+            $response = curl_exec($curl);
+            curl_close($curl);
+
+            $arrResponse = json_decode($response, true);
+            
+            if ($arrResponse["success"] == '1' ?? null && $arrResponse["action"] == $action ?? null) {
+                return $arrResponse["score"] ?? false;
+            } else {
+                return false;
+            }
+        }
+
+        function sendMail($deposit, $currency, $receive, $currencyReceive, $receivingAddr, $inxtAddr, $score) {
             $email = new \SendGrid\Mail\Mail();
             $email->setFrom("inxt@internxt.com");
             $email->setSubject("New Crypto INXT Request");
@@ -25,6 +41,7 @@
                         <li>Currency Receive: $currencyReceive</li>
                         <li>Receiving Address: $receivingAddr</li>
                         <li>Internxt Address: $inxtAddr</li>
+                        <li>Human score: $score</li>
                     </ul>"
             );
             $sendgrid = new \SendGrid(env('SENDGRID_API_KEY'));
@@ -38,18 +55,18 @@
         }
 
         if(isset($_GET['submit'])) {
+            $score = checkRecaptcha($_GET['recaptcha_token'] ?? null);
             if (
                 isset($_GET['deposit'])
                 && isset($_GET['currency']) && $_GET['deposit'] != ''
                 && isset($_GET['receive']) && $_GET['receive'] != ''
-                && isset($_GET['receiveAddr']) && $_GET['receiveAddr'] != '' && preg_match("/^(0x)?[0-9a-fA-F]{40}$/", $_GET['receiveAddr'])
+                && isset($_GET['receiveAddr']) && preg_match("/^0x[0-9a-fA-F]{40}$/", $_GET['receiveAddr'])
                 && isset($_GET['addr']) && $_GET['addr'] != ''
+                && $score > 0.5
             ) {
-                if (!isset($_SESSION['email_sended'])) {
-                    sendMail($_GET['deposit'], $_GET['currency'], $_GET['receive'], 'INXT.', $_GET['receiveAddr'], $_GET['addr']);
-                }
+                sendMail($_GET['deposit'], $_GET['currency'], $_GET['receive'], 'INXT.', $_GET['receiveAddr'], $_GET['addr'], $score);
 
-                header("Location: https://internxt.com/inxt/buy?submit=");
+                header("Location: https://internxt.com/inxt/buy?submit=#successForm");
                 die();
             }
         }
@@ -65,6 +82,7 @@
         </div>
     @else
         <form id="inxtBuyForm" class="__inxt-buy-form-section" method="GET">
+            <input id="recaptcha" name="recaptcha_token" type="hidden" />
             <div class="__section-buy">
                 <div style="width: 45%">
                     <label for="deposit" style="display: flex;">Deposit</label>
@@ -102,7 +120,7 @@
             <div class="__section-buy">
                 <div style="width: 100%">
                 <label for="receivedAddr" style="display: flex;">Please enter your INXT receiving address</label>
-                    <input id="receivedAddr" name="receiveAddr" type="text" class="form-control" placeholder="INXT Receiving address" required/>
+                    <input id="receivedAddr" name="receiveAddr" type="text" class="form-control" placeholder="INXT Receiving address" pattern="^0x[0-9a-zA-Z]{40}$" oninvalid="this.setCustomValidity('Invalid INXT address. Please insert a valid address')" required/>
                 </div>
                 
             </div>
@@ -119,7 +137,7 @@
             <input type="text" class="invisible">
 
             <div class="__section-buy" style="margin: auto; width: 20%">
-                <button type="submit" name="submit" class="w-full btn rounded-pill btn-outline-light __btn-content-primary">Done</button>
+                <button id="inxt-buy-submit" type="submit" name="submit" class="w-full btn rounded-pill btn-outline-light __btn-content-primary">Done</button>
             </div>
 
             
@@ -176,5 +194,16 @@
             $('#receive').val(receiveINXT);
         }
     });
+
+    $('#inxtBuyForm').submit(function (e) {
+      e.preventDefault();
+      grecaptcha.ready(function() {
+          grecaptcha.execute('<?=env('RECAPTCHA_V3_PK');?>', { action: 'buy_inxt' }).then(function(token) {
+            $('input#recaptcha').val(token)
+            $('#inxtBuyForm').unbind('submit')
+            $('#inxt-buy-submit').click()
+          })
+      })
+    })
 </script>
 @endpush

@@ -23,6 +23,7 @@
 
         <meta name="description" content="@yield('metaDescription')">
 
+        <script src="https://www.google.com/recaptcha/api.js?render=<?=env('RECAPTCHA_V3_PK');?>"></script>
         <script src="{{ asset('js/load.js') }}"></script>
 
         <script src="https://kit.fontawesome.com/b5adb1202b.js"></script>
