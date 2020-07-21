@@ -198,7 +198,7 @@
     $('#inxtBuyForm').submit(function (e) {
       e.preventDefault();
       grecaptcha.ready(function() {
-          grecaptcha.execute('<?=env('RECAPTCHA_V3_PK');?>', { action: 'buy_inxt' }).then(function(token) {
+          grecaptcha.execute('{{ env('RECAPTCHA_V3_PK') }}', { action: 'buy_inxt' }).then(function(token) {
             $('input#recaptcha').val(token)
             $('#inxtBuyForm').unbind('submit')
             $('#inxt-buy-submit').click()
