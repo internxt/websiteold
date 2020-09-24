@@ -11,19 +11,7 @@
 	<section class="section section--header section--xcloud-header-overview">
 	    <div id="driveSlideMobile" class="__content-home">
 	    
-
-	        <!-- <img class="section__image section__image--ipad" src="{{ asset('img/sections/home/ipad.png') }}" alt="X Cloud on your iPad">
-	        <img class="section__image section__image--phone" src="{{ asset('img/sections/home/phone.png') }}" alt="X Cloud on your iPhone">
-	        <img class="section__image section__image--laptop" src="{{ asset('img/sections/home/laptop.png') }}" alt="X Cloud on your Macbook"> -->
-
-	        
-	            
-				
 				<div class="__mobile-home-content" style="height: 58vh !important;">
-
-					<!-- <div class="section__icon-container">
-						<img class="relative section__icon" src="{{ asset('img/logos/drive-logo.svg') }}" alt="Introducing X Cloud">
-					</div> -->
 
 					<p class="relative section__heading">Internxt Drive</p>
 					<p class="section__highlight">Secure file storage</p>

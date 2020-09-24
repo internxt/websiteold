@@ -11,7 +11,7 @@
 |
 */
 
-Route::view('/', 'home')->name('home');
+Route::view('/', 'drive.home')->name('home');
 
 Route::prefix('drive')->name('xcloud.')->group(function () {
 
