@@ -12440,12 +12440,6 @@ input[type=radio] + label:before {
 }
 
 /* background-colors */
-.bg-light {
-  background-color: #ffffff !important;
-}
-.bg-dark {
-  background-color: #2F1893 !important;
-}
 .bg-main {
   background-color: #232340;
 }

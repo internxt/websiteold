@@ -1,4 +1,4 @@
-<header id="__header">
+<section id="__header" style="z-index: 5; background-color: transparent;">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
 
@@ -44,4 +44,4 @@
             <div><a class="nav-link __link-login" href="https://drive.internxt.com/login" style="color:#FFFF">SIGN IN</a></div>
         </div>
     </nav>
-</header>
+</section>
