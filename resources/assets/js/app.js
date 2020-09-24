@@ -545,7 +545,7 @@ $(document).ready(() => {
 				new TweenMax.fromTo(selector, 2, {
 						'background-size': '122%',
 					},{
-						'background-size': '107%',
+						'background-size': '130%',
 						ease: Power2.easeOut,
 					}
 				),

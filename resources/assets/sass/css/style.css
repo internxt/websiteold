@@ -474,6 +474,7 @@ b, strong {
   }
 }
 /* 3. Headers */
+
 @media (max-width: 767.98px) {
   .header_1 .text-adaptive {
     margin-top: 20px;

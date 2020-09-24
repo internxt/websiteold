@@ -1,6 +1,6 @@
 <section id="__header" style="position: absolute; width: 100%; z-index: 2;">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light">
 
             <a class="navbar-brand" href="/">
                 @if(
