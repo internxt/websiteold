@@ -442,8 +442,6 @@ footer > div {
 
         <div id='content' class='flex-1 w-full mx-auto'>
 
-            @include('_includes.navbar.newNavBar')
-
             @yield('body')
 
         </div>
