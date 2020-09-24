@@ -28,9 +28,6 @@
         <div class="__sections">
           <div class="__section section0">
 					
-                @include('_includes.navbar.newNavBar')
-
-
 				<section id="driveSlideMobile" class="__content-home">
 						
 					<div class="__mobile-home-content">

@@ -2,7 +2,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
 
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
                 @if(
                     Route::currentRouteName() == "xcore.overview" || 
                     Route::currentRouteName() == "inxt.overview" || 
