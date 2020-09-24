@@ -30,6 +30,9 @@
                     <a class="nav-link" href="{{ route('xcloud.overview') }}" style="color: {{ $textColor }} !important">DRIVE</a>
                 </li>
                 <li class="nav-item active">
+                    <a class="nav-link" href="/inxt" style="color: {{ $textColor }} !important">TOKEN</a>
+                </li>
+                <li class="nav-item active">
                     <a class="nav-link" href="https://send.internxt.com/" style="color: {{ $textColor }} !important">SEND</a>
                 </li>
                 <li class="nav-item active">

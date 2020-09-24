@@ -10,6 +10,10 @@
 				<img loading="lazy" class="link__image" src="{{ asset('img/sections/inxt/exchanges/exrates.png') }}" alt="Exrates">
 			</a>
 
+			<a class="link link--mercatox" href="https://app.uniswap.org/#/swap?outputCurrency=0xa8006C4ca56F24d6836727D106349320dB7fEF82" rel="nofollow" target="_blank">
+				<img loading="lazy" class="link__image" src="{{ asset('img/sections/inxt/exchanges/uniswap.png') }}" alt="Uniswap">
+			</a>
+
 			<a class="link link--mercatox" href="https://mercatox.com/exchange/INXT/BTC" rel="nofollow" target="_blank">
 				<img loading="lazy" class="link__image" src="{{ asset('img/sections/inxt/exchanges/mercatox.png') }}" alt="MERCATOX">
 			</a>

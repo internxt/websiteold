@@ -120,7 +120,7 @@
 		<div class="container">
 
 			<p class="section__heading" style="font-weight: 600;">
-				Internxt has partnered with non-profit organization OneTreePlanted. For every year you're subscribed to one of Internxt's premium plans, you'll be helping deforestation by planting a tree across the planet.
+				Internxt has partnered with non-profit organization OneTreePlanted. For every year you're subscribed to one of Internxt's premium plans, you'll be tackling deforestation by planting a tree across the planet.
 			</p>
 
 			<img class="section__image" src="{{ asset('/img/logos/one-tree.png') }}">
@@ -334,7 +334,7 @@
 					<ul>
 						<li>2 TB of storage</li>
 						<li>Secure file sharing</li>
-						<li>Inifite members</li>
+						<li>Infinite members</li>
 					</ul>
 					<ul>
 						<li>End-to-end encryption</li>
@@ -365,7 +365,7 @@
 					<ul>
 						<li>20 TB of storage</li>
 						<li>Secure file sharing</li>
-						<li>Inifite members</li>
+						<li>Infinite members</li>
 					</ul>
 					<ul>
 						<li>End-to-end encryption</li>

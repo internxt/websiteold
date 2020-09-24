@@ -10,7 +10,7 @@
 
 <div class="question-container">
 	<p class="question">What’s the minimum amount of space needed to get paid?</p>
-	<p class="answer">The minimum monthly payout is of €2, which corresponds to 200GB of hosted data. However, you can boost your payout by holding Internxt tokens. Check out our payout calculator in the Internxt Core page</p>
+	<p class="answer">The minimum monthly payout is of €5, which corresponds to 500 GB of hosted data. However, you can boost your payout by holding Internxt tokens. Check out our payout calculator in the Internxt Core page.</p>
 </div>
 
 <div class="question-container">
@@ -25,5 +25,5 @@
 
 <div class="question-container">
 	<p class="question">How often will I get paid?</p>
-	<p class="answer">X Core payouts are usually sent during the first week of each new month.</p>
+	<p class="answer">Internxt Core payouts are usually sent during the first week of each new month.</p>
 </div>

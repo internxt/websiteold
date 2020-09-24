@@ -162,7 +162,7 @@
 		    <div class="section__content">
 				<p class="section__heading" style="font-weight: 600;">Termination or Suspension.</p>
 				<p>Notwithstanding anything contained in this Agreement, we reserve the right, without notice and in our sole discretion, to terminate this Agreement or suspend your right to access the Services. You may terminate this Agreement without notice by discontinuing use of the Services. All rights and licenses granted to you under this Agreement will immediately be revoked upon our termination of the Agreement or our suspension of your access to the Services, and you must immediately submit payment for any fees payable to Internxt under the Agreement (as specified in the Storage Terms).
-				Internxt users can pay for a lifetime plan. A lifetime plan is in effect for the duration of the account owner or 99 years, whichever is shorter. In the event that Internxt ceases its operations within 4 years of starting the lifetime subscription, the user will be eligible for a full refund. If a user loses access to his or her lifetime account, that lifetime account will be deemed as lost. 	
+				Internxt users can pay for a lifetime plan. A lifetime plan is in effect for the duration of the account owner or 99 years, whichever is shorter. Lifetime accounts come with a standard 30 day money-back guarantee. If a user loses access to his or her lifetime account, that lifetime account will be deemed as lost. 	
 				</p>
 			</div>
 		</section>
@@ -205,8 +205,8 @@
 				<p>(b) Except where otherwise indicated via the Storage Services, we will charge all Fees to a payment method designated by you via the Storage Services that is acceptable to us. You represent and warrant that you are authorized to use the payment method you designate via the Storage Services and authorize us to charge all Fees to that method. If your payment method cannot be verified, is invalid, or is not otherwise acceptable, your right to use the Storage Services may be suspended automatically. Fees will be charged on a monthly basis based on the prior month’s usage. You can avoid incurring Fees at any time by discontinuing your use of the Storage Services to store your Storage Materials.</p>
 				<p>(c) Users with a free account who do not log in to their account for a period of one year will be considered inactive. Users will receive an email notice 7 days prior to reaching inactive status. Once a free account reaches that status, its files will be removed from the network in order to free up space for those free users who are actively using their account.</p>
 				<p>(d) Accounts on any of our premium plans who fail to renew their plan within a period of 7 days will be terminated.
-				<p>(e) All users who buy any of Internxt's premium plans will be eligible for a 30 day refund, unless they already receive a 30 day trial period of any of Internxt's premium plan. After those first 30 days using any of our premium plans have passed, no refund will be applicable.
-				<p>(f) Storage Nodes agree to let Internxt generate invoices for them, so that both parties can legally justify the payment Internxt sends to Storage Nodes every month. The invoice will be issued by the Storage Nodes (with the personal details he specifies at sign up), to Internxt. Storage Nodes can contact us and request those invoices at any time.</p>
+				<p>(e) All users who buy any of Internxt's premium plans will be eligible for a 30 day refund, unless they already receive a 30 day trial period of any of Internxt's premium plan. After those first 30 days using any of our premium plans have passed, no refund will be applicable. To request a refund, you should reach out to us via email, at hello@internxt.com.
+				<p>(f) Storage Nodes agree to let Internxt generate invoices on their behalf, so that both parties can legally justify the payment Internxt sends to Storage Nodes every month. The invoice will be issued by the Storage Nodes (with the personal details he specifies at sign up), to Internxt. Storage Nodes can contact us and request those invoices at any time.</p>
 			</div>
 		</section>
 
@@ -314,8 +314,9 @@
 					<a class="__footer-link" href="/core">Core</a>
 					<a class="__footer-link" href="mailto:{{ config('services.internxt.email') }}">Contact</a>
 					<a class="__footer-link" href="https://twitter.com/internxt" target='_blank'>Twitter</a>				
-					<a class="__footer-link" href="https://github.com/internxt" target='_blank'> GitHub</a>				
+					<a class="__footer-link" href="https://github.com/internxt" target='_blank'>GitHub</a>				
 					<a class="__footer-link" href="https://medium.com/internxt" target='_blank'>News</a>
+					<a class="__footer-link" href="https://t.me/internxt" target='_blank'>Community</a>				
 					<a class="__footer-link" href="/terms">Legal</a>
 					<a href="#"></a>
 					<a href="#"></a>

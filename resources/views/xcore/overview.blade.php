@@ -14,7 +14,7 @@
 			<img class="section__icon" src="{{ asset('img/logos/xcore.svg') }}">
 
 			<p class="section__heading" style="font-weight: 600;">Internxt Core</p>
-			<p class="section__highlight" style="font-weight: 600;">Get paid to share</p>
+			<p class="section__highlight" style="font-weight: 600;">For storage providers</p>
 
 
 			<div class="section__link-container hidden lg:inline-block">
@@ -95,8 +95,8 @@
 	<section class="section section--xcore-calculator">
 
 		<div class="container">
-			<p class="section__heading">Calculate how much you can earn from your unused storage space.</p>
-			<p class="section__explanation">The more storage you host and the more INXT you own will calculate to a greater passive income. Below is an estimation of how much you could earn by using Internxt Core.</p>
+			<p class="section__heading">Calculate how much you can earn with Internxt Core.</p>
+			<p class="section__explanation">The more space you host and the more INXT you own will calculate to a greater passive income. You'll get paid by the space that is actually being used in your node. Below is an estimation of how much you can earn by using Internxt Core.</p>
 
 			<x-core-earnings-calculator></x-core-earnings-calculator>
 		</div>

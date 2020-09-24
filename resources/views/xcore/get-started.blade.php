@@ -38,7 +38,7 @@
 			<div class="section__content">
 				<p class="section__label">Step 2</p>
 				<p class="section__heading">Set-up your Core node</p>
-				<p class="section__explanation">Insert your INXT Wallet address, choose where you’d like to store the encrypted shards of data from X Cloud users, allocate the desired storage capacity you want your node to provide and finally, insert your public IP, you can Google “what’s my IP” to find your public IP address. If your IP is dynamic (one that periodically changes), you can use noip and enter your hostname instead. <a href="https://whatismyipaddress.com/dynamic-static" rel="nofollow" target="_blank">Click here</a> to find out whether your public IP is static or dynamic.</p>
+				<p class="section__explanation">Insert your INXT Wallet address, choose where you’d like to store the encrypted shards of data from Drive users, allocate the desired storage capacity you want your node to provide and finally, insert your public IP, you can Google “what’s my IP” to find your public IP address. If your IP is dynamic (one that periodically changes), you can use noip and enter your hostname instead. <a href="https://whatismyipaddress.com/dynamic-static" rel="nofollow" target="_blank">Click here</a> to find out whether your public IP is static or dynamic.</p>
 			</div>
 		</div>
 	</section>
@@ -63,7 +63,7 @@
 			<div class="section__content">
 				<p class="section__label">Step 4</p>
 				<p class="section__heading">You're all set!</p>
-				<p class="section__explanation">Every month we will send you a payout based on how much disk space you got allocated and how much INXT you held. The more time you run the node, the more likely it is that the network will allocate your node files since it will rank you as a higher quality node than that of other users. For any questions, you can <a href="https://t.me/WeAreInternxt" rel="nofollow" target="_blank">join our Telegram community</a> to directly chat with our tech team and other community members.</p>
+				<p class="section__explanation">Every month we will send you a payout based on how much disk space you got allocated and how much INXT you held. The more time you run the node, the more likely it is that the network will allocate your node files since it will rank you as a higher quality node than that of other users. For any questions, you can <a href="https://t.me/Internxt" rel="nofollow" target="_blank">join our Telegram community</a> to directly chat with our tech team and other community members.</p>
 			</div>
 		</div>
 	</section>

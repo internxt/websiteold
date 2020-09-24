@@ -38,7 +38,7 @@
 			<img loading="lazy" class="section__image image--google" src="{{ asset('img/sections/about/associations/google.png') }}" alt="Esade">
 			<img loading="lazy" class="section__image image--stripe" src="{{ asset('img/sections/about/associations/stripe.png') }}" alt="Stripe">
 			<img loading="lazy" class="section__image image--plesk" src="{{ asset('img/sections/about/associations/plesk.png') }}" alt="Lanzadera">
-			<img loading="lazy" class="section__image image--sabadell" src="{{ asset('img/sections/about/associations/sabadell.png') }}" alt="Sabadell">
+			<img loading="lazy" class="section__image image--sabadell" src="{{ asset('img/sections/about/associations/tvc.png') }}" alt="TVC">
 			<img loading="lazy" class="section__image image--blackberry" src="{{ asset('img/sections/about/associations/blackberry.png') }}" alt="Blackberry">
 			<img loading="lazy" class="section__image image--ycombinator" src="{{ asset('img/sections/about/associations/ycombinator.png') }}" alt="Y Combinator">
 
@@ -76,40 +76,54 @@
 			<div class="members">
 				<div class="member">
 					<div class="section__content">
-						<p class="member__name">Fran Villalba Segerra</p>
+						<p class="member__name">Fran Villalba Segarra</p>
 						<p class="member__role">Founder &amp; CEO</p>
-						<p class="member__bio">Fran was <strong>awarded an internship at OnePlus</strong> at an early age and later moved <strong>on to work at Hostinger</strong>, one of the world's largest web hosting companies. Fran then began his journey into entrepreneurship <br class="hidden lg:block"> by launching his <strong>first startup, OneSite,</strong> which had over <strong>10,000 users</strong> within its first few months of operation. Fran has been listed on <strong>The Next Web's T500</strong>, which presents the 500 most talented in the digital scene, and was also <strong>nominated for Forbes 30 Under 30 2017.</strong></p>
+						<p class="member__bio">Fran was <strong>awarded an internship at OnePlus</strong> at an early age and later moved <strong>on to work at Hostinger</strong>. Fran then launched his <strong>first startup, OneSite,</strong> which had over <strong>10,000 users</strong> within its first few months of operation. Fran has been listed on <strong>The Next Web's T500</strong>, which presents the 500 most talented in the digital scene, and was also <strong>nominated for Forbes 30 Under 30 2017.</strong></p>
 						<button class="member__link">Open Bio</button>
 					</div>
 					<img loading="lazy" class="member__image" src="{{ asset('img/sections/about/team/fran.jpg') }}" alt="Fran Villalba Segerra">
 				</div>
 				<div class="member">
 					<div class="section__content">
-						<p class="member__name">Gonzalo Tormo Bas</p>
-						<p class="member__role">Developer</p>
-
-						<p class="member__bio">
-						Gonzalo started programming at the age of 17 and has excellent experience in <strong>JavaScript</strong>, PHP and <strong>backend</strong> development. Gonzalo has worked as a software developer at <strong>cybersecurity</strong> company ESET. 
-						</p>
-						<button class="member__link">Open Bio</button>
-					</div>
-					<img loading="lazy" class="member__image" src="{{ asset('img/sections/about/team/gtormo-bw.jpg') }}" alt="Gonzalo Tormo">
-				</div>
-				<div class="member">
-					<div class="section__content">
-						<p class="member__name">Alberto González Torre</p>
-						<p class="member__role">Developer</p>
-						<p class="member__bio">Alberto is a part of the <strong>Software developer</strong> team. He started programming at the early age of 13 and has been working with it ever since. He is an <strong>outstanding C# developer</strong> and has over 10 years of coding experience in JavaScript. He worked as a <strong>researcher and professor at Valencia University,</strong> and as a programmer in various companies.</p>
+						<p class="member__name">Alberto González</p>
+						<p class="member__role">Chief Technology Officer</p>
+						<p class="member__bio">Alberto is a core part of the <strong>Software developer</strong> team. He started programming at the early age of 13 and has been working with it ever since. He is an <strong>outstanding C# developer</strong> and has over 10 years of coding experience in JavaScript. He worked as a <strong>researcher and professor at Valencia University,</strong> and as a programmer in various companies.</p>
 						<button class="member__link">Open Bio</button>
 					</div>
 					<img loading="lazy" class="member__image" src="{{ asset('img/sections/about/team/alberto.jpg') }}" alt="Alberto González Torre">
 				</div>
-
+				<div class="member">
+					<div class="section__content">
+						<p class="member__name">Alejandra Arias</p>
+						<p class="member__role">Chief Marketing Officer</p>
+						<p class="member__bio">Alejandra is a crucial part of Internxt's <strong>Marketing</strong> team. She has studied Business Administration at the University of Valencia, and is in charge of everything that involves Internxt's Marketing strategy. She also helps Fran with Internxt's daily operations.</p>
+						<button class="member__link">Open Bio</button>
+					</div>
+					<img loading="lazy" class="member__image" src="{{ asset('img/sections/about/team/alejandra.png') }}" alt="Alejandra Arias Ontoja">
+				</div>
+				<div class="member">
+					<div class="section__content">
+						<p class="member__name">Elena Garrigós</p>
+						<p class="member__role">Developer</p>
+						<p class="member__bio">Elena is a highly skilled developer, who has studied <strong>Computer Engineering</strong> at the University of Valencia. She is highly proficient in dealing with highly complex challenges. She is part of Internxt's development team.</p>
+						<button class="member__link">Open Bio</button>
+					</div>
+					<img loading="lazy" class="member__image" src="{{ asset('img/sections/about/team/elena.png') }}" alt="Elena Garrigos">
+				</div>
+				<div class="member">
+					<div class="section__content">
+						<p class="member__name">Desi Miroslavova</p>
+						<p class="member__role">Developer</p>
+						<p class="member__bio">Desi is a highly skilled programmer, who has studied <strong>Computer Engineering</strong> at the University of Valencia. She is a crucial part of Internxt's development team.</p>
+						<button class="member__link">Open Bio</button>
+					</div>
+					<img loading="lazy" class="member__image" src="{{ asset('img/sections/about/team/desi.png') }}" alt="Elena Garrigos">
+				</div>
 				<div class="member">
 					<div class="section__content">
 						<p class="member__name">Alex Sicart Ramos</p>
 						<p class="member__role">Advisor</p>
-						<p class="member__bio">Alex has talked on stage at events, such as <strong>TED talks and iFest,</strong> to discuss blockchain and IPFS. He also came <strong>first place at an event hosted by German car manufacturer Audi</strong>, to create and pitch the most innovative product. Alex was seen by Forbes as being one of Europe’s most promising young game-changers and was awarded a place on the <strong>Forbes 30 Under 30 Europe 2017.</strong> Alex is also a creative consultant for the global leading consultancy firm, <strong>Accenture.</strong></p>
+						<p class="member__bio">Alex was seen by Forbes as being one of Europe’s most promising young game-changers and was awarded a place on the <strong>Forbes 30 Under 30 Europe 2017.</strong> Alex is also a creative consultant for the global leading consultancy firm, <strong>Accenture.</strong></p>
 						<button class="member__link">Open Bio</button>
 					</div>
 					<img loading="lazy" class="member__image" src="{{ asset('img/sections/about/team/alex.jpg') }}" alt="Alex Sicart Ramos">
@@ -118,21 +132,12 @@
 					<div class="section__content">
 						<p class="member__name">Jerome Albert</p>
 						<p class="member__role">Advisor</p>
-						<p class="member__bio">Jerome is a <strong>multinational</strong> who has grown up internationally and with an <strong>ambitious drive.</strong> He has a business background and a passion for <strong>innovation and sustainability.</strong> Finding the intersection of where commercial success meets with these is what he believes will determine the <strong>future success of companies.</strong> He has worked as a <strong>business development manager at blockchain startup BlockFactory</strong> and has previously held positions at <strong>Capgemini & Anthesis.</strong></p>
+						<p class="member__bio">Jerome is a <strong>multinational</strong> who has grown up internationally and with an <strong>ambitious drive.</strong> He has a business background and a passion for <strong>innovation and sustainability.</strong> He has worked as a <strong>business development manager at blockchain startup BlockFactory</strong> and has previously held positions at <strong>Capgemini & Anthesis.</strong></p>
 						<button class="member__link">Open Bio</button>
 					</div>
 					<img loading="lazy" class="member__image" src="{{ asset('img/sections/about/team/jerome.jpg') }}" alt="Jerome Albert">
 				</div>
-
-				<div class="member">
-					<div class="section__content">
-						<p class="member__name">Mike Handschuh</p>
-						<p class="member__role">Support Manager</p>
-						<p class="member__bio">Michael is a <strong>very ambitious community moderator.</strong> He is hooked by the ideas <strong>Internxt has produced.</strong> Following the project closely, Michael is always up to date and <strong>devotes his time to answer community questions.</strong> Furthermore, he never misses the opportunity to scout for any errors to correct and ways to <strong>improve the architecture Internxt build from a community perspective,</strong> so that both sides, employees and community members, are <strong>happy.</strong></p>
-						<button class="member__link">Open Bio</button>
-					</div>
-					<img loading="lazy" class="member__image" src="{{ asset('img/sections/about/team/michael.jpg') }}" alt="Michael Handschuh">
-				</div>
+				
 			</div>
 		</div>
 	</section>
