@@ -19,7 +19,9 @@ mix.js('resources/assets/js/app.js', 'public/js')
 		'resources/assets/js/analytics/drift.js',
 		//'resources/assets/js/analytics/mixpanel.js', // Not currently used
 	], 'public/js/analytics.js')
-    .sass('resources/assets/sass/app.scss', 'public/css')
+		.sass('resources/assets/sass/app.scss', 'public/css')
+		.sass('resources/assets/sass/drive/style.scss', 'public/css')
+		.minify('public/css/style.css')
 	.options({
 		processCssUrls: false,
 		postCss: [ tailwindcss('tailwind.config.js') ],
