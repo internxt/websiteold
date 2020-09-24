@@ -27,8 +27,8 @@ mix.js('resources/assets/js/app.js', 'public/js')
 		postCss: [ tailwindcss('tailwind.config.js') ],
 	})
 	.browserSync({
-		proxy: 'local.internxt.uk',
-		host: '192.168.1.20',
+		proxy: 'internxt-new.test',
+		host: '192.168.0.12',
 		tunnel: true,
 	})
    .version()
