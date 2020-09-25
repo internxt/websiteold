@@ -28,22 +28,10 @@
 
     @include('drive.home-sections.welcome')
 
-    @include('drive.home-sections.second')
-
 @endsection
 
 @push('js')
 
-    <!-- gReCaptcha popup (uncomment if you need a recaptcha integration) -->
-    <!--
-      <div class="bg-dark op-8 grecaptcha-overlay"></div>
-      <div class="bg-light radius10 w-350 h-120 px-20 pt-20 pb-20 grecaptcha-popup">
-       <div class="w-full h-full d-flex justify-content-center align-items-center">
-        <div id="g-recaptcha" data-sitekey="PUT_YOUR_SITE_KEY_HERE"></div>
-       </div>
-      </div>
-      <script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
-      -->
     <!-- Bootstrap 4.5.2 JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <!-- Fancybox 3 jQuery plugin JS (Open images and video in popup) -->

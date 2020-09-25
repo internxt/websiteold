@@ -1,0 +1,1 @@
+@extends('drive.home-sections.welcome-template')
