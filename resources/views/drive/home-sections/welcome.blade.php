@@ -1,9 +1,6 @@
 	<!-- Header 1 -->
-	<header class="pt-195 pb-110 bg-light" data-bg-src-2x="uploads/bg.png" data-bg-src="uploads/bg.png">
+	<header class="pt-195 bg-light" data-bg-src-2x="uploads/bg.png" data-bg-src="uploads/bg.png">
 		<div data-bg-src-2x="false">
-			<div class="mb-3 logo d-block d-xl-none text-center logo_mobile" data-aos="fade-down" data-aos-delay="0">
-				Startup
-			</div>
 			<h1 class="big text-center" data-aos="fade-down" data-aos-delay="0">
 				Internxt Drive
 			</h1>
@@ -14,16 +11,16 @@
 			</div>
 			<div class="mt-80 text-center buttons" data-aos="fade-down" data-aos-delay="500">
 				<div>
-					<a href="#" class="btn lg action-1">
+					<a href="https://drive.internxt.com/new" class="btn lg action-1">
 						Start for free
 					</a>
 				</div>
 				<div>
-					<a href="#" class="link mt-15 action-1 f-18 medium">
-						Download
+					<a href="/drive" class="link mt-15 action-1 f-18 medium">
+						Learn more
 					</a>
 				</div>
-				
+				<br>
 						<!-- Call to action 12 -->
 
 			<section class="call_to_action_12 pt-40">
@@ -36,7 +33,7 @@
 				</a>
 			</section>
 			<!-- Content 28 -->
-				<section class="container pt-100 pb-70 bg-light content_28" data-bg-src-2x="uploads/picture1.png">
+				<section class="container pt-100 pb-70 bg-light content_28" data-bg-src-2x="uploads/picture1.png" style="display: none;">
 					<div class="px-xl-0 text-center">
 						<div class="row justify-content-center">
 							<div class="col-lg-9" data-bg-src="false" data-bg-src-2x="false">
@@ -60,45 +57,14 @@
 								<img src="i/content_28_logo_3.png" srcset="i/content_28_logo_3@2x.png 2x" alt="" data-aos="fade-down" data-aos-delay="250">
 							</div>
 							<div class="col-md-2 col-sm-4 col-6 mb-30">
-								<img src="i/content_28_logo_4.png" srcset="i/content_28_logo_4@2x.png 2x" alt="" data-aos="fade-down" data-aos-delay="250">
-							</div>
-							<div class="col-md-2 col-sm-4 col-6 mb-30">
 								<img src="i/content_28_logo_5.png" srcset="i/content_28_logo_5@2x.png 2x" alt="" data-aos="fade-down" data-aos-delay="500">
 							</div>
 						</div>
 					</div>
 				</section>
 
-								<!-- Footer 2 -->
-								<footer class="pt-70 pb-65 bg-light text-center footer_2">
-									<div class="px-xl-0">
-										<div class="row justify-content-center">
-											<div class="col-12 lh-40" data-aos="fade-down" data-aos-delay="0">
-												<a href="#" class="link color-main mx-20">
-													Home
-												</a>
-												<a href="#" class="link color-main mx-20">
-													Drive
-												</a>
-												<a href="#" class="link color-main mx-20">
-													Send
-												</a>
-												<a href="#" class="link color-main mx-20">
-													Token
-												</a>
-												<a href="#" class="link color-main mx-20">
-													Core
-												</a>
-											</div>
-											<div class="mt-20 col-12" data-aos="fade-down" data-aos-delay="250">
-												<div class="color-heading text-adaptive">
-													Made with love by Internxt
-												</div>
-											</div>
-										</div>
-									</div>
-								</footer>
-			
+				@include('drive.home-sections.footer')
+		
 			</div>
 		</div>
 	</header>

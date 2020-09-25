@@ -386,12 +386,6 @@ footer > div {
         justify-content: center;
         
     }
-
-    .section0, .section1, .section--xcloud-header-overview {
-        /* background-position: right;
-        background-size: auto; */
-    }
-
     .__slide-content-footer {
         height: 100px;
         display: flex;

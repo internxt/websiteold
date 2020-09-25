@@ -195,7 +195,6 @@
 				container: 'body',
 			});
 
-
 			if (windowWidth > 1024) {
 
 				// X Core header bg

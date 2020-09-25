@@ -6,13 +6,13 @@
 				<p class="plan__quota">2 GB</p>
 			</div>
 			<div class="plan__payment-option">
-				<p class="plan__duration"><a href="https://drive.internxt.com/new" rel="nofollow" target="_blank">Free</a></p>
+				<p class="plan__duration"><a href="https://drive.internxt.com/new" rel="nofollow" target="_blank">Forever Free</a></p>
 			</div>
 		</div>
 	</div>
 
 	<div class="plan-wrapper plan--pro plan-wrapper--popular">
-		<p class="plan__label">Most popular</p>
+		<p class="plan__label">&nbsp;Try for free!</p>
 
 		<div class="plan plan--plus">
 			<div class="plan__quota-container">
@@ -32,6 +32,7 @@
 	</div>
 
 	<div class="plan-wrapper plan--pro">
+		<p class="plan__label">&nbsp;Try for free!</p>
 		<div class="plan plan--pro">
 			<div class="plan__quota-container">
 				<p class="plan__quota">200 GB</p>
@@ -50,6 +51,7 @@
 	</div>
 
 	<div class="plan-wrapper  plan--pro">
+		<p class="plan__label">&nbsp;Try for free!</p>
 		<div class="plan plan--pro">
 			<div class="plan__quota-container">
 				<p class="plan__quota">2 TB</p>

@@ -31,8 +31,6 @@
 
     @include('drive.home-sections.second')
 
-    @include('drive.home-sections.footer')
-
 @endsection
 
 @push('js')
