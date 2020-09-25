@@ -1,5 +1,5 @@
 	<!-- Header 1 -->
-	<header class="pt-195 bg-light" data-bg-src-2x="uploads/bg.png" data-bg-src="uploads/bg.png">
+	<header class="pt-195" data-bg-src-2x="uploads/bg.png" data-bg-src="uploads/bg.png">
 		<div data-bg-src-2x="false">
 			<h1 class="big text-center" data-aos="fade-down" data-aos-delay="0">
 				Internxt Drive
