@@ -6,7 +6,7 @@
 
 @section('metaDescription', 'Internxt is excitement, ambition, innovation. Join the revolution. The future is now. Make the switch to Internxt Drive, a private, green, safe and free cloud storage.')
 
-@section('additionalMeta')
+@push('additionalMeta')
     <!-- Bootstrap 4.5.2 CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -22,8 +22,7 @@
 
     <!-- Startup CSS (Styles for all blocks) - Remove ".min" if you would edit a css code -->
     <link href="css/style.min.css" rel="stylesheet" />
-
-@endsection
+@endpush
 
 @section('body')
 

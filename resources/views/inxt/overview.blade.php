@@ -8,6 +8,11 @@
 
 @section('metaDescription', 'Internxt token. Learn all about our cryptocurrency, INXT.')
 
+@push('additionalMeta')
+    <!-- Bootstrap 4.5.2 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+@endpush
+
 @section('body')
 
 	<section class="section section--header section--inxt-header-overview" id="inxt-overview" data-dark data-inxt-heading>

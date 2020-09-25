@@ -6,7 +6,7 @@
         <link rel="canonical" href="{{ $canonical }}">
         <link rel="icon" href="{{ asset('favicon.ico') }}">
         <!-- <link rel="icon" href="{{ asset('favicon.svg') }}" type="image/svg+xml" /> -->
-        @yield('additionalMeta')
+        @stack('additionalMeta')
 
         <title>@hasSection('pageTitle') @yield('pageTitle') @else Internxt @endif</title>
         <script
@@ -49,10 +49,6 @@
                 font-size: 13px;
                 letter-spacing: 1px;
                 color: black !important;
-            }
-
-            .navbar-brand {
-                margin-right: 0;
             }
 
             .navbar-dark {

@@ -6,9 +6,9 @@
 
 @section('metaDescription', 'Internxt is excitement, ambition, innovation. Join the revolution. The future is now. Make the switch to Internxt Drive, a private, green, safe and free cloud storage.')
 
-@section('additionalMeta')
+@push('additionalMeta')
 	<link rel="alternate" href="https://internxt.com/" hreflang="x-default">
-@endsection
+@endpush
 
 @section('body')
     <script>
@@ -152,109 +152,6 @@
 				window.location.href = 'https://send.internxt.com';
 			});
 		});
-
-		
-		// $(document).ready(function(){
-
-		// 	var ScrollMagicController = new ScrollMagic.Controller({
-		// 		container: 'body',
-		// 	});
-
-		// 	var headerSelector = '.section--header';
-
-		// 	var timeline = new TimelineMax();
-
-		// 	var tween1 = new TweenMax.staggerFromTo(headerSelector + ' .section__image', 1, {
-		// 		opacity: 0,
-		// 		y: 30,
-		// 	},{
-		// 		opacity: 1,
-		// 		y: 0,
-		// 		ease: Power2.easeOut,
-		// 	}, 0.3);
-
-		// 	var tween2 = TweenMax.staggerFromTo([
-		// 		`${headerSelector} .section__icon-container`,
-		// 		`${headerSelector} .section__heading`,
-		// 		`${headerSelector} .section__highlight`,
-		// 		`${headerSelector} .section__link-container`,
-		// 	], 0.5, {
-		// 		opacity: 0,
-		// 		y: 30,
-		// 	},{
-		// 		opacity: 1,
-		// 		y: 0,
-		// 		delay: 1,
-		// 	}, 0.15);
-
-		// 	timeline.add([tween1, tween2]);
-
-		// 	var scene = new ScrollMagic.Scene({
-		// 			triggerElement: headerSelector,
-		// 			triggerHook: 0,
-		// 			duration: 0,
-		// 			reverse: false,
-		// 		})
-		// 		.setTween(timeline)
-		// 		.addTo(ScrollMagicController)
-		// 	;
-
-
-		// 	// Scale down background graphic on X Core section
-		// 	var xCoreSectionSelector = '.section--intro-xcore';
-
-		// 	new ScrollMagic.Scene({
-		// 			triggerElement: xCoreSectionSelector,
-		// 			triggerHook: 0.8,
-		// 			duration: '100%',
-		// 		})
-		// 		.setTween(
-		//           new TweenMax.to(`${xCoreSectionSelector} .section__graphic`, 0.5, {
-		//           		scale: 1,
-		// 				ease: Power2.easeOut,
-		// 			}))
-		// 		.addTo(ScrollMagicController)
-		// 	;
-
-		// 	// Scale down background graphic on INXT section
-		// 	var inxtSectionSelector = '.section--intro-inxt';
-		// 	var scene3 = new ScrollMagic.Scene({
-		// 			triggerElement: inxtSectionSelector,
-		// 			triggerHook: 0.6,
-		// 			duration: '100%',
-		// 		})
-		// 		.setTween(new TweenMax.fromTo(inxtSectionSelector, 0.5, {
-		// 			"background-size" : "110% 110%",
-		// 			ease: Power2.easeIn,
-		// 		},{
-		// 			"background-size" : "100% 100%",
-		// 			ease: Power2.easeOut,
-		// 		}))
-		// 		.addTo(ScrollMagicController)
-		// 	;
-
-		// 	// Scale down background graphic on INXT section
-		// 	var internxtSectionSelector = '.section--intro-internxt';
-		// 	var scene4 = new ScrollMagic.Scene({
-		// 			triggerElement: internxtSectionSelector,
-		// 			triggerHook: 0.6,
-		// 			duration: '100%',
-		// 		})
-		// 		.setTween(new TweenMax.to(internxtSectionSelector + ' .background', 0.5, {
-		// 			scale: 1,
-		// 			ease: Power2.easeOut,
-		// 		}))
-		// 		.addTo(ScrollMagicController)
-		// 	;
-
-
-		// 	// No scroll, trigger as soon as page is ready
-		// 	new TweenMax.to(xCoreSectionSelector, 2, {
-		// 		opacity: 1,
-		// 		ease: Power2.easeOut,
-		// 	});
-
-		// });
 	</script>
 
 @endpush
