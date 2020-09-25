@@ -13,54 +13,9 @@
 
 @section('body')
 
-	<section class="section section--header section--xcloud-header-overview">
-	    <div id="driveSlideMobile" class="__content-home">
-	    
-				<div class="__mobile-home-content" style="height: 58vh !important;">
 
-					<p class="relative section__heading">Internxt Drive</p>
-					<p class="section__highlight">Secure file storage</p>
+	@include('drive.home-sections.welcome-section')
 
-					<div class="section__link-container md:hidden flex flex-col items-center" style="z-index: 0; margin-top: 18px !important;">
-
-						<a class="section__link section__link--ios" href="https://apps.apple.com/us/app/x-cloud-secure-file-storage/id1465869889" rel="nofollow" target="_blank">
-							<img loading="lazy" src="{{ asset('/img/logos/apple-app-store.png') }}" height="51" alt="Download X Cloud on the Apple App Store">
-						</a>
-
-						<a class="section__link section__link--android" href="https://play.google.com/store/apps/details?id=com.internxt.cloud" rel="nofollow" target="_blank">
-							<img loading="lazy" alt="Get it on Google Play" src="{{ asset('/img/logos/google-play-store.png') }}" height="51">
-						</a>
-					</div>
-
-					<div class="section__link-container hidden md:block">
-						<a class="section__link" href="https://drive.internxt.com/new">Get Started for Free with 2 GB</a>
-					</div>
-
-				</div>
-		</div>
-		
-		
-		<section id="driveSlidePC" class="__content-home">
-			
-			<div class="__slide-content-title">Internxt Drive</div>
-
-			<div class="__slide-content-body">
-				<div class="__slide-content-text">Switch to the only cloud storage service that truly respects your privacy. End-to-end encrypted, free, open source, trustless. Say hello to the new security and privacy standard. Start with 2 GB free for life.</div>
-			</div>
-
-			<div class="__slide-content-footer">
-				
-				<button type="button" class="w-full btnDownload btn rounded-pill btn-outline-light __btn-content" onClick="window.location.href='{{ $xcloudDownloadLink }}';" style="">Download</button>
-				<button type="button" class="w-full btnStartForFree btn rounded-pill btn-outline-light __btn-content-primary" style="">Start for free</button>
-			</div>
-
-		</section>
-
-					
-	        
-
-	    
-	</section>
 
 
 	<section class="section section--xcloud-feature section--xcloud-enhanced-technology" id="xcloud-enhanced-technology" data-gradient-heading>
