@@ -293,7 +293,7 @@
 		}
 
 		.members {
-
+			justify-content: space-between;
 			@screen lg {
 				@apply
 					.flex
@@ -304,13 +304,12 @@
 		}
 
 		.member {
-
 			background-color: #f0f0f0;
 			border-radius: 4px;
 			height: 155px;
 			margin: 0 auto 14px;
 			pointer-events: none; // So it can be styled on hover of link
-			width: 355px;
+			width: 345px;
 			transition: background-color 0.2s;
 
 			@apply
@@ -325,7 +324,7 @@
 			&:nth-child(3n+2) {
 
 				@screen lg {
-					margin: 0 12px;
+					/* margin: 0 12px; */
 				}
 
 			}
