@@ -36,7 +36,7 @@
 	</section>
 
 	<section class="section section--inxt-features">
-		<div class="container">
+		<div class="container" style="width: 80%;">
 			<div class="feature feature--revenue">
 				<p class="feature__heading">Part of our revenues are used<span class="feature__highlight"> to market buy INXT</span></p>
 			</div>
