@@ -16,9 +16,15 @@
 					</a>
 				</div>
 				<div>
+					@if (Route::currentRouteName() == "xcloud.overview")
+					<a href="{{ $xcloudDownloadLink }}" class="link mt-15 action-1 f-18 medium">
+						Download
+					</a>
+					@else
 					<a href="/drive" class="link mt-15 action-1 f-18 medium">
 						Learn more
 					</a>
+					@endif
 				</div>
 				<br>
             <!-- Call to action 12 -->
