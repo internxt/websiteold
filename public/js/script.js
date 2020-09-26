@@ -151,6 +151,7 @@ function SF_scripts(){
 	// Enable AOS plugin (blocks animations)
 	if(typeof(AOS) !== 'undefined' && $("body").hasClass("SFG_body")===false){
 		AOS.init({
+			mirror: true,
 			easing: 'ease-out-cubic',
 			once: true,
 			offset: 50
