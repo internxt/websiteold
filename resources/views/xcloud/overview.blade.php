@@ -90,7 +90,7 @@
 	<section class="section section--xcloud-decentralization">
 		<div class="container">
 
-			<p class="section__heading" style="font-weight: 600;">Decentralization.<span style="font-weight: 600;" class="section__highlight">A new kind of technology that gives you more privacy, security and freedom.</span></p>
+			<p class="section__heading" style="font-weight: 600;">Decentralization.<span style="font-weight: 600; top: 10px;" class="section__highlight">A new kind of technology that gives you more privacy, security and freedom.</span></p>
 
 			<div class="lg:flex">
 				<div class="section__content">
