@@ -5,7 +5,8 @@
 		<p class="section__explanation">Internxt Drive is available on Web, Desktop and Mobile. We have a range of storage plans to suit your needs. 20 GB for €0.89, 200 GB for €3.49 or 2 TB for just €8.99.</p>
 
 		<div class="section__link-container">
-			<a class="section__link" href="https://drive.internxt.com/new">Get Started for Free with 2 GB</a>
+			<a class="section__link" href="https://drive.internxt.com/new" style="white-space: nowrap">Get Started for Free with 2 GB</a>
+			<br />
 			<a class="section__link section__link--ios" href="https://apps.apple.com/us/app/x-cloud-secure-file-storage/id1465869889" rel="nofollow" target="_blank">
 				<img loading="lazy" src="{{ asset('/img/logos/apple-app-store.png') }}" height="51" alt="Download X Cloud on the Apple App Store">
 			</a>
@@ -15,8 +16,10 @@
 			</a>
 		</div>
 
-		<img class="section__image lg:hidden" src="{{ asset('/img/sections/xcloud/technology/get-started-with-1gb/bg-mobile.png') }}">
-		<img class="section__image hidden lg:block" src="{{ asset('/img/sections/xcloud/technology/get-started-with-1gb/bg.png') }}">
+		<div>
+			<img class="section__image lg:hidden" src="{{ asset('/img/sections/xcloud/technology/get-started-with-1gb/bg-mobile.png') }}">
+			<img class="section__image hidden lg:block" src="{{ asset('/img/sections/xcloud/technology/get-started-with-1gb/bg.png') }}">
+		</div>
 	</div>
 </section>
 

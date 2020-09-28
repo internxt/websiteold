@@ -153,7 +153,7 @@ function SF_scripts(){
 		AOS.init({
 			mirror: true,
 			easing: 'ease-out-cubic',
-			once: true,
+			once: false,
 			offset: 50
 		});
 		setTimeout(function(){

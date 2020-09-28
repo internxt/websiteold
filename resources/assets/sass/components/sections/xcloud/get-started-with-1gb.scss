@@ -124,15 +124,13 @@
 	}
 
 	.section__image {
-
 		bottom: -50px;
 		height: auto;
 		left: 0;
-		position: absolute;
+		position: relative;
 		width: 100%;
 
 		@screen lg {
-			bottom: -479px;
 			height: 935px;
     		left: auto;
 			width: auto;
