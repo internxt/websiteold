@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
@@ -333,11 +333,6 @@ footer > div {
         align-items: center;
     }
 
-    .__link-login {
-        display: flex;
-        justify-content: center;
-        
-    }
     .__slide-content-footer {
         height: 100px;
         display: flex;
@@ -349,7 +344,7 @@ footer > div {
 
     .__slide-content-footer > button {
         margin-right: 0px;
-        white-space: none;
+        white-space: nowrap;
     }
 
     .__content-home {
