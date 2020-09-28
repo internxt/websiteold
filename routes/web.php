@@ -66,6 +66,4 @@ Route::prefix('checkout')->name('checkout.')->group(function () {
 
 Route::redirect('roadmap', config('services.trello.roadmap'));
 
-Route::view('civic', 'civic-test')->name('civic-test');
-
 Route::any('buy', 'StripeController@attemptPayment')->name('stripe.purchase');
