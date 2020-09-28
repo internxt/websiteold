@@ -1,15 +1,12 @@
 .section--get-started-with-1gb {
-
 	height: 788px;
 	padding: 49px 24px 0;
 	text-align: center;
-    margin-bottom: 10px;
-    position: relative;
-    overflow: hidden;
+	margin-bottom: 10px;
+	position: relative;
+	overflow: hidden;
 
-    @apply
-    	.bg-body-bg
-    ;
+	@apply .bg-body-bg;
 
 	@screen lg {
 		background-position: left 36% bottom -480px;
@@ -20,7 +17,6 @@
 	}
 
 	.section__heading {
-
 		font-size: 28px;
 		font-weight: 600;
 		letter-spacing: -0.84px;
@@ -37,11 +33,9 @@
 			margin-bottom: 3px;
 			max-width: none;
 		}
-
 	}
 
 	.section__explanation {
-
 		color: #737373;
 		font-size: 20px;
 		font-weight: 450;
@@ -57,11 +51,9 @@
 			margin: 0 auto 43px;
 			width: 822px;
 		}
-
 	}
 
 	.section__link {
-
 		background-image: none;
 		color: #006deb;
 		font-size: 15px;
@@ -73,8 +65,7 @@
 		transition: background-position 0.2s;
 
 		@screen lg {
-
-			background-image: url('/img/icons/arrow-blue-bold.svg');
+			background-image: url("/img/icons/arrow-blue-bold.svg");
 			background-position: right 2px top 5px;
 			background-repeat: no-repeat;
 			background-size: 13px;
@@ -83,7 +74,6 @@
 			&:first-of-type {
 				margin-right: 26px;
 			}
-
 		}
 
 		&:hover {
@@ -91,18 +81,15 @@
 		}
 
 		&--create-account {
-
 			display: none;
 
 			@screen lg {
 				display: inline-block;
 			}
-
 		}
 
 		&--ios,
 		&--android {
-
 			background-image: none;
 			display: inline-block;
 			margin: 0 auto;
@@ -114,13 +101,11 @@
 			img {
 				height: 55px;
 			}
-
 		}
 
 		&--ios {
 			margin-top: 20px;
 		}
-
 	}
 
 	.section__image {
@@ -132,10 +117,8 @@
 
 		@screen lg {
 			height: 935px;
-    		left: auto;
+			left: auto;
 			width: auto;
 		}
-
 	}
-
 }

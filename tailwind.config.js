@@ -1,7 +1,7 @@
 module.exports = {
-    theme: {
-        extend: {
-            colors: {
+	theme: {
+		extend: {
+			colors: {
 				'body-bg': '#fafafa',
 				'button-bg': '#f7f7f7',
 				'footer-header': '#333333',
@@ -20,7 +20,7 @@ module.exports = {
 				'x-core-circular-bg': '#2d2d2d',
 				'xcore-purple': '#1d1a2f',
 			},
-		    fontFamily: {
+			fontFamily: {
 				'sans': [
 					'"Cerebri Sans"',
 					'-apple-system',
@@ -28,7 +28,7 @@ module.exports = {
 					'"Helvetica Neue"',
 					'sans-serif',
 				],
-		    },
+			},
 		},
-  	}
+	}
 };

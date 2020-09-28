@@ -18,19 +18,19 @@ mix.js('resources/assets/js/app.js', 'public/js')
 		'resources/assets/js/analytics/mailerlite.js',
 		'resources/assets/js/analytics/drift.js',
 	], 'public/js/analytics.js')
-		.sass('resources/assets/sass/app.scss', 'public/css')
-		.sass('resources/assets/sass/drive/style.scss', 'public/css')
-		.minify('public/css/style.css')
-		.sass('resources/assets/sass/drive/framework.scss', 'public/css')
-		.minify('public/css/framework.css')
+	.sass('resources/assets/sass/app.scss', 'public/css')
+	.sass('resources/assets/sass/drive/style.scss', 'public/css')
+	.minify('public/css/style.css')
+	.sass('resources/assets/sass/drive/framework.scss', 'public/css')
+	.minify('public/css/framework.css')
 	.options({
 		processCssUrls: false,
-		postCss: [ tailwindcss('tailwind.config.js') ],
+		postCss: [tailwindcss('tailwind.config.js')],
 	})
 	.browserSync({
 		proxy: 'internxt-new.test',
 		host: '192.168.0.12',
 		tunnel: true,
 	})
-   .version()
-;
+	.version()
+	;
