@@ -31,11 +31,6 @@
 				<section id="driveSlideMobile" class="__content-home">
 						
 					<div class="__mobile-home-content">
-
-						<!-- <div class="section__icon-container">
-							<img class="relative section__icon" src="{{ asset('img/logos/drive-logo.svg') }}" alt="Introducing X Cloud">
-						</div> -->
-
 						<p class="relative section__heading">Internxt Drive</p>
 						<p class="section__highlight">Secure file storage</p>
 

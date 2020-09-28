@@ -116,28 +116,9 @@
                 .section0, .section--header {
                     background: none;
                 }
-
-                #driveSlideMobile {
-                    visibility: visible;
-                    display: flex;
-                }
-
-                #driveSlidePC {
-                    visibility: hidden;
-                    display: none;
-                }
-
                 .section1 {
                     visibility: hidden;
                     display: none;
-                }
-
-                .__mobile-home-content {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    height: 63vh;
-                    top: -40px;
                 }
 
                 .page.vertical {
@@ -147,19 +128,6 @@
 
                 
             }
-
-            @media only screen and (min-width: 427px) {
-                #driveSlideMobile {
-                    visibility: hidden;
-                    display: none;
-                }
-
-                #driveSlidePC {
-                    visibility: visible;
-                    display: flex;
-                }
-            }
-            
 
             .navbar-toggler,
             .navbar-toggler:focus,
@@ -303,18 +271,6 @@ footer > div {
 
 /*****************/
 
-.__content-home {
-    height: 93%;
-    width: 43%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 100px;
-}
-
-.__content-home > section {
-    width: 100%;
-}
 
 @media only screen and (max-width: 426px) {
 

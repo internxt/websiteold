@@ -5,10 +5,9 @@
     </head>
 
     <body id="page--@yield('pageID')" class='flex flex-col h-full'>
+        @include('_includes.navbar.newNavBar')
 
         <div id='content' class='flex-1 w-full mx-auto'>
-
-            @include('_includes.navbar.newNavBar')
 
             @yield('body')
 

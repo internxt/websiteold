@@ -213,3 +213,38 @@ body {
 	-webkit-animation: arrowsDown 2.5s .8s linear forwards;
   animation: arrowsDown 2.5s .8s linear forwards;
 }
+/*
+.__content-home {
+    margin: 30%  auto;
+    border: solid 1px red;
+	width: 43%;
+    flex-direction: column;
+	justify-content: center;
+
+	.__mobile-home-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 63vh;
+		top: -40px;
+
+		.section__heading {
+			@apply
+			.text-text
+		;
+
+			font-size: 36.1px;
+			font-weight: 500;
+			letter-spacing: -0.81px;
+			line-height: 1.42;
+			@screen lg {
+				font-size: 43px;
+				font-weight: 600;
+				letter-spacing: -0.86px;
+			}
+	
+		}
+	}
+
+}
+*/
