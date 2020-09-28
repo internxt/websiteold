@@ -87,18 +87,13 @@ html {
 }
 
 body {
-
 	-webkit-overflow-scrolling: touch;
 	overflow-x: hidden;
 	overscroll-behavior-y: none;
 	width: 100vw;
 
-	@apply
-		.font-sans
-	;
-
+	@apply .font-sans;
 }
-
 
 .rslides {
 	list-style: none;
@@ -107,7 +102,7 @@ body {
 	padding: 0;
 	position: relative;
 	width: 100%;
- }
+}
 
 .rslides li {
 	-webkit-backface-visibility: hidden;
@@ -116,7 +111,7 @@ body {
 	position: absolute;
 	top: 0;
 	width: 100%;
- }
+}
 
 .rslides li:first-child {
 	display: block;
@@ -132,69 +127,65 @@ body {
 	width: 100%;
 }
 
-
 .section[data-inxt-transition] {
-
 	.section__heading,
 	.section__subheading,
 	.section__button {
 		opacity: 0;
 	}
-
 }
 
-.grecaptcha-badge { 
+.grecaptcha-badge {
 	visibility: hidden;
 }
 
 .line {
-  position: absolute;
-  z-index: -5;
-  pointer-events: none;
-  font-size: 0;
-}
-
-.line path {
-	stroke-dasharray: 2173;
-  stroke-dashoffset: 2173;
-	-webkit-animation: dash 2.5s .8s linear forwards;
-  animation: dash 2.5s .8s linear forwards;
+	position: absolute;
+	z-index: -5;
+	pointer-events: none;
+	font-size: 0;
+	path {
+		stroke-dasharray: 2173;
+		stroke-dashoffset: 2173;
+		-webkit-animation: dash 2.5s 0.8s linear forwards;
+		animation: dash 2.5s 0.8s linear forwards;
+	}
 }
 
 [data-aos="animation-line"] path {
-  -webkit-animation: none;
-  animation: none;
+	-webkit-animation: none;
+	animation: none;
 }
 
 [data-aos="animation-line"].aos-animate path {
-  -webkit-animation: dash 3s linear forwards;
-  animation: dash 3s linear forwards;
+	-webkit-animation: dash 3s linear forwards;
+	animation: dash 3s linear forwards;
 }
 
 @-webkit-keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
+	to {
+		stroke-dashoffset: 0;
+	}
 }
 
 @keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
+	to {
+		stroke-dashoffset: 0;
+	}
 }
 
 @-webkit-keyframes arrowsDown {
-  100% {
-    -webkit-transform: translateY(43px);
-    transform: translateY(43px);
-  }
+	100% {
+		-webkit-transform: translateY(43px);
+		transform: translateY(43px);
+	}
 }
 
 @keyframes arrowsDown {
-  100% {
-    -webkit-transform: translateY(43px);
-    transform: translateY(43px);
-  }
+	100% {
+		-webkit-transform: translateY(43px);
+		transform: translateY(43px);
+	}
 }
 
 .line01 {
@@ -203,15 +194,22 @@ body {
 
 .line02 {
 	top: -137px;
-  right: 126px;
-  -webkit-transform: rotate(-268deg);
-  -ms-transform: rotate(-268deg);
+	right: 250px;
+	-webkit-transform: rotate(-268deg);
+	-ms-transform: rotate(-268deg);
 	transform: rotate(-268deg);
 }
 
 .line02 path {
-	-webkit-animation: arrowsDown 2.5s .8s linear forwards;
-  animation: arrowsDown 2.5s .8s linear forwards;
+	-webkit-animation: arrowsDown 2.5s 0.8s linear forwards;
+	animation: arrowsDown 2.5s 0.8s linear forwards;
+}
+
+.line03 path {
+	stroke-dasharray: 4173;
+	stroke-dashoffset: 4173;
+	-webkit-animation: arrowsDown 4.5s 0.8s linear forwards;
+	animation: arrowsDown 4.5s 0.8s linear forwards;
 }
 /*
 .__content-home {
