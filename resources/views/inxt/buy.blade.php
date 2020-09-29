@@ -74,36 +74,6 @@
 @endsection
 
 @push('css')
-	{{-- <link rel="stylesheet" href="https://external.cryptowolf.eu/v3/css/inxt.css"> --}}
 	    <!-- Bootstrap 4.5.2 CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-
 @endpush
-
-{{-- @push('js')
-<script>
-       var external = 'inxt';
-       var cryptowolf = 'https://external.cryptowolf.eu/v3/';
-       function defer(method) {
-           if (window.jQuery) {
-             $( document ).ready(function() {
-                 method();
-             });
-           } else {
-               setTimeout(function() { defer(method) }, 50);
-           }
-       }
-       defer(function () {
-               $('#hiddendivbeforeselect').prepend($('.two')[0]);
-               $('.two').addClass('cryptowolf-element')
-               $.ajax ({
-                   type: "POST",
-                   url: "https://external.cryptowolf.eu/v3/css/inxt.css",
-                   success: function(result) {
-                   $("#cryptowolf").after('<style>' + result + '</style>')
-                   }
-               });
-               $.getScript(cryptowolf + 'js/cryptowolf.js');
-       })
- </script>
-@endpush --}}
