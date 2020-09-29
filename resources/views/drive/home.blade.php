@@ -31,9 +31,6 @@
 @endsection
 
 @push('js')
-
-    <!-- Bootstrap 4.5.2 JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <!-- Fancybox 3 jQuery plugin JS (Open images and video in popup) -->
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <!-- 
