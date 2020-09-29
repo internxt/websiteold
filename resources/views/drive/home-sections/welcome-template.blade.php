@@ -1,5 +1,5 @@
 <div id="page--home">
-    <div class="line line01" data-aos="animation-line" data-aos-once="false" data-aos-anchor="#welcome-header"
+    <div class="line line01 d-none d-sm-block" data-aos="animation-line" data-aos-once="false" data-aos-anchor="#welcome-header"
         data-aos-offset="100" data-aos-anchor-placement="top-center" data-aos-mirror="true">
         <svg class="line__svg" xmlns="http://www.w3.org/2000/svg" width="542" height="820">
             <path fill="none" stroke="#d1ecfd" stroke-width="2"

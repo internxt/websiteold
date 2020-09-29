@@ -1,5 +1,5 @@
     <section class="section--homepage-header d-md-none d-xs-flex">
-        <div id="driveSlideMobile" class="__content-home">
+        <div class="__content-home">
 
             <div class="__mobile-home-content">
 

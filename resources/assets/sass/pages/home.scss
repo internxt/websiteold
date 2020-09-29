@@ -1,16 +1,20 @@
 #page--home {
 
 	.section--homepage-header {
+		height: 100vh;
 
 		background-image: linear-gradient(to bottom, white, theme('colors.body-bg'));
-		background-position: top left;
-		background-size: cover;
-		height: 912px;
-		margin-bottom: 10px;
 		overflow: hidden;
-		padding-top: 115px;
 		position: relative;
 		width: 100vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		background: url('/img/logos/mobile-wp3.png') center no-repeat;
+		background-size: cover;
+		background-position: bottom;
+
 
 		@screen lg {
 			height: 694px;
@@ -188,15 +192,10 @@
 	}
 
 	.__mobile-home-content {
-		height: 60vh;
-		margin-bottom: 10px;
 		overflow: hidden;
 		padding-top: 0;
 		position: relative;
-
-		background: url('/img/logos/mobile-wp3.png') center no-repeat;
-		background-size: cover;
-		background-position: bottom;
+		width: 90vh;
 
 		@screen lg {
 			height: 100vh;
