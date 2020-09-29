@@ -158,8 +158,8 @@ body {
 }
 
 [data-aos="animation-line"].aos-animate path {
-	-webkit-animation: dash 3s linear forwards;
-	animation: dash 3s linear forwards;
+	-webkit-animation: dash 5s linear forwards;
+	animation: dash 5s linear forwards;
 }
 
 @-webkit-keyframes dash {
@@ -189,7 +189,7 @@ body {
 }
 
 .line01 {
-	left: 25%;
+	left: 20%;
 }
 
 .line02 {
