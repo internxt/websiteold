@@ -42,19 +42,6 @@
             <div class="__link-login"><a class="nav-link" href="https://drive.internxt.com/login" style="color: {{ $textColor }} !important">SIGN IN</a></div>
         </div>
     </nav>
-
-    <script>
-        $(document).ready(function() {
-            if ('{{ $textColor }}' == '#000') {
-				$('.navbar').removeClass('navbar-dark')
-			    $('.navbar').addClass('navbar-light')
-			} else {
-				$('.navbar').addClass('navbar-dark')
-			    $('.navbar').removeClass('navbar-light')
-			}
-        });
-        
-    </script>
 @endif
 
 
