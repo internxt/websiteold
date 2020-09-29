@@ -220,61 +220,6 @@ subscribeInput.on('blur', () => {
 
 $(document).ready(() => {
 
-	$("#page--inxt-overview .navbar-toggler").click(function(e){
-		if ($('.navbar-toggler').attr('aria-expanded') == 'true') {
-			$('#__header').attr('style', 'background-color: transparent !important');
-			$('.nav-link').attr('style', 'color: white !important');
-			$('.navbar-toggler-icon').css('background-image', `url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E)`);
-			// $('.navbar').addClass('navbar-dark')
-			// $('.navbar').removeClass('navbar-light')
-			// $('.navbar-brand svg g').attr('fill', '#FFF');
-		} else {
-			$('#__header').attr('style', 'background-color: white !important');
-			$('.nav-link').attr('style', 'color: black !important');
-			$('.navbar-toggler-icon').css('background-image', `url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E)`);
-			// $('.navbar').removeClass('navbar-dark')
-			// $('.navbar').addClass('navbar-light')
-			// $('.navbar-brand svg g').attr('fill', '#000');
-		}
-	})
-
-	$("#page--xcore-overview .navbar-toggler").click(function(e){
-		if ($('.navbar-toggler').attr('aria-expanded') == 'true') {
-			$('#__header').attr('style', 'background-color: transparent !important');
-			$('.nav-link').attr('style', 'color: white !important');
-			$('.navbar-toggler-icon').css('background-image', `url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E)`);
-			// $('.navbar').addClass('navbar-dark')
-			// $('.navbar').removeClass('navbar-light')
-			// $('.navbar-brand svg g').attr('fill', '#FFF');
-		} else {
-			$('#__header').attr('style', 'background-color: white !important');
-			$('.nav-link').attr('style', 'color: black !important');
-			$('.navbar-toggler-icon').css('background-image', `url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E)`);
-			// $('.navbar').removeClass('navbar-dark')
-			// $('.navbar').addClass('navbar-light')
-			// $('.navbar-brand svg g').attr('fill', '#000');
-		}
-	})
-
-	$("#page--about .navbar-toggler").click(function(e){
-		if ($('.navbar-toggler').attr('aria-expanded') == 'true') {
-			$('#__header').attr('style', 'background-color: transparent !important');
-			// $('.nav-link').attr('style', 'color: white !important');
-			$('.navbar-toggler-icon').css('background-image', `url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E)`);
-			// $('.navbar').addClass('navbar-dark')
-			// $('.navbar').removeClass('navbar-light')
-			// $('.navbar-brand svg g').attr('fill', '#FFF');
-		} else {
-			$('#__header').attr('style', 'background-color: white !important');
-			// $('.nav-link').attr('style', 'color: black !important');
-			$('.navbar-toggler-icon').css('background-image', `url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E)`);
-			// $('.navbar').removeClass('navbar-dark')
-			// $('.navbar').addClass('navbar-light')
-			// $('.navbar-brand svg g').attr('fill', '#000');
-		}
-	})
-
-
 	let
 		navbar = $('#navbar'),
 		subNavButton = $('.navbar__subnav-button'),
