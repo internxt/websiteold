@@ -59,7 +59,7 @@
 	</section>
 
 	<section class="section section--inxt-secure-ways-to-store">
-		<div class="w-4/6 m-auto">
+		<div class="w-5/6 m-auto">
 			<p class="section__heading">Secure ways to store INXT tokens</p>
 
 			<div class="flex flex-wrap justify-center">
