@@ -25,10 +25,6 @@
 
         <script src="https://kit.fontawesome.com/b5adb1202b.js"></script>
 
-        
-
-        <link rel="stylesheet" href="{{ asset('one-page-scroll-fsscroll/src/jquery.fsscroll.css') }}">
-
         <style>
             .__inxt-buy-form-section {
                 padding-left: 20px;

@@ -1,10 +1,6 @@
 @extends('drive.home-sections.welcome-template')
 
 @push('additionalMeta')
-    <!-- Bootstrap 4.5.2 CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
     <link rel="alternate" href="https://internxt.com/" hreflang="x-default">
     <!-- Slick 1.8.1 jQuery plugin CSS (Sliders) -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
