@@ -6,6 +6,12 @@
 
 @section('metaDescription', 'Get paid to share the exceeding disk space of your computer to host encrypted shards of data as part of a decentralized network of servers.')
 
+@push('additionalMeta')
+<!-- Bootstrap 4.5.2 CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+@endpush
+
 @section('body')
 
 	<section class="section section--header section--xcore-header-overview" id="xcore-header-overview" data-dark>
