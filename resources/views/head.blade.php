@@ -174,11 +174,6 @@ footer {
     align-items: center;
 }
 
-.__internal-footer {
-width: 60%;
-margin: auto;
-}
-
 footer>div {
     display: flex;
     flex-direction: row;
@@ -266,11 +261,6 @@ justify-content: center;
 }
 
 @media only screen and (max-width: 426px) {
-
-.__internal-footer {
-    width: 100%;
-    font-size: 0.7rem;
-}
 
 .__slide-content-container {
     width: auto;

@@ -1,5 +1,5 @@
 <footer class="d-none d-lg-flex py-3">
-    <div class="__internal-footer">
+    <div class="w-3/5 mx-auto">
         <a href="#"></a>
         <a href="#"></a>
         <a href="/" class="__footer-link">Internxt</a>
