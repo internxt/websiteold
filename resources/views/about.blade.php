@@ -123,6 +123,15 @@
 						<button class="member__link">Open Bio</button>
 					</div>
 					<img loading="lazy" class="member__image" src="{{ asset('img/sections/about/team/desi.png') }}" alt="Elena Garrigos">
+				</div>		
+				<div class="member">
+					<div class="section__content">
+						<p class="member__name">Emi Filopova</p>
+						<p class="member__role">Marketing Assistant</p>
+						<p class="member__bio">Emi is a highly skilled marketing professional, who has studied <strong>Business Administration</strong> at the University of Valencia. She helps us out boost our marketing efforts here at Internxt.</p>
+						<button class="member__link">Open Bio</button>
+					</div>
+					<img loading="lazy" class="member__image" src="{{ asset('img/sections/about/team/emi.png') }}" alt="Elena Garrigos">
 				</div>
 				<div class="member">
 					<div class="section__content">
