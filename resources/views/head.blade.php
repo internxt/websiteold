@@ -15,6 +15,8 @@ integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="ano
 integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
 </script>
 
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
 <meta name="description" content="@yield('metaDescription')">
 
 <script src="https://www.google.com/recaptcha/api.js?render={{ env('RECAPTCHA_V3_PK') }}"></script>
