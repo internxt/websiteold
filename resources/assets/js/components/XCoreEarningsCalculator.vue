@@ -1,17 +1,13 @@
 <style lang="scss" scoped>
 
     .xcore-earnings-calculator {
-
         margin: 0 auto;
-
         @media (min-width: 1024px) {
             width: 440px;
         }
-
     }
 
     .form-item {
-
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -23,7 +19,6 @@
         }
 
         &--amount-earned {
-
             .value-container{
                 width: 160.5px;
             }
@@ -68,12 +63,18 @@
         justify-content: flex-end;
         padding: 0 15px;
         width: 128px;
+
+        &--last {
+            .value {
+                margin: 1px auto;
+            }
+        }
     }
 
     .value {
 
         background: none;
-        font-size: 13px;
+        font-size: 14px;
         height: 20px;
         line-height: 1.49;
         text-align: right;
@@ -88,7 +89,7 @@
 
     .value__suffix {
         color: #7f7f7f;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 500;
         letter-spacing: -0.11px;
         line-height: 1.49;
