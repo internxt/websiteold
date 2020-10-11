@@ -2,7 +2,7 @@
   <a href="https://drive.internxt.com/new" class="btn action-1 w-full noradius d-block">
     <div class="px-xl-0 pt-35 pb-35">
       <h2 class="small" data-aos="fade-down" data-aos-delay="0">
-        Just in! All our premium plans, free one month
+        Just in! Get up to 2 TB of storage, free a month
       </h2>
     </div>
   </a>

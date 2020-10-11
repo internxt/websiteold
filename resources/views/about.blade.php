@@ -110,7 +110,7 @@
 					<div class="section__content">
 						<p class="member__name">Elena Garrigós</p>
 						<p class="member__role">Developer</p>
-						<p class="member__bio">Elena is a highly skilled developer, who has studied <strong>Computer Engineering</strong> at the University of Valencia. She is highly proficient in dealing with highly complex challenges. She is part of Internxt's development team.</p>
+						<p class="member__bio">Elena is a highly skilled developer, who has studied <strong>Computer Engineering</strong> at the Polytechnic University of Valencia. She is highly proficient in dealing with highly complex challenges. She is part of Internxt's development team.</p>
 						<button class="member__link">Open Bio</button>
 					</div>
 					<img loading="lazy" class="member__image" src="{{ asset('img/sections/about/team/elena.png') }}" alt="Elena Garrigos">
@@ -119,14 +119,23 @@
 					<div class="section__content">
 						<p class="member__name">Desi Miroslavova</p>
 						<p class="member__role">Developer</p>
-						<p class="member__bio">Desi is a highly skilled programmer, who has studied <strong>Computer Engineering</strong> at the University of Valencia. She is a crucial part of Internxt's development team.</p>
+						<p class="member__bio">Desi is a highly skilled programmer, who has studied <strong>Computer Engineering</strong> at the Polytechnic University of Valencia. She is a crucial part of Internxt's development team.</p>
 						<button class="member__link">Open Bio</button>
 					</div>
 					<img loading="lazy" class="member__image" src="{{ asset('img/sections/about/team/desi.png') }}" alt="Elena Garrigos">
+				</div>	
+					<div class="member">
+					<div class="section__content">
+						<p class="member__name">Joan Mora</p>
+						<p class="member__role">Developer</p>
+						<p class="member__bio">Joan is a highly skilled developer, who has studied <strong>Computer Engineering</strong> at the Polytechnic University of Valencia. He is highly proficient in dealing with highly complex networks, and has a strong background as a devops developer. He is part of Internxt's development team.</p>
+						<button class="member__link">Open Bio</button>
+					</div>
+					<img loading="lazy" class="member__image" src="{{ asset('img/sections/about/team/joan.png') }}" alt="Elena Garrigos">
 				</div>		
 				<div class="member">
 					<div class="section__content">
-						<p class="member__name">Emi Filopova</p>
+						<p class="member__name">Emi Filipova</p>
 						<p class="member__role">Marketing Assistant</p>
 						<p class="member__bio">Emi is a highly skilled marketing professional, who has studied <strong>Business Administration</strong> at the University of Valencia. She helps us out boost our marketing efforts here at Internxt.</p>
 						<button class="member__link">Open Bio</button>
