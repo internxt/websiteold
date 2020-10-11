@@ -1,8 +1,18 @@
+.inxt-buy-form {
+	#inxt-buy-submit {
+		border: solid 1px #f8f9fa;
+		background-color: #f8f9fa;
+
+		&:hover {
+			background-color: rgba(23, 26, 32, .8);
+			color: white;
+		}
+	}
+}
+
 #page--inxt-buy {
-
 	.section--inxt-header-buy {
-
-		background-image: url('/img/sections/inxt/buy/header.jpg');
+		background-image: url("/img/sections/inxt/buy/header.jpg");
 		background-position: center;
 		background-size: cover;
 		height: 100vh;
@@ -17,7 +27,6 @@
 		}
 
 		.section__heading {
-
 			color: white;
 			font-size: 36.1px;
 			font-weight: 500;
@@ -32,11 +41,9 @@
 				line-height: 1.12;
 				text-align: left;
 			}
-
 		}
 
 		.section__subheading {
-
 			color: white;
 			font-size: 20px;
 			font-weight: 500;
@@ -47,7 +54,6 @@
 				font-size: 28px;
 				line-height: 2.11;
 			}
-
 		}
 
 		.section__highlight {
@@ -58,13 +64,10 @@
 			color: white;
 			width: 107px;
 		}
-
 	}
 
 	.section--inxt-buy-directly {
-
 		.section__heading {
-
 			font-size: 28px;
 			letter-spacing: -0.84px;
 			line-height: 1.07;
@@ -76,11 +79,9 @@
 				line-height: 0.95;
 				margin: 0 auto 16px;
 			}
-
 		}
 
 		.section__explanation {
-
 			font-size: 20px;
 			letter-spacing: -0.24px;
 			line-height: 1.3;
@@ -93,31 +94,22 @@
 				margin: 0 auto 100px;
 				width: 551px;
 			}
-
 		}
-
 	}
 
 	.section--inxt-links.links--exchanges {
-
-		@apply
-			.bg-body-bg
-		;
+		@apply .bg-body-bg;
 
 		.section__heading {
-
 			margin-bottom: 53px;
 
 			@screen lg {
 				margin: 0 auto 110px;
 			}
-
 		}
 
 		.link {
 			background: white;
 		}
-
 	}
-
 }

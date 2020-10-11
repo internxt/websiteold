@@ -136,8 +136,8 @@
 
             <input type="text" class="invisible">
 
-            <div class="__section-buy" style="margin: auto; width: 20%">
-                <button id="inxt-buy-submit" type="submit" name="submit" class="w-full btn rounded-pill btn-outline-light __btn-content-primary">Done</button>
+            <div>
+                <button id="inxt-buy-submit" type="submit" name="submit" class="w-40 btn rounded-pill">Done</button>
             </div>
 
             
