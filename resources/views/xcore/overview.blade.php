@@ -47,12 +47,12 @@
 				<div class="lg:flex lg:justify-between">
 					<div class="data">
 						<p class="data__label">Nodes in over</p>
-						<img class="data__value" src="{{ asset('/img/sections/xcore/overview/earn-money/countries.svg') }}">
+						<p class="data__value">100</p>
 						<p class="data__label">Different countries</p>
 					</div>
 					<div class="data">
 						<p class="data__label">More than</p>
-						<img class="data__value" src="{{ asset('/img/sections/xcore/overview/earn-money/available-data.svg') }}">
+						<p class="data__value">10 PB</p>
 						<p class="data__label">Available data</p>
 					</div>
 				</div>
