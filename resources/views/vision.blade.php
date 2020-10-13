@@ -2,6 +2,8 @@
 
 @section('pageID', 'vision')
 
+@section('pageNameSegment', 'vision')
+
 @section('pageTitle', 'Internxt – Luxe Webcam Cover')
 
 @section('metaDescription', 'Protect your privacy with our premium Webcam Cover. Ships everywhere for free.')

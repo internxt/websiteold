@@ -4,6 +4,8 @@
 
 @section('pageID', 'inxt-metrics')
 
+@section('pageNameSegment', 'metrics')
+
 @section('navbar-classes', 'navbar--dark')
 
 @section('pageTitle', 'Internxt Token – Token Metrics.')

@@ -2,6 +2,8 @@
 
 @section('pageID', '503')
 
+@section('pageNameSegment', '503')
+
 @section('pageTitle', $exception->getMessage())
 
 @section('body')

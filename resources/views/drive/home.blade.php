@@ -2,6 +2,8 @@
 
 @section('pageID', 'internxt-home')
 
+@section('pageNameSegment', 'home')
+
 @section('pageTitle', 'Internxt – Be limitless.')
 
 @section('metaDescription', 'Internxt is excitement, ambition, innovation. Join the revolution. The future is now. Make the switch to Internxt Drive, a private, green, safe and free cloud storage.')

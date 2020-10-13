@@ -2,6 +2,8 @@
 
 @section('pageID', 'inxt-buy')
 
+@section('pageNameSegment', 'buy-token')
+
 @section('navbar-classes', 'navbar--dark')
 
 @section('pageTitle', 'Internxt Token – Buy INXT Tokens.')

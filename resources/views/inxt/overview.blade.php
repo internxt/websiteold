@@ -2,6 +2,8 @@
 
 @section('pageID', 'inxt-overview')
 
+@section('pageNameSegment', 'overview')
+
 @section('navbar-classes', 'navbar--dark')
 
 @section('pageTitle', 'Internxt Token – Our tokenized asset.')

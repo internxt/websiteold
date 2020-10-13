@@ -2,6 +2,8 @@
 
 @section('pageID', 'terms')
 
+@section('pageNameSegment', 'terms')
+
 @section('pageTitle', 'Internxt – Terms and Conditions.')
 
 @section('body')

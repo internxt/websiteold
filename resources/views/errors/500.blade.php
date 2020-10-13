@@ -2,6 +2,8 @@
 
 @section('pageID', '500')
 
+@section('pageNameSegment', '500')
+
 @section('pageTitle', 'Server Error')
 
 @section('body')

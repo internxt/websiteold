@@ -2,6 +2,8 @@
 
 @section('pageID', 'checkout-success')
 
+@section('pageNameSegment', 'checkout-success')
+
 @section('pageTitle', 'Success! Your X Cloud Vision is on its way.')
 
 @section('body')

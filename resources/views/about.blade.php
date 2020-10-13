@@ -2,6 +2,8 @@
 
 @section('pageID', 'about')
 
+@section('pageNameSegment', 'about')
+
 @section('navbar-classes', 'navbar--dark')
 
 @section('pageTitle', 'Internxt – About us.')

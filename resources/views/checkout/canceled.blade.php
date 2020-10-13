@@ -2,6 +2,8 @@
 
 @section('pageID', 'checkout-canceled')
 
+@section('pageNameSegment', 'checkout-canceled')
+
 @section('pageTitle', 'Checkout error.')
 
 @section('body')

@@ -2,6 +2,8 @@
 
 @section('pageID', 'xcore-overview')
 
+@section('pageNameSegment', 'core')
+
 @section('pageTitle', 'Internxt Core – Get Paid to Share.')
 
 @section('metaDescription', 'Get paid to share the exceeding disk space of your computer to host encrypted shards of data as part of a decentralized network of servers.')

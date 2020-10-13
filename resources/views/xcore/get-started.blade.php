@@ -2,6 +2,8 @@
 
 @section('pageID', 'xcore-get-started')
 
+@section('pageNameSegment', 'getstarted')
+
 @section('pageTitle', 'Internxt Core – Get Started with Internxt Core.')
 
 @section('metaDescription', 'Start earning a passive income by renting out your extra storage disk space today.')

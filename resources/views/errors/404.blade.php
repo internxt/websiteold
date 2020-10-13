@@ -2,6 +2,8 @@
 
 @section('pageID', '404')
 
+@section('pageNameSegment', '404')
+
 @section('pageTitle', 'Page Not Found')
 
 @push('additionalMeta')

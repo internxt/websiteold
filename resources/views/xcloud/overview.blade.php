@@ -2,6 +2,8 @@
 
 @section('pageID', 'xcloud-overview')
 
+@section('pageNameSegment', 'drive')
+
 @section('pageTitle', 'Internxt Drive – A different cloud storage service.')
 
 @section('metaDescription', 'Internxt Drive is a private, green, free cloud storage service. Make the switch to a better cloud.')

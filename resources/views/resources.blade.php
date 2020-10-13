@@ -2,6 +2,8 @@
 
 @section('pageID', 'resources')
 
+@section('pageNameSegment', 'resources')
+
 @section('navbar-classes', 'navbar--dark')
 
 @section('pageTitle', 'Internxt – Enliven words with the right visual.')

@@ -8,13 +8,11 @@
         @include('_includes.navbar.newNavBar')
 
         <div id='content' class='flex-1 w-full mx-auto'>
-
             @yield('body')
-
         </div>
 
         @if(Route::currentRouteName() != "home")
-        @include('drive.home-sections.footer')
+            @include('drive.home-sections.footer')
         @endif
 
         <script type="text/javascript" src="{{ mix('js/app.js') }}"></script>
@@ -35,7 +33,7 @@
         }
         </script>
 
-        @if(app()->environment('production'))
+        @if(app()->environment('production') || true)
 
             {{-- This will load tracking scripts only if cookie consent is provided --}}
             @include('_includes.scripts.cookie-consent')

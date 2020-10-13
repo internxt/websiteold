@@ -2,6 +2,8 @@
 
 @section('pageID', 'consultancy')
 
+@section('pageNameSegment', 'consultancy')
+
 @section('navbar-classes', 'navbar--dark')
 
 @section('pageTitle', 'Internxt – Creating your digital transformation.')
