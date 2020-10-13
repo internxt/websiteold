@@ -422,6 +422,7 @@ function SF_scripts(){
 	}
 
 	// Google maps initialisation
+	/*
 	if($(".js-google-map").length>0){
 		$(".js-google-map").each(function(){
 			
@@ -468,6 +469,7 @@ function SF_scripts(){
 
 		});
 	}
+	*/
 
 	/*
 		Sliders
