@@ -29,7 +29,7 @@
            Google maps JS API 
            Don't forget to replace the key "AIzaSyDP6Ex5S03nvKZJZSvGXsEAi3X_tFkua4U" to your own! 
            Learn how to get a key: https://help.designmodo.com/article/startup-google-maps-api/ 
-          -->
+    -->
     <!--
     <script type="text/javascript"
         src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDP6Ex5S03nvKZJZSvGXsEAi3X_tFkua4U"></script>
